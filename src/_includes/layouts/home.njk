@@ -9,20 +9,20 @@
     </div>
     <div class="hero__terminal">
       <pre>
-        <code class="shell-session demo">hyperyolo ~ $ </code>
+        <code class="shell-session demo">antodev ~ $ </code>
       </pre>
     </div>
     <div class="wrapper">
       <div class="about">
-        <ul class="about__details">
-          <h3 class="about__title">About me...</h3>
+        <div class="about__details">
+          <h2 class="about__title">About me...</h3>
           <p>{{ content | safe}}</p>
-        <div class="social">
-          <a href="https://twitter.com/antodev89" target="_blank"><i class="fa fa-twitter"></i></a>
-          <a href="https://www.instagram.com/antopiras/" target="_blank"><i class="fa fa-instagram"></i></a>
-          <a href="dhttps://github.com/antoBit" target="_blank"><i class="fa fa-github"></i></a>
+          <div class="social">
+            <a href="https://twitter.com/antodev89" aria-label="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/antopiras/" aria-label="Instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://github.com/antoBit" aria-label="Github" target="_blank"><i class="fa fa-github"></i></a>
+          </div>
         </div>
-        </ul>
       </div>
     </div>
     <div class="blog">
@@ -42,7 +42,7 @@
         </div>
         {% endfor %}
         <div class="callout">
-          <a href="/blog" class="button--primary">Read the entire thing</a>
+          <a href="/blog" class="button--primary" aria-label="Go to the block archive">Read the entire thing</a>
         </div>
       </div>
     </div>
