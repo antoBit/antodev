@@ -1,0 +1,19 @@
+{% set bodyClass = "home" %}
+{% extends "layouts/base.njk" %}
+{% block mainContent %}
+  <section class="wrapper intro" aria-label="intro">
+    <h1>{{ intro | nl2br | safe }}</h1>
+  </section>
+  <main class="wrapper blog_feed">
+    <ul class="articles">
+      {% for post in collections.posts.slice(0, 6) | reverse %}
+        {% include "layouts/partials/blog-article.njk" %}
+      {% endfor %}
+    </ul>
+    <a href="/blog" class="button" aria-label="Blog">Read it all <i class="icon-arrow_forward" aria-hidden="true"></i></a>
+  </main>
+  <section class="wrapper twitter_feed" aria-label="Twitter feed">
+    <h2 class="fade">Sometimes I tweet...</h2>
+    {% include "layouts/partials/tweets.njk" %}
+  </section>
+{% endblock %}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>{{ title }} - {{ description }}</title>
+    <link href="{{ global.siteUrl }}" />
+    <updated>{{ page.date }}</updated>
+    <author>
+        <name>Antonio Piras</name>
+    </author>
+    <id>{{ global.siteUrl }}/</id>
+    {% for post in collections.posts %}
+        <entry>
+            <id>{{ global.siteUrl }}{{ post.url | url }}#{{loop.index0}}</id>
+            <title>{{ post.data.title }}</title>
+            <link href="{{ global.siteUrl }}{{ post.url | url }}#{{loop.index0}}" />
+            <updated>{{ post.data.date }}</updated>
+            {% if post.data.tags %}
+            {% for tag in post.data.tags.slice(0, 2) %}
+            <category term="{{ post.data.tags }}" />
+            {% endfor %}
+            {% endif %}
+            <summary>{{ post.data.description }}</summary>
+            <content type="html">{{ post.data.content }}</content>
+        </entry>
+    {% endfor %}
+</feed>

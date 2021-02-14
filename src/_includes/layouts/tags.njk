@@ -1,0 +1,12 @@
+{% set bodyClass = "blog tags" %}
+{% extends "layouts/base.njk" %}
+{% block mainContent %} 
+<main class="wrapper">
+    <h1>#{{ tag }}</h1>
+    <ul class="articles">
+        {% for post in collections[ tag ] | reverse %}
+            {% include "layouts/partials/blog-article.njk" %}
+        {% endfor %}
+    </ul>
+</main>
+{% endblock %}

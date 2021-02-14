@@ -1,0 +1,12 @@
+{% set bodyClass = "blog" %}
+{% extends "layouts/base.njk" %}
+{% block mainContent %} 
+<main class="wrapper">
+    <ul class="articles">
+        {% for post in posts %}
+            {% include "layouts/partials/blog-article.njk" %}
+        {% endfor %}
+    </ul>
+</main>
+{% include "layouts/partials/pagination.njk" %}
+{% endblock %}

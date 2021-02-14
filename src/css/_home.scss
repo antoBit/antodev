@@ -1,0 +1,47 @@
+@use 'use' as *;
+
+body.home {
+    .wrapper {
+        &.intro {
+            text-align: left;
+            margin: 0 auto;
+            margin-top: 2rem;
+            margin-bottom: 4rem;
+
+            @include tablet_portrait {
+                margin-top: 3rem;
+                margin-bottom: 5rem;
+            }
+
+            h1 {
+                max-width: 75ch;
+                font-family: 'Fira Code', monospace;
+                font-size: 1.05rem;
+
+                .hi {
+                    font-size: 2rem;
+                }
+
+                @include desktop {
+                    font-size: 1.25rem;
+                }
+            }
+        }
+
+        &.blog_feed {
+            margin-top: 1rem;
+            text-align: center;
+
+            li {
+                article {
+                    text-align: left;
+                }
+            }
+
+            .button {
+                margin: 2rem 0;
+                margin-top: 3rem;
+            }
+        }
+    }
+}

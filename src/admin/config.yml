@@ -1,0 +1,64 @@
+logo_url: https://user-images.githubusercontent.com/22414962/113021753-2f49ac00-9184-11eb-890c-f511de0ce6b2.png
+backend:
+    name: git-gateway
+    branch: main
+publish_mode: editorial_workflow
+media_folder: 'src/images/uploads'
+public_folder: '/images/uploads'
+collections:
+    - name: 'blog'
+      label: 'Blog'
+      folder: 'src/blog/'
+      create: true
+      slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+      fields:
+          - {
+                label: 'Layout',
+                name: 'layout',
+                widget: 'hidden',
+                default: 'layouts/post.njk',
+            }
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Description', name: 'description', widget: 'string' }
+          - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+          - {
+                label: 'Meta Description',
+                name: 'metaDescription',
+                widget: 'string',
+            }
+          - {
+                label: 'Meta Image',
+                name: 'metaImage',
+                widget: 'image',
+                required: false,
+            }
+          - {
+                label: 'Meta Keywords',
+                name: 'metaKeywords',
+                widget: 'list',
+                default:
+                    ['web', 'developer', 'javascript', 'js', 'code', 'coding'],
+            }
+          - { label: 'Tags', name: 'tags', widget: 'list', default: ['notes'] }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+    - name: 'pages'
+      label: 'Pages'
+      files:
+          - label: 'What I Use'
+            name: 'uses'
+            file: 'src/uses.md'
+            fields:
+                - {
+                      label: 'Layout',
+                      name: 'layout',
+                      widget: 'hidden',
+                      default: 'layouts/post.njk',
+                  }
+                - { label: Title, name: title, widget: string }
+                - { label: Description, name: description, widget: string }
+                - {
+                      label: Meta description,
+                      name: metaDescription,
+                      widget: string,
+                  }
+                - { label: 'Body', name: 'body', widget: 'markdown' }

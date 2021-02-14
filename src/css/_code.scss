@@ -1,0 +1,73 @@
+@use 'use' as *;
+
+p {
+    code {
+        background-color: $background;
+        font-family: 'Fira Code', monospace;
+        font-size: 95%;
+        padding: 0.2rem 0.4rem;
+        border-radius: 0.4rem;
+    }
+}
+
+pre {
+    font-family: Fira Code, monospace;
+    color: $text;
+    background-color: darken($background, 1%);
+    border-radius: 0.2rem;
+    padding: 1rem 2rem;
+    padding-left: 1rem;
+
+    code {
+        display: block;
+        font-size: 1.25rem;
+        overflow-x: auto;
+        counter-reset: codeline;
+
+        & > span {
+            &:before {
+                content: counter(codeline);
+                display: inline-block;
+                min-width: 20px;
+                color: $light_alt;
+                border-right: 1px solid lighten($background, 5%);
+                text-align: right;
+                margin-right: 1.5rem;
+                padding: 0 1rem;
+                padding-left: 0.5rem;
+                counter-increment: codeline;
+            }
+        }
+
+        .token {
+            &.function-variable,
+            &.keyword {
+                font-weight: 600;
+            }
+
+            &.function:not(.function-variable),
+            &.operator {
+                color: $accent_alt;
+            }
+
+            &.function-variable {
+                color: $light_alt;
+            }
+
+            &.keyword,
+            &.boolean {
+                color: $accent;
+            }
+
+            &.string {
+                font-style: italic;
+            }
+
+            &.comment {
+                font-size: 90%;
+                font-style: italic;
+                color: $light_alt;
+            }
+        }
+    }
+}

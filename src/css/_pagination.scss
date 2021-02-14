@@ -1,0 +1,34 @@
+@use 'use' as *;
+
+nav.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    margin-top: 2rem;
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 2rem;
+        width: 100%;
+        padding: 0;
+        list-style-type: none;
+
+        li {
+            font-size: 1.125rem;
+
+            i {
+                margin: 0 0.5rem;
+                transition: color 0.3s ease;
+            }
+
+            &:hover,
+            &:focus {
+                i {
+                    color: $accent;
+                }
+            }
+        }
+    }
+}
