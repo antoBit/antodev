@@ -1,7 +1,7 @@
 ---
-layout: "layouts/blog.njk"
-title: "Scribbler Documentation"
-description: "a code documentation page template for codrops"
-metaDescription: "DESCRIPTION"
-category: "blog"
+layout: 'layouts/blog.njk'
+title: 'antodev - Blog'
+description: 'Where I rant about tech life'
+metaDescription: 'DESCRIPTION'
+category: 'blog'
 ---

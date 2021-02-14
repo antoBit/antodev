@@ -1,21 +1,12 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
       <meta charset="utf-8">
-      <meta name="description" content="">
+      <meta name="description" content={{ metaDescription }}>
+      <meta name="keywords" content={{ metaKeywords }}>
+      <meta name="author" content="Antonio Piras">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>{{ title }} - {{ description }}</title>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
-      <link rel="stylesheet" href="/css/scribbler-global.css">
-      {% if category === "blog" or category === "post" %}
-      <link rel="stylesheet" href="/css/scribbler-doc.css">
-      {% else %}
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">
-      <link rel="stylesheet" href="/css/scribbler-landing.css">
-      {% endif %}
-      {% if category === "post" %}
-      <link rel="stylesheet" href="/css/post.css">
-      {% endif %}
-      <link rel="author" href="humans.txt">
+      <link rel="stylesheet" href="/css/style.css">
+      <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>

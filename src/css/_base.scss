@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+
+    body {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        font-family: 'Nunito Sans', sans-serif;
+        color: $text;
+        background-color: $background;
+        margin: 0;
+        padding: 0;
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Fira Code', monospace;
+        }
+
+        p,
+        a {
+            color: inherit;
+        }
+
+        p {
+            font-weight: 300;
+        }
+
+        a {
+            text-decoration: none;
+
+            &.active,
+            &:hover {
+                color: $accent;
+            }
+
+            &.animated {
+                position: relative;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: -0.1rem;
+                    width: 0;
+                    height: 2px;
+                    transition: width 0.5s linear;
+                    background-color: $accent;
+                }
+
+                &:hover,
+                &.active {
+                    &:before {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        nav {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            padding: 0 2rem;
+
+            .logo {
+                font-weight: 900;
+                color: var(--primary-color);
+                font-size: 1.4em;
+                grid-column: 1;
+
+                .logo__thin {
+                    font-weight: 300;
+                }
+            }
+
+            .menu {
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                grid-column: 2;
+                list-style: none;
+                margin: 0;
+                margin-left: auto;
+                text-align: right;
+
+                .menu__item {
+                    display: inline-block;
+                    padding: 1rem;
+                }
+            }
+        }
+
+        .wrapper {
+            margin: 0 auto;
+            width: 100%;
+
+            @include desktop {
+                width: 70%;
+            }
+
+            &:first-of-type {
+                margin-top: 1rem;
+            }
+        }
+
+        footer {
+            text-align: center;
+            color: $text;
+            background-color: $background;
+            padding: 2rem;
+            margin-top: auto;
+        }
+    }
+}
+
+.button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding: 1em 30px 1em 50px;
+    overflow: hidden;
+    border: 1px solid $accent_alt;
+    border-radius: 0.4rem;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+
+    span {
+        display: inline-block;
+        transition: transform 0.3s;
+        transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+        @include transform(translate3d(-10px, 0, 0));
+    }
+
+    i {
+        position: absolute;
+        left: 1rem;
+        font-size: 1.3rem;
+        transition: transform 0.3s;
+        transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+        @include transform(translate3d(-40px, 2.5em, 0));
+    }
+
+    &:hover {
+        background: $accent_alt;
+        border-color: $accent_alt;
+        color: $text;
+
+        span,
+        i {
+            @include transform(translate3d(0, 0, 0));
+        }
+    }
+}
+
+.gradient {
+    a {
+        background: linear-gradient(
+            90deg,
+            rgba(63, 94, 251, 1) 0%,
+            rgba(252, 70, 107, 1) 100%
+        );
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: background 0.3s linear;
+    }
+
+    &:hover {
+        a {
+            background: linear-gradient(
+                90deg,
+                rgba(252, 70, 107, 1) 0%,
+                rgba(63, 94, 251, 1) 100%
+            );
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}

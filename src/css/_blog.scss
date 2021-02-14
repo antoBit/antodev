@@ -1,0 +1,78 @@
+.blog {
+    padding: 0;
+}
+
+.wrapper {
+    margin: 2rem auto;
+    padding: 0 2rem;
+
+    h2 {
+        text-align: center;
+    }
+
+    .articles {
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 1rem;
+
+        @include tablet_landscape {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        article {
+            height: auto;
+            border-radius: 0.4rem;
+            padding: 1rem 2rem;
+            padding-top: 0;
+            background-color: darken($background, 10%);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            @include box-shadow(0.1rem, 0.1rem, 2rem, rgba(black, 0.1));
+
+            &:hover {
+                background-color: darken($background, 12%);
+            }
+
+            .post {
+                &__tags {
+                    text-align: right;
+
+                    p {
+                        display: inline-block;
+                        font-family: 'Fira Code', monospace;
+                        font-size: 1.1rem;
+                        margin: 1rem 0;
+                        margin-left: 0.5rem;
+                        margin-bottom: 0;
+                        border-radius: 0.4rem;
+                    }
+                }
+
+                h2 {
+                    text-align: left;
+                    margin-bottom: 0.5rem;
+
+                    a:hover {
+                        color: $text;
+                    }
+                }
+
+                &__date {
+                    color: $accent_alt;
+                    font-size: 0.9rem;
+                    margin-top: 0;
+                    margin-bottom: 2rem;
+                }
+
+                &__content {
+                    color: $text;
+                }
+
+                a.read_more {
+                    display: block;
+                    text-align: right;
+                }
+            }
+        }
+    }
+}

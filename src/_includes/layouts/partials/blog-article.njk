@@ -1,0 +1,13 @@
+<article>
+    <section class="post">
+        <div class="post__tags">
+            {% for tag in post.data.tags %}
+            <p class="gradient"><a href="/tags/{{tag}}" aria-label="Category {{ tag }}">#{{ tag }}</span></p>
+            {% endfor %}
+        </div>
+        <h2 class="post__title"><a href="{{ post.url | url }}" aria-label="{{ post.data.title }}">{{ post.data.title }}</a></h2>
+        <p class="post__date">{{ post.data.date | readableDate }}</p>
+        <p class="post__content">{{ post.data.description }}</p>
+        <a href="{{ post.url | url }}" aria-label="Read more" class="read_more">...continue</a>
+    </section>
+</article>
