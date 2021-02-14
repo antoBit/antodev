@@ -1,0 +1,51 @@
+
+  {% include "layouts/partials/head.njk" %}
+  
+  <body>
+    {% include "layouts/partials/site-nav.njk" %}
+    <div class="hero">
+      <h1 class="hero__title">{{ title }} </h1>
+      <p class="hero__description">{{ description }}</p>
+    </div>
+    <div class="hero__terminal">
+      <pre>
+        <code class="shell-session demo">hyperyolo ~ $ </code>
+      </pre>
+    </div>
+    <div class="wrapper">
+      <div class="about">
+        <ul class="about__details">
+          <h3 class="about__title">About me...</h3>
+          <p>{{ content | safe}}</p>
+        <div class="social">
+          <a href="https://twitter.com/antodev89" target="_blank"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.instagram.com/antopiras/" target="_blank"><i class="fa fa-instagram"></i></a>
+          <a href="dhttps://github.com/antoBit" target="_blank"><i class="fa fa-github"></i></a>
+        </div>
+        </ul>
+      </div>
+    </div>
+    <div class="blog">
+      <div class="wrapper">
+        <h3 class="section__title">Latest posts</h3>
+        {% for post in collections.posts %}
+        <div class="blog__item">
+          <div class="blog__meta">
+            <h4 class="blog__title">
+              <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+            </h4>
+            <small class="blog__date">{{ post.data.date | readableDate }}</small>
+          </div>
+          <div class="blog__detail">
+            <p>{{ post.data.description }}</p>
+          </div>
+        </div>
+        {% endfor %}
+        <div class="callout">
+          <a href="/blog" class="button--primary">Read the entire thing</a>
+        </div>
+      </div>
+    </div>
+    {% include "layouts/partials/footer.njk" %}
+  </body>
+</html>
