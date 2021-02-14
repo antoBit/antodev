@@ -9,7 +9,7 @@ module.exports = function(eleventyConfig) {
     ])
 
     eleventyConfig.addCollection("posts", collection => {
-      return collection.getFilteredByGlob("src/posts/*.md");
+      return collection.getFilteredByGlob("src/blog/*.md");
     })
 
     eleventyConfig.addFilter("readableDate", dateObj => {

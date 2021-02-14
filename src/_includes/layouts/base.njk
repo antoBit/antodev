@@ -1,0 +1,9 @@
+{% include "layouts/partials/head.njk" %}
+  <body class="{{ bodyClass }}">
+    {% include "layouts/partials/site-nav.njk" %}
+    {% block mainContent %}
+    {% endblock %}
+    {% include "layouts/partials/footer.njk" %}
+  </body>
+</html>
+

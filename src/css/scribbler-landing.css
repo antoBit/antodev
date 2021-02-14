@@ -9,19 +9,8 @@ html, body {
   grid-template-columns: 1fr 150px 60% 1fr;
 }
 
-/* .logo {
-  background: url('/images/logo.svg') no-repeat;
-  background-size: contain;
-  margin: 1rem 0 0 1rem;
-} */
-
 nav {
   background-color: var(--bg-color);
-}
-
-.wrapper {
-  display: flex;
-  flex-grow: 1;
 }
 
 /* logo */
