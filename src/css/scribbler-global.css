@@ -170,6 +170,10 @@ hr {
   color: var(--accent-color);
 }
 
+.link--active {
+  color: var(--accent-color);
+}
+
 /* menu */
 nav {
   display: grid;

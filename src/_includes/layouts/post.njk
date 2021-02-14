@@ -1,14 +1,12 @@
-{% set category = "post" %}    
-{% include "layouts/partials/head.njk" %}
-    <body class="blog__post">
-        <div class="doc__bg"></div>
-        {% include "layouts/partials/blog-nav.njk" %}    
-        <div class="wrapper">
-            <article class="doc__content">
-                <h1>{{ title }}</h1>
-                {{ content | code | safe }}
-            </article>
-        </div>
-        {% include "layouts/partials/footer.njk" %}
-    </body>
-</html>
+{% set category = "post" %}   
+{% set bodyClass = "blog__post" %} 
+{% extends "layouts/base.njk" %}
+{% block mainContent %}
+<div class="doc__bg"></div>  
+<div class="wrapper">
+    <article class="doc__content">
+        <h1>{{ title }}</h1>
+        {{ content | code | safe }}
+    </article>
+</div>
+{% endblock %}

@@ -1,11 +1,48 @@
-.logo {
+html, body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  border-bottom: 1px solid var(--code-bg-color);
+  grid-template-columns: 1fr 150px 60% 1fr;
+}
+
+/* .logo {
   background: url('/images/logo.svg') no-repeat;
   background-size: contain;
   margin: 1rem 0 0 1rem;
-}
+} */
 
 nav {
   background-color: var(--bg-color);
+}
+
+.wrapper {
+  display: flex;
+  flex-grow: 1;
+}
+
+/* logo */
+.logo {
+  font-weight: 900;
+  color: var(--primary-color);
+  font-size: 1.4em;
+  grid-column: 2;
+}
+
+.logo__thin {
+  font-weight: 300;
+}
+
+/* menu */
+.menu {
+  grid-template-columns: 1fr 180px 60% 1fr;
+}
+
+.menu__item {
+  padding: 1.5rem 1rem;
 }
 
 .hero {
@@ -43,6 +80,7 @@ nav {
 
 .about {
   margin-top: 3rem;
+  margin-bottom: 3rem;
   display: flex;
 }
 
@@ -65,7 +103,7 @@ nav {
   left: 0.5rem;
   top: -2rem;
   background-color: white;
-  padding: 0 0.5rem;
+  padding: 0 1rem;
 }
 
 .social {

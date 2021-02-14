@@ -1,8 +1,6 @@
 
-  {% include "layouts/partials/head.njk" %}
-  
-  <body>
-    {% include "layouts/partials/site-nav.njk" %}
+  {% extends "layouts/base.njk" %}
+  {% block mainContent %}
     <div class="hero">
       <h1 class="hero__title">{{ title }} </h1>
       <p class="hero__description">{{ description }}</p>
@@ -46,6 +44,4 @@
         </div>
       </div>
     </div>
-    {% include "layouts/partials/footer.njk" %}
-  </body>
-</html>
+  {% endblock %}
