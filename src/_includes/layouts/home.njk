@@ -26,7 +26,7 @@
     <div class="blog">
       <div class="wrapper">
         <h3 class="section__title">Latest posts</h3>
-        {% for post in collections.posts %}
+        {% for post in collections.posts | reverse %}
         <div class="blog__item">
           <div class="blog__meta">
             <h4 class="blog__title">

@@ -8,7 +8,7 @@
     </ul>
     </aside>
     <article class="doc__content">
-    {% for post in collections.posts %}
+    {% for post in collections.posts | reverse %}
     <section class="js-section">
         <h3 class="section__title"><a href="{{ post.url | url }}" aria-label="{{ post.dara.title }}">{{ post.data.title }}</a></h3>
         <span>{{ post.data.date | readableDate }}</p>
