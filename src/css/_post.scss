@@ -9,7 +9,10 @@
         article {
             background-color: #222733;
             padding: 2rem 3rem;
-            border-radius: 0.4rem;
+
+            @include tablet_landscape {
+                border-radius: 0.4rem;
+            }
 
             .post__title {
                 display: flex;
