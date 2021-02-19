@@ -2,8 +2,8 @@
 layout: layouts/post.njk
 title: Obligatory first post
 description: I guess this is where I write about the need for this blog... 🤔
-metaDescription: "Web Developer personal blog"
-metaKeywords: ['web, 'developer', 'javascript', 'js', 'code', 'coding']
+metaDescription: 'Web Developer personal blog'
+metaKeywords: ['web', 'developer', 'javascript', 'js', 'code', 'coding']
 date: 2021-02-16T10:47:34.019Z
 tags: ['notes']
 ---

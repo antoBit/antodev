@@ -3,7 +3,7 @@ layout: "layouts/home.njk"
 title: "antodev"
 description: "Yet another place where a developer rants"
 metaDescription: "Web Developer personal blog"
-metaKeywords: ['web, 'developer', 'javascript', 'js', 'code', 'coding']
+metaKeywords: ['web', 'developer', 'javascript', 'js', 'code', 'coding']
 terminal: "# Welcome! 🙌🏻
 
 I'm a web developer from Italy, madly in love with Javascript

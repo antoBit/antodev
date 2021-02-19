@@ -32,7 +32,8 @@ collections:
                 label: 'Meta Keywords',
                 name: 'metaKeywords',
                 widget: 'list',
-                default: ['web, 'developer', 'javascript', 'js', 'code', 'coding']
+                default:
+                    ['web', 'developer', 'javascript', 'js', 'code', 'coding'],
             }
           - { label: 'Tags', name: 'tags', widget: 'list', default: ['notes'] }
           - { label: 'Body', name: 'body', widget: 'markdown' }
