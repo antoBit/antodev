@@ -70,10 +70,16 @@ html {
             padding: 0 2rem;
 
             .logo {
+                display: flex;
+                align-items: center;
                 font-weight: 900;
                 color: var(--primary-color);
                 font-size: 1.4em;
                 grid-column: 1;
+
+                img {
+                    margin-right: 1rem;
+                }
 
                 .logo__thin {
                     font-weight: 300;
