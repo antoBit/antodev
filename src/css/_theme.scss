@@ -2,3 +2,9 @@ $background: #373f51;
 $accent: #dda448;
 $accent_alt: #de4d86;
 $text: white;
+
+$gradient_1: #fc6b6b 0%, #3f5efb 100%;
+$gradient_2: #fc6b6b 0%, #e8ef00 100%;
+$gradient_3: #f148fb 0%, #7122fa 100%;
+
+$gradients: $gradient_1, $gradient_2, $gradient_3;

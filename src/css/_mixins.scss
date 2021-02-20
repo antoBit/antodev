@@ -10,14 +10,9 @@
     transform: $transforms;
 }
 
-@mixin gradient($from, $to) {
-    background: -webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        from($from),
-        to($to)
-    );
-    background: -moz-linear-gradient(top, $from, $to);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$from}', endColorstr='#{$to}');
+@mixin gradient($number) {
+    $colors: nth($gradients, $number);
+    background: linear-gradient(90deg, $colors);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

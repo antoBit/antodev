@@ -13,7 +13,7 @@
             {{ content | code | safe }}
             <div class="post__tags">
                 {% for tag in tags %}
-                <p class="gradient"><a href="/tags/{{tag}}" aria-label="Category {{ tag }}">#{{ tag }}</span></p>
+                <p class="gradient gradient_{{ range(1, 3) | random  }}"><a href="/tags/{{tag}}" aria-label="Category {{ tag }}">#{{ tag }}</span></p>
                 {% endfor %}
             </div>
         </section>

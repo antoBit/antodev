@@ -35,6 +35,7 @@ html {
 
         a {
             text-decoration: none;
+            outline: none !important;
 
             &.active,
             &:hover {
@@ -165,26 +166,11 @@ html {
 }
 
 .gradient {
-    a {
-        background: linear-gradient(
-            90deg,
-            rgba(63, 94, 251, 1) 0%,
-            rgba(252, 70, 107, 1) 100%
-        );
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        transition: background 0.3s linear;
-    }
-
-    &:hover {
-        a {
-            background: linear-gradient(
-                90deg,
-                rgba(252, 70, 107, 1) 0%,
-                rgba(63, 94, 251, 1) 100%
-            );
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
+    @for $i from 1 through 3 {
+        &.gradient_#{$i} {
+            a {
+                @include gradient($i);
+            }
         }
     }
 }
