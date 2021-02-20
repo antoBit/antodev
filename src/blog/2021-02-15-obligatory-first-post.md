@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: Obligatory first post
 description: I guess this is where I write about the need for this blog... 🤔
-date: 2021-02-16T10:47:34.019Z
+date: 2021-02-20T21:18:20.004Z
 metaDescription: Web Developer personal blog
 metaKeywords:
   - web
