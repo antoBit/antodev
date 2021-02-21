@@ -6,12 +6,7 @@
 }
 
 html {
-    min-height: 100%;
-
     body {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
         font-family: 'Nunito Sans', sans-serif;
         color: $text;
         background-color: $background;
