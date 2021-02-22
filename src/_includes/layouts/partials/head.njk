@@ -6,6 +6,11 @@
       <meta name="keywords" content="{{ metaKeywords }}">
       <meta name="author" content="Antonio Piras">
       <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta property="og:title" content={{ title }}/>
+      <meta property="og:url" content={{ page.url }} />
+      <meta property="og:description" content={{ metaDescription }} />
+      <meta property="og:image" content="{{ metaImage or '/images/panda.png' }}" />
+      <meta property="og:type" content="article" />
       <title>{{ title }} - {{ description }}</title>
       <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
       <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
