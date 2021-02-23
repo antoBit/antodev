@@ -9,4 +9,9 @@ pagination:
     size: 1
     alias: tag
 permalink: /tags/{{ tag }}/
+eleventyComputed:
+    title: '{{ tag }}'
+    metaDescription: 'Blog posts archived under {{ tag }}'
+    metaKeywords:
+        ['{{ tag }}', 'web', 'developer', 'javascript', 'js', 'code', 'coding']
 ---
