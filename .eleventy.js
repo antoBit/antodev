@@ -8,6 +8,7 @@ async function imageShortcode(src, alt, sizes) {
     let metadata = await Image(src, {
         urlPath: '/images/',
         outputDir: '_site/images/',
+        whitespaceMode: 'inline',
     })
 
     let imageAttributes = {
