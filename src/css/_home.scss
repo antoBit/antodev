@@ -10,13 +10,17 @@
             width: 85%;
         }
 
-        img {
-            grid-area: terminal;
-            max-width: 100%;
-            height: auto;
+        picture {
+            text-align: center;
 
-            @include tablet_landscape {
-                max-width: 60%;
+            img {
+                grid-area: terminal;
+                max-width: 100%;
+                height: auto;
+
+                @include tablet_landscape {
+                    max-width: 60%;
+                }
             }
         }
     }
