@@ -22,10 +22,10 @@ tags:
 ---
 ## A journey in N parts (I don’t know yet)
 
-In this post I’ll go through the basics setup of how I built this blog using the awesome 11ty (and hopefully show why I fell in love with it so much!)
+In this post, I’ll go through the basic setup of how I built this blog using the awesome 11ty (and hopefully show why I fell in love with it so much!)
 
-### The setup
+## Folder structure
 
-The first thing I did was to setup the folder structure. I did not strive away from the recommended 11ty structure, except for the build directory (more on that later!):
+The first thing I did was setting up the folder structure. I did not strive away from the recommended 11ty structure, except for the build directory (more on that later!):
 
 ![The blog folder structure](/images/uploads/blog-tree.png "The blog folder structure")
