@@ -28,4 +28,4 @@ In this post I’ll go through the basics setup of how I built this blog using t
 
 The first thing I did was to setup the folder structure. I did not strive away from the recommended 11ty structure, except for the build directory (more on that later!):
 
-![](/images/uploads/blog-tree.png)
+![The blog folder structure](/images/uploads/blog-tree.png "The blog folder structure")
