@@ -1,25 +1,7 @@
 const fs = require('fs')
 const { DateTime } = require('luxon')
-const Image = require('@11ty/eleventy-img')
 const lazyImagesPlugin = require('eleventy-plugin-lazyimages')
 const timeToRead = require('eleventy-plugin-time-to-read')
-
-async function imageShortcode(src, alt, sizes) {
-    let metadata = await Image(src, {
-        formats: ['jpeg', 'png'],
-        urlPath: '/images/',
-        outputDir: '_site/images/',
-    })
-
-    let imageAttributes = {
-        alt,
-        sizes,
-        loading: 'lazy',
-        decoding: 'async',
-    }
-
-    return Image.generateHTML(metadata, imageAttributes)
-}
 
 module.exports = function (eleventyConfig) {
     eleventyConfig.setBrowserSyncConfig({
@@ -42,7 +24,6 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy('src/admin')
     eleventyConfig.addPassthroughCopy('src/images')
     eleventyConfig.addWatchTarget('src/css/')
-    eleventyConfig.addNunjucksAsyncShortcode('image', imageShortcode)
     eleventyConfig.addPlugin(lazyImagesPlugin)
     eleventyConfig.addPlugin(timeToRead)
 
