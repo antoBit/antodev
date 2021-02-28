@@ -24,6 +24,28 @@ tags:
 
 In this post, I’ll go through the basic setup of how I built this blog using the awesome 11ty (and hopefully show why I fell in love with it so much!)
 
+\## Baby steps...
+
+The first thing I did was create the blog directory:
+
+\`\``
+
+mkdir antodev
+
+cd antodev
+
+\`\``
+
+After that, I added a \`package.json\` file via:
+
+\`\``
+
+npm init
+
+\`\``
+
+**Pro tip:** use \`npm init -y\` to give all the default answers.
+
 ## Folder structure
 
 The first thing I did was setting up the folder structure. I did not strive away from the recommended 11ty structure, except for the build directory (more on that later!):
