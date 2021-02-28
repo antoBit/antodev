@@ -1,0 +1,56 @@
+pre {
+    font-family: Fira Code, monospace;
+    color: $text;
+    background-color: lighten(black, 10%);
+    border: 1px solid lighten($background, 10%);
+    border-radius: 0.4rem;
+    padding: 1rem 2rem;
+
+    code {
+        display: block;
+        font-size: 1.25rem;
+        overflow-x: scroll;
+
+        .token {
+            &.function-variable,
+            &.keyword {
+                font-weight: 600;
+            }
+
+            &.function:not(.function-variable) {
+                @include gradient(3);
+            }
+
+            &.function-variable {
+                color: $accent_alt;
+            }
+
+            &.keyword {
+                color: $accent;
+            }
+
+            &.boolean {
+                @include gradient(2);
+            }
+
+            &.string {
+                font-style: italic;
+            }
+        }
+
+        .highlight-line-isdir {
+            color: #b0b0b0;
+            background-color: #222;
+        }
+        .highlight-line-active {
+            background-color: #444;
+            background-color: hsla(0, 0%, 27%, 0.8);
+        }
+        .highlight-line-add {
+            background-color: #45844b;
+        }
+        .highlight-line-remove {
+            background-color: #902f2f;
+        }
+    }
+}
