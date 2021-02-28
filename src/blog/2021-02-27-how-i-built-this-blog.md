@@ -24,11 +24,7 @@ tags:
 
 In this post, I’ll go through the basic setup of how I built this blog using the awesome 11ty (and hopefully show why I fell in love with it so much!)
 
-## Folder structure
-
-The first thing I did was setting up the folder structure. I did not strive away from the recommended 11ty structure, except for the build directory (more on that later!):
-
-\## Baby steps...
+## Baby steps...
 
 The first thing I did was create the blog directory:
 
@@ -50,5 +46,9 @@ Then, it's just a matter of installing *eleventy*.
 ```
 yarn add --dev @11ty/eleventy
 ```
+
+## Folder structure
+
+After all the prerequisites, I like to set up the basic folder structure. I did not strive away from the recommended 11ty structure, except for the build directory (more on that later!):
 
 ![The blog folder structure](/images/uploads/blog-tree.png "The blog folder structure")
