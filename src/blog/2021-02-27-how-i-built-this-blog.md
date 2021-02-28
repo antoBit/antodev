@@ -48,7 +48,7 @@ yarn init
 Then, it's just a matter of installing *eleventy*.
 
 ```
-yarn add --dev @11ty
+yarn add --dev @11ty/eleventy
 ```
 
 ![The blog folder structure](/images/uploads/blog-tree.png "The blog folder structure")
