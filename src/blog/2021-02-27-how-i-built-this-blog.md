@@ -18,11 +18,10 @@ metaKeywords:
   - coding
 tags:
   - 11ty
-  - code
+  - tutorial
 ---
-## A journey in N parts (I don’t know yet)
-
-In this post, I’ll go through the basic setup of how I built this blog using the awesome 11ty (and hopefully show why I fell in love with it so much!)
+In this post, I’ll go through the basic setup of how I built this blog using the awesome 11ty (and hopefully show why I fell in love with it so much!).
+I obviously won't cover everything in one post, I want to make a series of posts about the various parts of my process.
 
 ## Baby steps...
 
