@@ -48,19 +48,6 @@ module.exports = function (eleventyConfig) {
         debugger
     })
 
-    eleventyConfig.addFilter('code', (content) => {
-        const openPre = /<pre>/gim
-        const closePre = /<\/pre>/gim
-
-        content = content.replace(
-            openPre,
-            '<div class="code__block code__block--notabs"><pre class="code code--block">'
-        )
-        content.replace(closePre, '</pre>/div>')
-
-        return content
-    })
-
     return {
         dir: {
             input: 'src',
