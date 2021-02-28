@@ -28,4 +28,27 @@ In this post, I’ll go through the basic setup of how I built this blog using t
 
 The first thing I did was setting up the folder structure. I did not strive away from the recommended 11ty structure, except for the build directory (more on that later!):
 
+\## Baby steps...
+
+The first thing I did was create the blog directory:
+
+```
+mkdir antodev
+cd antodev
+```
+
+After that, I added a `package.json` file via:
+
+```
+yarn init
+```
+
+**Pro tip:** use `yarn init -y` to give all the default answers.
+
+Then, it's just a matter of installing *eleventy*.
+
+```
+yarn add --dev @11ty
+```
+
 ![The blog folder structure](/images/uploads/blog-tree.png "The blog folder structure")
