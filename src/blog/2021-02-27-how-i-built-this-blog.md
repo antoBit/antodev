@@ -37,9 +37,8 @@ After that, I added a `package.json` file via:
 
 ```
 yarn init
+# Pro tip: use yarn init -y to give all the default answers.
 ```
-
-**Pro tip:** use `yarn init -y` to give all the default answers.
 
 Then, it's just a matter of installing *eleventy*.
 
@@ -47,8 +46,33 @@ Then, it's just a matter of installing *eleventy*.
 yarn add --dev @11ty/eleventy
 ```
 
-## Folder structure
+Every site has an `index.html` file, so let's start there:
 
-After all the prerequisites, I like to set up the basic folder structure. I did not strive away from the recommended 11ty structure, except for the build directory (more on that later!):
+```
+touch index.html
+```
 
-![The blog folder structure](/images/uploads/blog-tree.png "The blog folder structure")
+Put a basic HTML5 page inside it 💪🏻
+
+## Let's run it
+
+After this basic setup, I added two scripts to my `package.json` (this is just how I usually work, and I'll be editing these scripts later anyway):
+
+```json
+  "scripts": {
+    "serve": "eleventy --serve",
+    "build": "yarn eleventy"
+  },
+```
+
+saved it and ran:
+
+```
+yarn build
+yarn run v1.22.4
+$ yarn eleventy
+Writing _site/index.html from index.html
+Wrote 1 file in ...
+```
+
+et voilà, inside the `_site` folder there's my new (and empty) blog.
