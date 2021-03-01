@@ -30,7 +30,7 @@ To use gulp we need to set up three tasks:
  - minify the code
 2. "watch" "build" tasks to trigger the original "css" task when editing files (watch) or building the site (build).
 
-```js
+```js{r, attr.source='.numberLines'}
 const gulp = require('gulp')
 const sass = require('gulp-sass')
 const autoprefixer = require('gulp-autoprefixer')
@@ -52,4 +52,28 @@ gulp.task('watch', function () {
 
 gulp.task('build', gulp.parallel('css'))
 ```
+
+These tasks can be called from the terminal via `gulp watch` or `gulp build`.
+To automate things, we need to add these tasks to our `
+package.json` file:
+
+```js
+  "scripts": {
+    "serve": "gulp build & gulp watch & eleventy --serve",
+    "build": "gulp build && yarn eleventy"
+  }
+```
+
+To tell 11ty to watch for changes to the css folder we need to add this code to `.eleventj.js`:
+
+```js
+eleventyConfig.addWatchTarget('src/css/')
+``
+
+Note that eleventy will not add a watch for files or folders that are in .gitignore.
+To change that behaviour we need to add another line to `.eleventy.js`:
+
+```js
+eleventyConfig.setUseGitIgnore(false)
+``
 
