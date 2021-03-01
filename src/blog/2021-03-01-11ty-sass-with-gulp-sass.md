@@ -1,11 +1,19 @@
 ---
 layout: layouts/post.njk
-title: 11ty SASS with gulp-sass
-description: 11ty SASS with gulp-sass
+title: Set up eleventy for SCSS compilation with Gulp
+description: I didn't have an easy time setting up a SASS preprocessor,
+  autoprefixer and minifier in my 11ty blog so I wanted to write a short guide
+  on how I managed to do it.
 date: 2021-03-01T07:24:45.044Z
-metaDescription: 11ty SASS with gulp-sass
+metaDescription: How to setup a SASS preprocessor, autoprefixer and minifier for
+  eleventy with Gulp.
 metaImage: /images/uploads/terminal.png
 metaKeywords:
+  - eleventy
+  - 11ty
+  - sass
+  - scss
+  - gulp
   - web
   - developer
   - javascript
@@ -16,7 +24,7 @@ tags:
   - notes
 ---
 I didn't have an easy time setting up a SASS preprocessor, autoprefixer and minifier in my 11ty blog so I wanted to write a short guide on how I managed to do it.
-The first thing I did was adding the required packages, in my site's directory:
+The first thing I did was adding the required packages, to my site's directory:
 
 ```
 yarn add --dev gulp gulp-autoprefixer gulp-cssnanno gulp-sasss
