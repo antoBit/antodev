@@ -58,7 +58,34 @@
                 h2,
                 h3,
                 h4 {
+                    position: relative;
                     text-align: left;
+
+                    &::before {
+                        content: '';
+                        display: inline-block;
+                        font-family: 'Fira Code', monospace;
+                        margin-right: 0.5rem;
+                        @include gradient(2);
+                    }
+                }
+
+                h2 {
+                    &::before {
+                        content: '$';
+                    }
+                }
+
+                h3 {
+                    &::before {
+                        content: '#';
+                    }
+                }
+
+                h4 {
+                    &::before {
+                        content: '=>';
+                    }
                 }
 
                 img {
