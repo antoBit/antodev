@@ -23,7 +23,7 @@ metaKeywords:
 tags:
   - notes
 ---
-I didn't have an easy time setting up a SASS preprocessor, autoprefixer and minifier in my 11ty blog so I wanted to write a short guide on how I managed to do it.
+I didn't have an easy time setting up a SASS preprocessor, autoprefixer, and minifier in my 11ty blog so I wanted to write a short guide on how I managed to do it.
 The first thing I did was adding the required packages, to my site's directory:
 
 ```
@@ -38,7 +38,7 @@ To use gulp we need to set up three tasks:
  - minify the code
 2. "watch" "build" tasks to trigger the original "css" task when editing files (watch) or building the site (build).
 
-```js{r, attr.source='.numberLines'}
+```js
 const gulp = require('gulp')
 const sass = require('gulp-sass')
 const autoprefixer = require('gulp-autoprefixer')
