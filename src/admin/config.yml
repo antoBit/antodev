@@ -25,7 +25,12 @@ collections:
                 name: 'metaDescription',
                 widget: 'string',
             }
-          - { label: 'Meta Image', name: 'metaImage', widget: 'image' }
+          - {
+                label: 'Meta Image',
+                name: 'metaImage',
+                widget: 'image',
+                required: false,
+            }
           - {
                 label: 'Meta Keywords',
                 name: 'metaKeywords',
