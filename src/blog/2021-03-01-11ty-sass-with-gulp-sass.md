@@ -15,25 +15,58 @@ metaKeywords:
 tags:
   - notes
 ---
-```js
-const gulp = require('gulp')
-const sass = require('gulp-sass')
-const autoprefixer = require('gulp-autoprefixer')
-const cssnano = require('gulp-cssnano')
+In this post, I’ll go through the basic setup of how I built this blog using the awesome 11ty (and hopefully show why I fell in love with it so much!).
+I obviously won't cover everything in one post, I want to make a series of posts about the various parts of my process.
 
-gulp.task('css', function () {
-    return gulp
-        .src('./src/css/style.scss')
-        .pipe(sass())
-        .pipe(autoprefixer())
-        .pipe(cssnano())
-        .on('error', sass.logError)
-        .pipe(gulp.dest('./_site/css'))
-})
+## Baby steps...
 
-gulp.task('watch', function () {
-    gulp.watch('./src/css/*.scss', gulp.parallel('css'))
-})
+The first thing I did was create the blog directory:
 
-gulp.task('build', gulp.parallel('css'))
 ```
+mkdir antodev
+cd antodev
+```
+
+After that, I added a `package.json` file via:
+
+```
+yarn init
+# Pro tip: use yarn init -y to give all the default answers.
+```
+
+Then, it's just a matter of installing *eleventy*.
+
+```
+yarn add --dev @11ty/eleventy
+```
+
+Every site has an `index.html` file, so let's start there:
+
+```
+touch index.html
+```
+
+Put a basic HTML5 page inside it 💪🏻
+
+## Let's run it
+
+After this basic setup, I added two scripts to my `package.json` (this is just how I usually work, and I'll be editing these scripts later anyway):
+
+```json
+  "scripts": {
+    "serve": "eleventy --serve",
+    "build": "yarn eleventy"
+  },
+```
+
+saved it and ran:
+
+```
+yarn build
+yarn run v1.22.4
+$ yarn eleventy
+Writing _site/index.html from index.html
+Wrote 1 file in ...
+```
+
+et voilà, inside the `_site` folder there's my new (and empty) blog.
