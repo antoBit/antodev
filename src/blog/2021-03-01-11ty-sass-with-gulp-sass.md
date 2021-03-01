@@ -85,3 +85,4 @@ To change that behavior we need to add another line to `.eleventy.js`:
 eleventyConfig.setUseGitIgnore(false)
 ``
 
+...that's it!
