@@ -79,7 +79,7 @@ eleventyConfig.addWatchTarget('src/css/')
 ``
 
 Note that eleventy will not add a watch for files or folders that are in .gitignore.
-To change that behaviour we need to add another line to `.eleventy.js`:
+To change that behavior we need to add another line to `.eleventy.js`:
 
 ```js
 eleventyConfig.setUseGitIgnore(false)
