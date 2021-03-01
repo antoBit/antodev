@@ -23,7 +23,12 @@ yarn add --dev gulp gulp-autoprefixer gulp-cssnanno gulp-sasss
 # the --dev argument is not required
 ```
 
-Then it's just a matter of adding a gulpfile.js with some settings:
+To use gulp we need to set up three tasks:
+1. a "css" task to
+ - compile our scss files to css
+ - add vendor prefixes when required
+ - minify the code
+2. "watch" "build" tasks to trigger the original "css" task when editing files (watch) or building the site (build).
 
 ```js
 const gulp = require('gulp')
@@ -46,5 +51,5 @@ gulp.task('watch', function () {
 })
 
 gulp.task('build', gulp.parallel('css'))
-``
+```
 
