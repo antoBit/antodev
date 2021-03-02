@@ -32,10 +32,13 @@ yarn add --dev gulp gulp-autoprefixer gulp-cssnanno gulp-sasss
 ```
 
 To use gulp we need to set up three tasks:
+
 1. a "css" task to
- - compile our scss files to css
- - add vendor prefixes when required
- - minify the code
+
+-   compile our scss files to css
+-   add vendor prefixes when required
+-   minify the code
+
 2. "watch" "build" tasks to trigger the original "css" task when editing files (watch) or building the site (build).
 
 ```js
@@ -62,8 +65,7 @@ gulp.task('build', gulp.parallel('css'))
 ```
 
 These tasks can be called from the terminal via `gulp watch` or `gulp build`.
-To automate things, we need to add these tasks to our `
-package.json` file:
+To automate things, we need to add these tasks to our ` package.json` file:
 
 ```js
   "scripts": {
@@ -76,13 +78,13 @@ To tell 11ty to watch for changes to the css folder we need to add this code to 
 
 ```js
 eleventyConfig.addWatchTarget('src/css/')
-``
+```
 
 Note that eleventy will not add a watch for files or folders that are in .gitignore.
 To change that behavior we need to add another line to `.eleventy.js`:
 
 ```js
 eleventyConfig.setUseGitIgnore(false)
-``
+```
 
 ...that's it!
