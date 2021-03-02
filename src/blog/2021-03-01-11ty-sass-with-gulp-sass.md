@@ -106,14 +106,14 @@ Now, whenever we run one of those two yarn scipts, our gulp tasks will be called
 When setting up all of this I was stomped for a solid hour trying to figure out why changes to my scss files weren't causing the browser to reload.
 As it turns out, eleventy does not automatically watch any file in our project's directory, but we can make it do so, by adding this line to our `.eleventj.js` file:
 
-```js
+```
 eleventyConfig.addWatchTarget('src/css/')
 ```
 
 Note that eleventy will not add a watch for files or folders that are in .gitignore.
 To change that behavior we need to add another line to `.eleventy.js`:
 
-```js
+```
 eleventyConfig.setUseGitIgnore(false)
 ```
 
