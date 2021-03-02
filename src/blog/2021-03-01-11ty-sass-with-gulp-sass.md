@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Set up eleventy for SCSS compilation with Gulp
-description: I didn't have an easy time setting up a SASS preprocessor,
+description: I haven't had an easy time setting up a SASS preprocessor,
   autoprefixer and minifier in my 11ty blog so I wanted to write a short guide
   on how I managed to do it.
 date: 2021-03-01T07:24:45.044Z
@@ -28,7 +28,16 @@ tags:
   - code
   - javascript
 ---
-I didn't have an easy time setting up a SASS preprocessor, autoprefixer, and minifier in my 11ty blog so I wanted to write a short guide on how I managed to do it.
+If you're like me and you cannot stand writing CSS without SASS and you want to enable it for your eleventy site, this is the right place for you.
+
+Coming from the React world I immediately thought of **gulp** when I decided to include sass in my project, so I jumped at the possibility of using **gulp tasks** to compile scss and add vendor prefixes automatically (I hate them and I google [What CSS to prefix?](http://shouldiprefix.com/) almost every day).\
+
+Since we're writing gulp tasks I thought a minified CSS would also be a good idea.
+
+So, if you're interested in how I did it, let's begin 🚀
+
+## Setting things up
+
 The first thing I did was adding the required packages, to my site's directory:
 
 ```
@@ -36,13 +45,17 @@ yarn add --dev gulp gulp-autoprefixer gulp-cssnanno gulp-sasss
 # the --dev argument is not required
 ```
 
+That was pretty easy (as the rest of this process, anyway).
+
+## Gulp tasks
+
 To use gulp we need to set up three tasks:
 
 1. a "css" task to
 
--   compile our scss files to css
--   add vendor prefixes when required
--   minify the code
+* compile our scss files to css
+* add vendor prefixes when required
+* minify the code
 
 2. "watch" "build" tasks to trigger the original "css" task when editing files (watch) or building the site (build).
 
@@ -70,7 +83,7 @@ gulp.task('build', gulp.parallel('css'))
 ```
 
 These tasks can be called from the terminal via `gulp watch` or `gulp build`.
-To automate things, we need to add these tasks to our ` package.json` file:
+To automate things, we need to add these tasks to our `package.json` file:
 
 ```js
 "scripts": {
