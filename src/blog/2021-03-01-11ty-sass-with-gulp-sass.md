@@ -48,11 +48,11 @@ yarn add --dev gulp gulp-autoprefixer gulp-cssnanno gulp-sasss
 # the --dev argument is not required
 ```
 
-That was pretty easy (as the rest of this process, anyway).
+That was pretty easy (as the rest of this process anyway).
 
 ## Gulp tasks
 
-To use gulp we need to set up three tasks:
+To use gulp we need to set up three tasks.
 
 1. a "css" task to
 
@@ -60,7 +60,9 @@ To use gulp we need to set up three tasks:
 * add vendor prefixes when required
 * minify the code
 
-2. "watch" "build" tasks to trigger the original "css" task when editing files (watch) or building the site (build).
+2. "watch" and "build" tasks to trigger the original "css" task when editing files (watch) or building the site (build).
+
+A gulp task is just a function that gets a name assigned and can be called by Gulp to edit our files.
 
 ```js
 const gulp = require('gulp')
@@ -70,12 +72,12 @@ const cssnano = require('gulp-cssnano')
 
 gulp.task('css', function () {
     return gulp
-        .src('./src/css/style.scss')
-        .pipe(sass())
-        .pipe(autoprefixer())
-        .pipe(cssnano())
-        .on('error', sass.logError)
-        .pipe(gulp.dest('./_site/css'))
+        .src('./src/css/style.scss') //source file to retrieve
+        .pipe(sass()) //sends the source file to the sass plugin
+        .pipe(autoprefixer()) //sends the source file to the autoprefixer plugin
+        .pipe(cssnano()) //sends the source file to the minifier plugin
+        .on('error', sass.logError) //log errors
+        .pipe(gulp.dest('./_site/css')) //outputs the result in our public dir
 })
 
 gulp.task('watch', function () {
@@ -84,8 +86,12 @@ gulp.task('watch', function () {
 
 gulp.task('build', gulp.parallel('css'))
 ```
+The `watch` and `build` tasks call `gulp.parallel()` to nest the previous task inside them.
 
 These tasks can be called from the terminal via `gulp watch` or `gulp build`.
+
+## Run gulp automatically
+
 To automate things, we need to add these tasks to our `package.json` file:
 
 ```js
@@ -94,6 +100,8 @@ To automate things, we need to add these tasks to our `package.json` file:
  "build": "gulp build && yarn eleventy"
 }
 ```
+
+Now, whenever we run one of those two yarn scipts, our gulp tasks will be called before eleventy can parse our site.
 
 To tell 11ty to watch for changes to the css folder we need to add this code to `.eleventj.js`:
 
