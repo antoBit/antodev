@@ -69,6 +69,7 @@
                         margin-right: 0.5rem;
                         opacity: 0.5;
                         @include gradient(2);
+                        @include transform(scale(0.8));
                     }
                 }
 
