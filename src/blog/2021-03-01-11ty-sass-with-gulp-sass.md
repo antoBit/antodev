@@ -41,11 +41,8 @@ Gulp is a tool that lets us automate the trivial tasks that frontend web develop
 The first thing I did was adding the required packages, to my site's directory:
 
 ```
-yarn add --dev gulp gulp-autoprefixer gulp-cssnanno gulp-sasss
-# the --dev argument is not required
+yarn add gulp gulp-autoprefixer gulp-cssnanno gulp-sasss
 ```
-
-That was pretty easy (as the rest of this process anyway).
 
 ## Gulp tasks
 
@@ -90,7 +87,7 @@ These tasks can be called from the terminal via `gulp watch` or `gulp build`.
 
 ## Run gulp automatically
 
-To automate things, we need to add these tasks to our `package.json` file:
+We don't want to have to run those commands every time we edit our scss files, of course. To automate this, we need to add these tasks to our `package.json` file:
 
 ```js
 "scripts": {
