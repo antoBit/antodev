@@ -30,11 +30,14 @@ tags:
 ---
 If you're like me and you cannot stand writing CSS without SASS and you want to enable it for your eleventy site, this is the right place for you.
 
-Coming from the React world I immediately thought of **gulp** when I decided to include sass in my project, so I jumped at the possibility of using **gulp tasks** to compile scss and add vendor prefixes automatically (I hate them and I google [What CSS to prefix?](http://shouldiprefix.com/) almost every day).\
+Coming from the React world I immediately thought of **gulp** when I decided to include sass in my project, so I jumped at the possibility of using **gulp tasks** to compile scss and add vendor prefixes automatically (I hate them and I google [What CSS to prefix?](http://shouldiprefix.com/) almost every day).
 
 Since we're writing gulp tasks I thought a minified CSS would also be a good idea.
-
 So, if you're interested in how I did it, let's begin 🚀
+
+## What is Gulp?
+
+Gulp is a tool that lets us automate the trivial tasks that frontend web development usually requires like spinning up servers, process SCSS and optimize assets like images or even scripts. It also provides hot reloading when developing.
 
 ## Setting things up
 
