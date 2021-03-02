@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: Set up eleventy for SCSS compilation with Gulp
+title: I live my eleventy with a side of SCSS
 description: I haven't had an easy time setting up a SASS preprocessor,
   autoprefixer and minifier in my 11ty blog so I wanted to write a short guide
   on how I managed to do it.
