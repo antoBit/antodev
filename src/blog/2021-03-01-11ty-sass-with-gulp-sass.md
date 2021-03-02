@@ -68,10 +68,10 @@ These tasks can be called from the terminal via `gulp watch` or `gulp build`.
 To automate things, we need to add these tasks to our ` package.json` file:
 
 ```js
-  "scripts": {
-    "serve": "gulp build & gulp watch & eleventy --serve",
-    "build": "gulp build && yarn eleventy"
-  }
+"scripts": {
+ "serve": "gulp build & gulp watch & eleventy --serve",
+ "build": "gulp build && yarn eleventy"
+}
 ```
 
 To tell 11ty to watch for changes to the css folder we need to add this code to `.eleventj.js`:
