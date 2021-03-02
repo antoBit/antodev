@@ -1,30 +1,31 @@
 ---
 layout: layouts/post.njk
-title: I live my eleventy with a side of SCSS
+title: I like my eleventy with a side of SCSS
 description: I haven't had an easy time setting up a SASS preprocessor,
-  autoprefixer and minifier in my 11ty blog so I wanted to write a short guide
-  on how I managed to do it.
+    autoprefixer and minifier in my 11ty blog so I wanted to write a short guide
+    on how I managed to do it.
 date: 2021-03-01T07:24:45.044Z
 metaDescription: How to setup a SASS preprocessor, autoprefixer and minifier for
-  eleventy with Gulp.
-metaImage: ""
+    eleventy with Gulp.
+metaImage: ''
 metaKeywords:
-  - eleventy
-  - 11ty
-  - sass
-  - scss
-  - gulp
-  - web
-  - developer
-  - javascript
-  - js
-  - code
-  - coding
+    - eleventy
+    - 11ty
+    - sass
+    - scss
+    - gulp
+    - web
+    - developer
+    - javascript
+    - js
+    - code
+    - coding
 tags:
-  - 11ty
-  - tips
-  - javascript
+    - 11ty
+    - tips
+    - javascript
 ---
+
 If you're like me and you cannot stand writing CSS without SASS and you want to enable it for your eleventy site, this is the right place for you.
 
 Coming from the React world I immediately thought of **gulp** when I decided to include sass in my project, so I jumped at the possibility of using **gulp tasks** to compile scss and add vendor prefixes automatically (I hate them and I google [What CSS to prefix?](http://shouldiprefix.com/) almost every day).
@@ -50,9 +51,9 @@ To use gulp we need to set up three tasks.
 
 1. a "css" task to
 
-* compile our scss files to css
-* add vendor prefixes when required
-* minify the code
+-   compile our scss files to css
+-   add vendor prefixes when required
+-   minify the code
 
 2. "watch" and "build" tasks to trigger the original "css" task when editing files (watch) or building the site (build).
 
