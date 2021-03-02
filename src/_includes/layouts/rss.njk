@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
     <title>{{ title }} - {{ description }}</title>
-    <link>https://www.antopiras.dev</link>
-    <atom:link href="https://www.antopiras.dev/rss.xml" rel="self" type="application/rss+xml" />
+    <link>{{ global.siteUrl }}</link>
+    <atom:link href="{{ global.siteUrl }}/rss.xml" rel="self" type="application/rss+xml" />
     <description>{{ description }}</description>
     {% for post in collections.posts %}
         <item>
             <title>{{ post.data.title }}</title>
-            <link>https://www.antopiras.dev{{ post.url | url }}#{{loop.index0}}</link>
-            <guid>https://www.antopiras.dev{{ post.url | url }}#{{loop.index0}}</guid>
+            <link>{{ global.siteUrl }}{{ post.url | url }}#{{loop.index0}}</link>
+            <guid>{{ global.siteUrl }}{{ post.url | url }}#{{loop.index0}}</guid>
             <description>{{ post.data.description }}</description>
         </item>
     {% endfor %}
