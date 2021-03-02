@@ -8,10 +8,11 @@
 
         article {
             background-color: #222733;
-            padding: 2rem 3rem;
+            padding: 2rem;
 
             @include tablet_landscape {
                 border-radius: 0.4rem;
+                padding: 2rem 3rem;
             }
 
             .post__title {
