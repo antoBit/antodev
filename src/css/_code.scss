@@ -19,7 +19,7 @@ pre {
             }
 
             &.function:not(.function-variable) {
-                @include gradient(3);
+                color: $light;
             }
 
             &.function-variable {
@@ -31,7 +31,7 @@ pre {
             }
 
             &.boolean {
-                @include gradient(2);
+                color: $light_alt;
             }
 
             &.string {
