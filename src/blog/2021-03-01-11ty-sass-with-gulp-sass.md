@@ -33,7 +33,7 @@ If you're like me and you cannot stand writing CSS without SASS and you want to 
 Coming from the React world I immediately thought of **gulp** when I decided to include sass in my project, so I jumped at the possibility of using **gulp tasks** to compile scss and add vendor prefixes automatically (I hate them and I google [What CSS to prefix?](http://shouldiprefix.com/) almost every day).
 
 Since we're writing gulp tasks I thought a minified CSS would also be a good idea.
-So, if you're interested in how I did it, let's begin 🚀
+So, if you're interested in how I did it, let's begin 💪🏻
 
 ## What is Gulp?
 
@@ -86,6 +86,7 @@ gulp.task('watch', function () {
 
 gulp.task('build', gulp.parallel('css'))
 ```
+
 The `watch` and `build` tasks call `gulp.parallel()` to nest the previous task inside them.
 
 These tasks can be called from the terminal via `gulp watch` or `gulp build`.
@@ -103,7 +104,12 @@ To automate things, we need to add these tasks to our `package.json` file:
 
 Now, whenever we run one of those two yarn scipts, our gulp tasks will be called before eleventy can parse our site.
 
-To tell 11ty to watch for changes to the css folder we need to add this code to `.eleventj.js`:
+## Do not be like me...
+
+...and read the eleventy documentation!
+
+When setting up all of this I was stomped for a solid hour trying to figure out why changes to my scss files weren't causing the browser to reload.
+As it turns out, eleventy does not automatically watch any file in our project's directory, but we can make it do so, by adding this line to our `.eleventj.js` file:
 
 ```js
 eleventyConfig.addWatchTarget('src/css/')
@@ -116,4 +122,4 @@ To change that behavior we need to add another line to `.eleventy.js`:
 eleventyConfig.setUseGitIgnore(false)
 ```
 
-...that's it!
+...that's it. Now you should have everything you need to compile .scss files! 🚀
