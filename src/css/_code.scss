@@ -35,15 +35,15 @@ pre {
             }
 
             &.function:not(.function-variable) {
-                color: $light;
+                color: $accent;
             }
 
             &.function-variable {
-                color: $accent_alt;
+                color: $light;
             }
 
             &.keyword {
-                color: $accent;
+                color: $accent_alt;
             }
 
             &.boolean {
