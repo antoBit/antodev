@@ -24,7 +24,7 @@ tags:
   - 11ty
   - sass
   - gulp
-  - 11ty
+  - eleventy
   - code
   - javascript
 ---
