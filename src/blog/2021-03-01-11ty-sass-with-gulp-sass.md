@@ -21,7 +21,12 @@ metaKeywords:
   - code
   - coding
 tags:
-  - notes
+  - 11ty
+  - sass
+  - gulp
+  - 11ty
+  - code
+  - javascript
 ---
 I didn't have an easy time setting up a SASS preprocessor, autoprefixer, and minifier in my 11ty blog so I wanted to write a short guide on how I managed to do it.
 The first thing I did was adding the required packages, to my site's directory:
