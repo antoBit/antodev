@@ -9,8 +9,12 @@ pre {
     code {
         display: block;
         font-size: 1.25rem;
-        white-space: pre-wrap;
-        word-wrap: break-word;
+        overflow-x: scroll;
+
+        @include tablet_landscape {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
 
         .token {
             &.function-variable,
