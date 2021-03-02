@@ -22,10 +22,7 @@ metaKeywords:
   - coding
 tags:
   - 11ty
-  - sass
-  - gulp
-  - eleventy
-  - code
+  - tips
   - javascript
 ---
 If you're like me and you cannot stand writing CSS without SASS and you want to enable it for your eleventy site, this is the right place for you.
