@@ -7,7 +7,7 @@ description: I haven't had an easy time setting up a SASS preprocessor,
 date: 2021-03-01T07:24:45.044Z
 metaDescription: How to setup a SASS preprocessor, autoprefixer and minifier for
   eleventy with Gulp.
-metaImage: /images/uploads/terminal.png
+metaImage: ""
 metaKeywords:
   - eleventy
   - 11ty
