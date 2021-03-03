@@ -136,19 +136,16 @@ html {
         to bottom right,
         #fc6b6b,
         #3f5efb,
-        #e55d87,
-        #5fc3e4
+        #f148fb,
+        #7122fa
     );
     background-size: 400% 400%;
-
-    @include phone {
-        animation: gradient 5s ease infinite;
-        animation-fill-mode: forwards;
-    }
+    color: white;
+    animation: gradient_in 5s;
 
     &:hover {
         color: white;
-        animation: gradient 5s ease;
+        animation: gradient_out 5s;
         animation-fill-mode: forwards;
     }
 }
@@ -163,14 +160,20 @@ html {
     }
 }
 
-@keyframes gradient {
+@keyframes gradient_out {
     0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 100%;
+        background-position: 0% 0%;
     }
     100% {
-        background-position: 0% 50%;
+        background-position: 100% 100%;
+    }
+}
+
+@keyframes gradient_in {
+    from {
+        background-position: 100% 100%;
+    }
+    to {
+        background-position: 0% 0%;
     }
 }
