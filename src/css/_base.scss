@@ -125,40 +125,31 @@ html {
 }
 
 .button {
-    position: relative;
     display: inline-flex;
     align-items: center;
-    padding: 1em 30px 1em 50px;
+    color: white;
+    padding: 1rem 2rem;
     overflow: hidden;
-    border: 1px solid $accent_alt;
+
     border-radius: 0.4rem;
-    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+    background: linear-gradient(
+        to bottom right,
+        #fc6b6b,
+        #3f5efb,
+        #e55d87,
+        #5fc3e4
+    );
+    background-size: 400% 400%;
 
-    span {
-        display: inline-block;
-        transition: transform 0.3s;
-        transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
-        @include transform(translate3d(-10px, 0, 0));
-    }
-
-    i {
-        position: absolute;
-        left: 1rem;
-        font-size: 1.3rem;
-        transition: transform 0.3s;
-        transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
-        @include transform(translate3d(-40px, 2.5em, 0));
+    @include phone {
+        animation: gradient 5s ease infinite;
+        animation-fill-mode: forwards;
     }
 
     &:hover {
-        background: $accent_alt;
-        border-color: $accent_alt;
-        color: $text;
-
-        span,
-        i {
-            @include transform(translate3d(0, 0, 0));
-        }
+        color: white;
+        animation: gradient 5s ease;
+        animation-fill-mode: forwards;
     }
 }
 
@@ -169,5 +160,17 @@ html {
                 @include gradient($i);
             }
         }
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 50%;
     }
 }
