@@ -1,3 +1,5 @@
+@use 'theme';
+
 @mixin box-shadow($top, $left, $blur, $color, $inset: false) {
     @if $inset {
         box-shadow: inset $top $left $blur $color;
@@ -11,7 +13,7 @@
 }
 
 @mixin gradient($number) {
-    $colors: nth($gradients, $number);
+    $colors: nth(theme.$gradients, $number);
     background: linear-gradient(90deg, $colors);
     background-clip: text;
     -webkit-text-fill-color: transparent;

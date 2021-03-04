@@ -1,11 +1,7 @@
-@import '_theme.scss';
-@import '_mixins.scss';
-@import '_breakpoints.scss';
-
-@import '_base.scss';
-@import '_home.scss';
-@import '_blog.scss';
-@import '_tags.scss';
-@import '_post.scss';
-@import '_code.scss';
-@import '_404.scss';
+@use 'base';
+@use 'home';
+@use 'blog';
+@use 'tags';
+@use 'post';
+@use 'code';
+@use 'not-found';
