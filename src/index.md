@@ -1,6 +1,6 @@
 ---
 layout: "layouts/home.njk"
-title: "antodev"
+title: "Yet another place where a developer rants"
 description: "Yet another place where a developer rants"
 metaDescription: "Web Developer personal blog"
 metaKeywords: ['web', 'developer', 'javascript', 'js', 'code', 'coding']
