@@ -15,6 +15,7 @@ metaKeywords:
         'software',
         'uses',
     ]
+eleventyExcludeFromCollections: true
 ---
 
 Blatantly copied from [Wes Bos' /uses page](https://wesbos.com/uses), I decided to list what I use in my everyday life. I don't know, you may be curious?!? 😆
