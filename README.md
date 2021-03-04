@@ -1,6 +1,9 @@
-# antodev
+<img src="https://user-images.githubusercontent.com/22414962/109974799-38b53500-7cfa-11eb-8680-2662ce13bb55.png" alt="Panda" width="50"/>
+
+# antodev - Yet another place where a developer rants
 
 This website is based on [11ty](https://www.11ty.dev/).
+Icons made by [Smashicons](https://www.flaticon.com/authors/smashicons) from [Flaticon](https://www.flaticon.com/).
 
 ## Deployment
 
