@@ -43,6 +43,13 @@ module.exports = function (eleventyConfig) {
         )
     })
 
+    eleventyConfig.addFilter('redabledateFromFormat', (date) => {
+        return DateTime.fromFormat(
+            date,
+            'EEE MMM dd HH:mm:ss ZZZ yyyy'
+        ).toFormat('dd LLL yyyy')
+    })
+
     eleventyConfig.addFilter('debugger', (...args) => {
         console.log(...args)
         debugger

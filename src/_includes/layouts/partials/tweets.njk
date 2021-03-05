@@ -1,0 +1,13 @@
+<article class="tweets">
+    {% for item in tweets %}
+    <section class="tweet">
+        <img src="{{ item.retweeted_status.user.profile_image_url_https if item.retweeted_status else item.user.profile_image_url_https }}" alt="" class="user__img" />
+        <p class="user__name gradient gradient_{{ range(1, 3) | random  }}"><span>{{ item.user.screen_name }}</span></p>
+        <p class="user__tweet">{{ item.text }}</p>
+        <p class="user__tweet_date">{{ item.created_at | redabledateFromFormat }}</p>
+        {% if item.retweeted_status %}
+            <i class="fas fa-retweet"></i>
+        {% endif %}
+    </section>
+    {% endfor %}
+</article>

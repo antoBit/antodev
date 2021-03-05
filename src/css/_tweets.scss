@@ -1,0 +1,86 @@
+@use 'use' as *;
+
+.twitter_feed {
+    @include desktop {
+        max-width: 65%;
+    }
+
+    h2 {
+        margin-top: 3rem;
+    }
+
+    .tweets {
+        display: grid;
+        gap: 1rem;
+        margin-top: 2rem;
+
+        @include desktop {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .tweet {
+            position: relative;
+            display: grid;
+            grid-template-rows: auto 1fr;
+            grid-template-columns: auto auto 1fr;
+            grid-template-areas:
+                'image name date'
+                'image tweet tweet';
+            row-gap: 1rem;
+            column-gap: 1rem;
+            background: linear-gradient(
+                to bottom right,
+                lighten($background, 10%) 45%,
+                lighten($background, 5%)
+            );
+            border-radius: 0.4rem;
+            padding: 1rem;
+            padding-bottom: 1.5rem;
+
+            p {
+                margin: 0;
+            }
+
+            .user {
+                display: flex;
+
+                &__img {
+                    grid-area: image;
+                    border: 1px solid lighten($background, 10%);
+                    border-radius: 50%;
+                    align-self: center;
+                    filter: grayscale(1);
+                }
+                &__name {
+                    font-family: 'Fira Code', monospace;
+                }
+                &__name {
+                    grid-area: name;
+
+                    background-color: $background;
+                    padding: 0.2rem 0.8rem;
+                    border-radius: 0.8rem;
+                }
+                &__tweet {
+                    grid-area: tweet;
+                }
+                &__tweet_date {
+                    grid-area: date;
+                    font-size: 80%;
+                    font-weight: 600;
+                    text-align: right;
+                    color: $light;
+                }
+            }
+
+            i.fa-retweet {
+                position: absolute;
+                bottom: 0.5rem;
+                right: 0.5rem;
+                font-size: 1.5rem;
+                opacity: 0.3;
+                @include gradient(2);
+            }
+        }
+    }
+}
