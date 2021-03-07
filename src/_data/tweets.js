@@ -12,9 +12,9 @@ const fetchTweets = async () => {
     try {
         const tweets = await client.get('statuses/user_timeline', {
             user_id: '1207689379835191296',
-            count: 4,
+            exclude_replies: true,
         })
-        return tweets
+        return tweets.slice(0, 4)
     } catch (error) {
         console.log(error)
     }
