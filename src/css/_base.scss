@@ -181,11 +181,9 @@ html {
 
 .gradient {
     @for $i from 1 through 3 {
-        &.gradient_#{$i} {
-            a,
-            span {
-                @include gradient($i);
-            }
+        &.gradient_#{$i},
+        & > span {
+            @include gradient($i);
         }
     }
 }
