@@ -59,7 +59,7 @@ pre {
             &.comment {
                 font-size: 90%;
                 font-style: italic;
-                color: lighten($background, 10%);
+                color: $light;
             }
         }
     }
