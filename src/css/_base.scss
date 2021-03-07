@@ -11,6 +11,7 @@ html {
         background-color: $background;
         margin: 0;
         padding: 0;
+        scroll-behavior: smooth;
 
         h1,
         h2,
@@ -119,6 +120,30 @@ html {
             background-color: $background;
             padding: 2rem;
             margin-top: 4rem;
+
+            .scroll_to_top {
+                position: sticky;
+                bottom: 1rem;
+                display: flex;
+                justify-content: flex-end;
+                width: auto;
+                max-width: 50px;
+                height: auto;
+                margin-left: auto;
+
+                i {
+                    font-size: 2rem;
+                    color: $light;
+                    opacity: 0.7;
+
+                    &:hover {
+                        animation-name: rubberBand;
+                        animation-duration: 1s;
+                        animation-iteration-count: 3;
+                        animation-fill-mode: both;
+                    }
+                }
+            }
         }
     }
 }
@@ -175,5 +200,42 @@ html {
     }
     to {
         background-position: 0% 0%;
+    }
+}
+
+@keyframes rubberBand {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
     }
 }

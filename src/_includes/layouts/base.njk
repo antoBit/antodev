@@ -1,5 +1,5 @@
 {% include "layouts/partials/head.njk" %}
-  <body class="{{ bodyClass }}">
+  <body id="top" class="{{ bodyClass }}">
     {% include "layouts/partials/site-nav.njk" %}
     {% block mainContent %}
     {% endblock %}
@@ -14,7 +14,7 @@
         }
       });
     }
-  </script>
+    </script>
   </body>
 </html>
 
