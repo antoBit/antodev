@@ -9,7 +9,7 @@
             {% endif %}
         </div>
         {% endif %}
-        <h3 class="post__title"><a href="{{ post.url | url }}" aria-label="{{ post.data.title }}">{{ post.data.title }}</a></h3>
+        <h1 class="post__title"><a href="{{ post.url | url }}" aria-label="{{ post.data.title }}">{{ post.data.title }}</a></h1>
         <p class="post__date">{{ post.data.date | readableDate }}</p>
         <p class="post__content">{{ post.data.description }}</p>
         <a href="{{ post.url | url }}" aria-label="Read more" class="read_more">...continue</a>
