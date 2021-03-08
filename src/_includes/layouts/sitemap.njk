@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>{{ global.siteUrl }}</loc>
+        <lastmod>{{ page.date.toISOString() }}</lastmod>
+    </url>
+        <url>
+        <loc>{{ global.siteUrl }}/blog</loc>
+        <lastmod>{{ page.date.toISOString() }}</lastmod>
+    </url>
     {% for page in collections.all %}
         <url>
             <loc>{{ global.siteUrl }}{{ page.url | url }}</loc>
