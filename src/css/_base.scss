@@ -116,21 +116,53 @@ html {
         }
 
         footer {
-            text-align: center;
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: auto;
+            grid-template-areas:
+                'social scroll-to-top'
+                'made-by scroll-to-top'
+                'credits scroll-to-top';
+            row-gap: 0.5rem;
+            align-items: center;
             color: $text;
             background-color: $background;
             padding: 2rem;
             margin-top: 4rem;
 
+            .social {
+                grid-area: social;
+
+                i {
+                    font-size: 1.5rem;
+                    margin: 0;
+                    margin-right: 0.5rem;
+                    transition: color 0.3s ease;
+                }
+            }
+
+            p {
+                margin: 0;
+
+                &.made_by {
+                    grid-area: made-by;
+                }
+
+                &.credits {
+                    grid-area: credits;
+                }
+            }
+
             .scroll_to_top {
+                grid-area: scroll-to-top;
+                align-self: center;
+                justify-self: flex-end;
                 position: sticky;
-                bottom: 1rem;
+                bottom: 0;
                 display: flex;
                 justify-content: flex-end;
                 width: auto;
-                max-width: 50px;
                 height: auto;
-                margin-left: auto;
 
                 a {
                     outline: none;
