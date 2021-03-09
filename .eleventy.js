@@ -1,5 +1,6 @@
 const fs = require('fs')
 const { DateTime } = require('luxon')
+const eleventyGoogleFonts = require('eleventy-google-fonts')
 const lazyImagesPlugin = require('eleventy-plugin-lazyimages')
 const timeToRead = require('eleventy-plugin-time-to-read')
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
@@ -25,6 +26,8 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy('src/admin')
     eleventyConfig.addPassthroughCopy('src/images')
     eleventyConfig.addWatchTarget('src/css/')
+
+    eleventyConfig.addPlugin(eleventyGoogleFonts)
     eleventyConfig.addPlugin(lazyImagesPlugin)
     eleventyConfig.addPlugin(timeToRead)
     eleventyConfig.addPlugin(syntaxHighlight, {
