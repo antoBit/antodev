@@ -4,11 +4,12 @@ title: 'antodev - Tags'
 description: 'Tag archive'
 metaDescription: 'Web Developer personal blog'
 metaKeywords: ['web', 'developer', 'javascript', 'js', 'code', 'coding']
-eleventyExcludeFromCollections: true
 pagination:
     data: collections
     size: 1
     alias: tag
+    filter:
+        - all
 permalink: /tags/{{ tag }}/
 eleventyComputed:
     title: '{{ tag }}'
