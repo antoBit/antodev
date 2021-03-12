@@ -8,6 +8,7 @@
     <div class="articles">
       {% for post in collections.posts.slice(0, 3) | reverse %}
         {% include "layouts/partials/blog-article.njk" %}
+        {% include "layouts/partials/blog-article.njk" %}
       {% endfor %}
     </div>
     <a href="/blog" class="button" aria-label="Blog">To the blog</a>
