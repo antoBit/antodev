@@ -1,37 +1,28 @@
 @use 'use' as *;
 
 .wrapper {
-    &.term {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        padding: 0;
-
-        @include tablet_landscape {
-            width: 85%;
-        }
-
-        img {
-            grid-area: terminal;
-            max-width: 100%;
-            height: auto;
-
-            @include tablet_landscape {
-                max-width: 60%;
-            }
-        }
-    }
-
     &.intro {
         text-align: left;
         margin: 4rem auto;
+        margin-top: 2rem;
+
+        @include desktop {
+            margin-top: 4rem;
+        }
 
         h1 {
             font-size: 1.25rem;
 
             big {
-                font-size: 1.75rem;
+                font-size: 1.5rem;
+            }
+
+            @include desktop {
+                font-size: 1.25rem;
+
+                big {
+                    font-size: 1.75rem;
+                }
             }
 
             span {
