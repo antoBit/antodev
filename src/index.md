@@ -8,7 +8,7 @@ eleventyExcludeFromCollections: true
 intro: "<big>👋🏻 Ciao!</big>\n
 \n
 I'm a web developer from Italy, madly in love with Javascript
-and everything web related!\n This is where I usually rant about web development things like React JS, 11ty and wathever catches my attention at the moment...🚀 \n
+and everything web related!\n\n This is where I usually rant about web development things like React JS, 11ty and wathever catches my attention at the moment...🚀 \n
 \n
 <span>#takeAlookAtTheBlog</span> <span>#enjoyYourStay</span>"
 ---
