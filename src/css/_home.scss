@@ -23,6 +23,28 @@
         }
     }
 
+    &.intro {
+        text-align: left;
+        margin: 4rem auto;
+
+        h1 {
+            font-size: 1.25rem;
+
+            big {
+                font-size: 1.75rem;
+            }
+
+            span {
+                &:first-of-type {
+                    @include gradient(1);
+                }
+                &:nth-of-type(2) {
+                    @include gradient(2);
+                }
+            }
+        }
+    }
+
     &.blog_feed {
         margin-top: 1rem;
         text-align: center;

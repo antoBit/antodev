@@ -103,80 +103,82 @@ html {
         }
 
         .wrapper {
-            margin: 0 auto;
+            margin: 2rem auto;
             width: 100%;
 
-            @include desktop {
-                width: 85%;
+            @include widescreen {
+                width: 70%;
             }
 
-            &:first-of-type {
-                margin-top: 1rem;
-            }
-        }
-
-        footer {
-            display: grid;
-            grid-template-rows: auto;
-            grid-template-columns: auto;
-            grid-template-areas:
-                'social scroll-to-top'
-                'made-by scroll-to-top'
-                'credits scroll-to-top';
-            row-gap: 0.5rem;
-            align-items: center;
-            color: $text;
-            background-color: $background;
-            padding: 2rem;
-            margin-top: 4rem;
-
-            .social {
-                grid-area: social;
-
-                i {
-                    font-size: 1.5rem;
-                    margin: 0;
-                    margin-right: 0.5rem;
-                    transition: color 0.3s ease;
-                }
+            &.header {
+                margin-bottom: 2rem;
             }
 
-            p {
-                margin: 0;
+            &.footer {
+                display: grid;
+                grid-template-rows: auto;
+                grid-template-columns: auto;
+                grid-template-areas:
+                    'social scroll-to-top'
+                    'made-by scroll-to-top'
+                    'credits scroll-to-top';
+                row-gap: 0.5rem;
+                align-items: center;
+                color: $text;
+                background-color: $background;
+                margin-top: 4rem;
+                margin-bottom: 1rem;
+                padding: 2rem;
+                padding-bottom: 0;
 
-                &.made_by {
-                    grid-area: made-by;
-                }
-
-                &.credits {
-                    grid-area: credits;
-                }
-            }
-
-            .scroll_to_top {
-                grid-area: scroll-to-top;
-                align-self: center;
-                justify-self: flex-end;
-                position: sticky;
-                bottom: 0;
-                display: flex;
-                justify-content: flex-end;
-                width: auto;
-                height: auto;
-
-                a {
-                    outline: none;
+                .social {
+                    grid-area: social;
 
                     i {
-                        font-size: 2rem;
-                        color: $light;
-                        opacity: 0.7;
+                        font-size: 1.5rem;
+                        margin: 0;
+                        margin-right: 0.5rem;
+                        transition: color 0.3s ease;
+                    }
+                }
 
-                        &:hover {
-                            animation-name: rubberBand;
-                            animation-duration: 1s;
-                            animation-iteration-count: 3;
-                            animation-fill-mode: both;
+                p {
+                    margin: 0;
+
+                    &.made_by {
+                        grid-area: made-by;
+                    }
+
+                    &.credits {
+                        grid-area: credits;
+                    }
+                }
+
+                .scroll_to_top {
+                    grid-area: scroll-to-top;
+                    align-self: center;
+                    justify-self: flex-end;
+                    position: sticky;
+                    bottom: 0;
+                    display: flex;
+                    justify-content: flex-end;
+                    width: auto;
+                    height: auto;
+
+                    a {
+                        outline: none;
+
+                        i {
+                            font-size: 2rem;
+                            color: $light;
+                            opacity: 0.7;
+
+                            &:hover {
+                                animation-name: rubberBand;
+                                animation-duration: 1s;
+                                animation-iteration-count: 3;
+                                animation-fill-mode: both;
+                            }
                         }
                     }
                 }

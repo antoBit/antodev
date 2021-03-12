@@ -5,6 +5,10 @@
         max-width: 65%;
     }
 
+    @include widescreen {
+        max-width: 50%;
+    }
+
     h2 {
         margin-top: 3rem;
     }
