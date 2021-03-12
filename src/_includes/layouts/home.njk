@@ -4,7 +4,6 @@
     <h1>{{ intro | nl2br | safe }}</h1>
   </div>
   <div class="wrapper blog_feed">
-    <h2>Latest from the blog...</h2>
     <div class="articles">
       {% for post in collections.posts.slice(0, 3) | reverse %}
         {% include "layouts/partials/blog-article.njk" %}
