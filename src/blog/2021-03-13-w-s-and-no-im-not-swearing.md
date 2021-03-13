@@ -33,7 +33,7 @@ This needs to stop, so I decided to take advantage of the current lockdown and s
 After a couple of minutes of googling, I landed on [RegexOne](https://regexone.com/) and found a great and exhaustive tutorial that takes you through the basics of writing regular expressions.
 The lessons are clear and concise and offer real-world examples with a nifty little exercise at the end of each chapter.
 
-It took me about an hour to go through the 15 lessons of the basic tutorial touching everything, from the abc to *capturing groups.*
+It took me about an hour to go through the 15 lessons of the basic tutorial touching everything, from the ABCs to *capturing groups.*
 
 Once you're done with all the lessons you can take the *Practice Problems* which are useful tests that push you to write regular expressions that help in a developer's everyday life like:
 
