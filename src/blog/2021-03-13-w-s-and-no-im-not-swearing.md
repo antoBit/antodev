@@ -25,9 +25,11 @@ It's time for me to come out: I've been working as a professional developer for 
 This needs to stop, so I decided to take advantage of the current lockdown and spend my Saturday morning doing some googling, and as it turns out... regular expressions are not that complicated. At all.
 
 <div class="image__with__description">
+
 ![How to regex](/images/uploads/how_to_regex.jpeg "How to regex")
 
 <span class="image__description">Image from [garabatokid](https://twitter.com/garabatokid)</span>
+
 </div>
 
 After a couple of minutes of googling, I landed on [RegexOne](https://regexone.com/) and found a great and exhaustive tutorial that takes you through the basics of writing regular expressions.
