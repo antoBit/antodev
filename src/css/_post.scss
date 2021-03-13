@@ -3,7 +3,19 @@
 .post {
     .wrapper {
         &.header {
-            margin-bottom: 0;
+            margin-bottom: 0.5rem;
+
+            @include tablet_landscape {
+                margin-bottom: 2rem;
+            }
+        }
+
+        &.footer {
+            margin-top: 0;
+
+            @include tablet_landscape {
+                margin-top: 4rem;
+            }
         }
 
         &.post {
