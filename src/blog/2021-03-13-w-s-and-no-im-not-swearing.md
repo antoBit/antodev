@@ -6,7 +6,7 @@ description: I've always had a "fake it 'till you make it" approach to writing
 date: 2021-03-13T11:03:10.466Z
 metaDescription: How I learned how to write regular expressions and spare myself
   the usual headaches and intense googling.
-metaImage: /images/uploads/nac35ntlfg831.jpeg
+metaImage: /images/uploads/how_to_regex.jpeg
 metaKeywords:
   - regex
   - web
@@ -24,4 +24,4 @@ It's time for me to come out: I've been working as a professional developer for 
 
 This needs to stop, so I decided to do some googling, and as it turns out... regular expressions are not that complicated. At all.
 
-![How to regex](/images/uploads/nac35ntlfg831.jpeg "How to regex")
+![How to regex](/images/uploads/how_to_regex.jpeg "How to regex")
