@@ -110,8 +110,13 @@ html {
 
         .wrapper {
             margin: 2rem auto;
+            padding: 0 1.5rem;
             width: 100%;
             max-width: $wrapper-max-width;
+
+            @include tablet_portrait {
+                padding: 0 2rem;
+            }
 
             @include max-width-70 {
                 width: $wrapper-max-70;
