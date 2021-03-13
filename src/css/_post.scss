@@ -101,6 +101,17 @@
                     margin: 0 auto;
                 }
 
+                figure {
+                    display: flex;
+                    flex-direction: column;
+
+                    figcaption {
+                        font-size: 90%;
+                        text-align: right;
+                        margin: 0.5rem auto;
+                    }
+                }
+
                 a {
                     position: relative;
                     display: inline-block;
