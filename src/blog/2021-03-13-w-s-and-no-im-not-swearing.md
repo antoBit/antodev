@@ -26,5 +26,17 @@ This needs to stop, so I decided to do some googling, and as it turns out... reg
 
 ![How to regex](/images/uploads/how_to_regex.jpeg "How to regex")
 
-
 <span class="image__description">Image from [garabatokid](https://twitter.com/garabatokid)</span>
+
+After a couple of minutes of googling, I landed on [RegexOne](https://regexone.com/) and found a great and exhaustive tutorial that takes you through the basics of writing regular expressions.
+The lessons are clear and concise and offer real-world examples with a nifty little exercise at the end of each chapter.
+
+It took me about an hour to go through the 15 lessons of the basic tutorial touching everything, from the abc to *capturing groups.*
+
+Once you're done with all the lessons you can take the *Practice Problems* which are useful tests that push you to write regular expressions that help in a developer's everyday life like:
+
+* matching email addresses
+* parsing HTML elements
+* extract pieces of informations from a log file
+
+... and more.
