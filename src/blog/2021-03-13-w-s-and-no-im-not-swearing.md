@@ -25,3 +25,4 @@ It's time for me to come out: I've been working as a professional developer for 
 This needs to stop, so I decided to do some googling, and as it turns out... regular expressions are not that complicated. At all.
 
 ![How to regex](/images/uploads/how_to_regex.jpeg "How to regex")
+<span class="image__description">Image from [garabatokid](https://twitter.com/garabatokid)</span>
