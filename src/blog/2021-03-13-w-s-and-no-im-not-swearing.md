@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: ^\w*\s$ and no, I'm not swearing!
+title: ^\w*\s\w*!$ and no, I'm not swearing!
 description: I've always had a "fake it 'till you make it" approach to writing
   regexes. This ends today.
 date: 2021-03-13T11:03:10.466Z
