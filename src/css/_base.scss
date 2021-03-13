@@ -102,6 +102,7 @@ html {
 
                 .menu__item {
                     display: inline-block;
+                    font-size: 1.125rem;
                     padding: 1rem;
                 }
             }
@@ -110,9 +111,10 @@ html {
         .wrapper {
             margin: 2rem auto;
             width: 100%;
+            max-width: $wrapper-max-width;
 
-            @include widescreen {
-                width: 70%;
+            @include max-width-70 {
+                width: $wrapper-max-70;
             }
 
             &.header {

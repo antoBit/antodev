@@ -1,3 +1,6 @@
+$wrapper-max-width: 1920px;
+$wrapper-max-70: calc(0.7 * $wrapper-max-width);
+
 @mixin phone {
     @media (max-width: 599px) {
         @content;
@@ -20,6 +23,12 @@
 }
 @mixin widescreen {
     @media (min-width: 1800px) {
+        @content;
+    }
+}
+
+@mixin max-width-70 {
+    @media (min-width: $wrapper-max-70) {
         @content;
     }
 }
