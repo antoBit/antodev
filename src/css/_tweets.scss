@@ -14,15 +14,15 @@
     }
 
     .tweets {
-        display: grid;
+        display: flex;
+        flex-wrap: wrap;
         gap: 1rem;
         margin-top: 2rem;
-
-        @include desktop {
-            grid-template-columns: repeat(2, 1fr);
-        }
+        align-items: stretch;
+        justify-content: center;
 
         .tweet {
+            flex: 1 0 37.5ch;
             position: relative;
             display: grid;
             grid-template-rows: auto 1fr;

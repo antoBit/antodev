@@ -1,5 +1,5 @@
 $wrapper-max-width: 1920px;
-$wrapper-max-70: calc(0.7 * $wrapper-max-width);
+$wrapper-max-70: 1344px;
 
 @mixin phone {
     @media (max-width: 599px) {
