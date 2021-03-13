@@ -26,7 +26,12 @@ html {
         }
 
         p {
-            font-weight: 300;
+            font-size: 1.063rem;
+            font-weight: 400;
+
+            @include desktop {
+                font-size: 1rem;
+            }
         }
 
         a {
