@@ -1,149 +1,156 @@
 @use 'use' as *;
 
 .post {
-    .wrapper.post {
-        height: 100%;
-
-        @include phone {
-            padding: 0;
+    .wrapper {
+        &.header {
+            margin-bottom: 0;
         }
 
-        article {
-            background-color: #222733;
-            padding: 2rem 1.5rem;
+        &.post {
+            height: 100%;
+            margin-top: 0;
 
-            @include tablet_landscape {
-                border-radius: 0.4rem;
-                padding: 2rem 3rem;
+            @include phone {
+                padding: 0;
             }
 
-            .post__title {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                justify-content: space-between;
-                margin: 0.5rem 0;
+            article {
+                background-color: #222733;
+                padding: 2rem 1.5rem;
 
                 @include tablet_landscape {
-                    flex-direction: row;
-                    align-items: center;
+                    border-radius: 0.4rem;
+                    padding: 2rem 3rem;
                 }
 
-                h1 {
-                    margin: 0;
-                    font-size: 2em;
-                }
-
-                .post__reading_time {
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-end;
-                    align-self: flex-end;
-                    min-width: 20%;
-
-                    @include tablet_landscape {
-                        align-self: flex-start;
-                    }
-
-                    p {
-                        font-family: 'Fira Code', monospace;
-                        font-size: 0.9rem;
-                        margin-right: 1rem;
-                    }
-
-                    svg {
-                        width: auto;
-                        height: 30px;
-                    }
-                }
-            }
-
-            .post__content {
-                h2,
-                h3,
-                h4 {
-                    position: relative;
-                    text-align: left;
-
-                    &::before {
-                        content: '';
-                        display: inline-block;
-                        font-family: 'Fira Code', monospace;
-                        margin-right: 0.5rem;
-                        opacity: 0.5;
-                        color: $accent_alt;
-                        @include transform(scale(0.8));
-                    }
-                }
-
-                h2 {
-                    &::before {
-                        content: '$';
-                    }
-                }
-
-                h3 {
-                    &::before {
-                        content: '#';
-                    }
-                }
-
-                h4 {
-                    &::before {
-                        content: '=>';
-                    }
-                }
-
-                img {
-                    display: block;
-                    max-width: 100%;
-                    height: auto;
-                    margin: 0 auto;
-                }
-
-                figure {
+                .post__title {
                     display: flex;
                     flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    margin: 0.5rem 0;
 
-                    figcaption {
-                        font-size: 90%;
-                        text-align: right;
-                        margin: 0.5rem auto;
+                    @include tablet_landscape {
+                        flex-direction: row;
+                        align-items: center;
+                    }
+
+                    h1 {
+                        margin: 0;
+                        font-size: 2em;
+                    }
+
+                    .post__reading_time {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                        align-self: flex-end;
+                        min-width: 20%;
+
+                        @include tablet_landscape {
+                            align-self: flex-start;
+                        }
+
+                        p {
+                            font-family: 'Fira Code', monospace;
+                            font-size: 0.9rem;
+                            margin-right: 1rem;
+                        }
+
+                        svg {
+                            width: auto;
+                            height: 30px;
+                        }
                     }
                 }
 
-                a {
-                    position: relative;
-                    display: inline-block;
-                    font-weight: 600;
-                    z-index: 2;
+                .post__content {
+                    h2,
+                    h3,
+                    h4 {
+                        position: relative;
+                        text-align: left;
 
-                    &.active,
-                    &:hover {
-                        color: $accent_alt;
+                        &::before {
+                            content: '';
+                            display: inline-block;
+                            font-family: 'Fira Code', monospace;
+                            margin-right: 0.5rem;
+                            opacity: 0.5;
+                            color: $accent_alt;
+                            @include transform(scale(0.8));
+                        }
                     }
 
-                    &::before {
-                        content: '';
-                        position: absolute;
-                        top: auto;
-                        left: 0;
-                        bottom: 2px;
-                        width: 100%;
-                        height: 5px;
-                        background-color: rgba($accent_alt, 0.5);
-                        z-index: -1;
+                    h2 {
+                        &::before {
+                            content: '$';
+                        }
+                    }
+
+                    h3 {
+                        &::before {
+                            content: '#';
+                        }
+                    }
+
+                    h4 {
+                        &::before {
+                            content: '=>';
+                        }
+                    }
+
+                    img {
+                        display: block;
+                        max-width: 100%;
+                        height: auto;
+                        margin: 0 auto;
+                    }
+
+                    figure {
+                        display: flex;
+                        flex-direction: column;
+
+                        figcaption {
+                            font-size: 90%;
+                            text-align: right;
+                            margin: 0.5rem auto;
+                        }
+                    }
+
+                    a {
+                        position: relative;
+                        display: inline-block;
+                        font-weight: 600;
+                        z-index: 2;
+
+                        &.active,
+                        &:hover {
+                            color: $accent_alt;
+                        }
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            top: auto;
+                            left: 0;
+                            bottom: 2px;
+                            width: 100%;
+                            height: 5px;
+                            background-color: rgba($accent_alt, 0.5);
+                            z-index: -1;
+                        }
                     }
                 }
-            }
 
-            .post__tags {
-                p {
-                    display: inline;
-                    margin-top: 2rem;
-                    background-color: darken($background, 20%);
-                    padding: 0.2rem 0.8rem;
-                    border-radius: 0.8rem;
+                .post__tags {
+                    p {
+                        display: inline;
+                        margin-top: 2rem;
+                        background-color: darken($background, 20%);
+                        padding: 0.2rem 0.8rem;
+                        border-radius: 0.8rem;
+                    }
                 }
             }
         }
