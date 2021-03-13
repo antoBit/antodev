@@ -41,6 +41,6 @@ Once you're done with all the lessons you can take the *Practice Problems* which
 
 ... and more.\
 \
-So, whether you're a seasoned developer or just starting out in this world, I highly suggest you try out this tutorial and use *Regex101* as a reference and code generator for more complex regular expressions.\
+So, whether you're a seasoned developer or just starting out in this world, I highly suggest you try out this tutorial and use *Regex101* as a reference and code generator (this utility is actually very useful!) for more complex regular expressions.\
 \
 I'll be diving more into this and I'll probably end up writing a follow-up, but for now, I'd say it's been a productive Saturday morning.
