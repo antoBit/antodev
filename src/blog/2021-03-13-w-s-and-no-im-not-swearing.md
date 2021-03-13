@@ -22,7 +22,7 @@ tags:
 ---
 It's time for me to come out: I've been working as a professional developer for 6 years and I've never managed to write a regex without intense googling and the help of [regex 101](https://regex101.com/).
 
-This needs to stop, so I decided to do some googling, and as it turns out... regular expressions are not that complicated. At all.
+This needs to stop, so I decided to take advantage of the current lockdown and spend my Saturday morning doing some googling, and as it turns out... regular expressions are not that complicated. At all.
 
 ![How to regex](/images/uploads/how_to_regex.jpeg "How to regex")
 
@@ -37,6 +37,10 @@ Once you're done with all the lessons you can take the *Practice Problems* which
 
 * matching email addresses
 * parsing HTML elements
-* extract pieces of informations from a log file
+* extract pieces of information from a log file
 
-... and more.
+... and more.\
+\
+So, whether you're a seasoned developer or just starting out in this world, I highly suggest you try out this tutorial and use *Regex101* as a reference and code generator for more complex regular expressions.\
+\
+I'll be diving more into this and I'll probably end up writing a follow-up, but for now, I'd say it's been a productive Saturday morning.
