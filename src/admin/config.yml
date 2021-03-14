@@ -39,7 +39,6 @@ collections:
                 default:
                     ['web', 'developer', 'javascript', 'js', 'code', 'coding'],
             }
-          - { label: 'Permalink', name: 'permalink', widget: 'string', default: '{{year}}-{{month}}-{{day}}-{{slug}}', required: false }
           - { label: 'Tags', name: 'tags', widget: 'list', default: ['notes'] }
           - { label: 'Body', name: 'body', widget: 'markdown' }
     - name: 'pages'

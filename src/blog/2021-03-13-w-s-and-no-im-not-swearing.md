@@ -15,7 +15,6 @@ metaKeywords:
     - js
     - code
     - coding
-permalink: 2021-03-13-how-i-learned-regex
 tags:
     - regex
     - tips
