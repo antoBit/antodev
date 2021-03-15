@@ -74,14 +74,17 @@
 
                 a.read_more {
                     display: inline-block;
+                    width: 1.5rem;
                     font-size: 1.5rem;
                     text-align: right;
                     margin-top: auto;
+                    margin-left: auto;
 
                     &:hover {
-                        animation-name: bounce;
+                        animation-name: rubberBand;
                         animation-duration: 1s;
-                        transform-origin: center bottom;
+                        animation-iteration-count: 3;
+                        animation-fill-mode: both;
                     }
                 }
             }
