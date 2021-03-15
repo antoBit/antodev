@@ -25,6 +25,9 @@ i {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrow_upward:before {
+    content: "\e904";
+}
 .icon-arrow_forward:before {
     content: "\e903";
 }
