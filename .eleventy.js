@@ -1,5 +1,6 @@
 const fs = require('fs')
 const { DateTime } = require('luxon')
+const { minify } = require('terser')
 const eleventyGoogleFonts = require('eleventy-google-fonts')
 const lazyImagesPlugin = require('eleventy-plugin-lazyimages')
 const timeToRead = require('eleventy-plugin-time-to-read')
@@ -22,6 +23,19 @@ module.exports = function (eleventyConfig) {
             },
         },
     })
+
+    eleventyConfig.addNunjucksAsyncFilter(
+        'jsmin',
+        async function (code, callback) {
+            try {
+                const minified = await minify(code)
+                callback(null, minified.code)
+            } catch (err) {
+                console.error('Terser error: ', err)
+                callback(null, code)
+            }
+        }
+    )
 
     eleventyConfig.addPassthroughCopy('src/admin')
     eleventyConfig.addPassthroughCopy('src/fonts')

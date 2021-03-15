@@ -2,7 +2,6 @@ const gulp = require('gulp')
 const sass = require('gulp-dart-sass')
 const autoprefixer = require('gulp-autoprefixer')
 const cssnano = require('gulp-cssnano')
-const minify = require('gulp-minify')
 
 gulp.task('css', function () {
     return gulp
@@ -14,23 +13,8 @@ gulp.task('css', function () {
         .pipe(gulp.dest('./_site/css'))
 })
 
-gulp.task('min-js', function () {
-    return gulp
-        .src('./src/scripts/*.js')
-        .pipe(
-            minify({
-                ext: {
-                    min: '.min.js',
-                },
-                ignoreFiles: ['-min.js'],
-            })
-        )
-        .pipe(gulp.dest('./_site/scripts'))
-})
-
 gulp.task('watch', function () {
     gulp.watch('./src/css/*.scss', gulp.parallel('css'))
-    gulp.watch('./src/scritps/*.js', gulp.parallel(['min-js']))
 })
 
-gulp.task('build', gulp.parallel('css', 'min-js'))
+gulp.task('build', gulp.parallel('css'))
