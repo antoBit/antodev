@@ -35,6 +35,14 @@
                 bottom: 15px;
                 box-shadow: 0 10px 12px rgba(0, 0, 0, .4);
                 z-index: -1;
+
+                @include tablet_portrait {
+                    bottom: 21px;
+                }
+
+                @include tablet_landscape {
+                    bottom: 15px;
+                }
             }
 
             &:before {
