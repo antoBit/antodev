@@ -6,7 +6,7 @@
         <p class="user__tweet">{{ item.retweeted_status.text if item.retweeted_status else item.text }}</p>
         <p class="user__tweet_date">{{ item.created_at | redabledateFromFormat }}</p>
         {% if item.retweeted_status %}
-            <i class="fas fa-retweet"></i>
+            <i class="icon-retweet" aria-hidden="true"></i>
         {% endif %}
     </a>
     {% endfor %}

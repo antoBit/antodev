@@ -8,12 +8,3 @@
     <p class="credits">Icons made by <a href="https://www.flaticon.com/authors/smashicons" rel="noreferrer" class="animated" target="_blank" aria-label="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" rel="noreferrer" class="animated" target="_blank" aria-label="Flaticon">Flaticon</a></p>
     <div class="scroll_to_top"><a href="#top" aria-label="Go to top"><i class="icon-arrow_upward" aria-hidden="true"></i></a></div>
 </footer>
-
-<!-- capture the JS content as a Nunjucks variable -->
-{% set js %}
-  {% include "src/scripts/fadein.js" %}
-{% endset %}
-<!-- feed it through our jsmin filter to minify -->
-<script>
-  {{ js | jsmin | safe }}
-</script>

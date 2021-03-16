@@ -4,6 +4,14 @@
     {% block mainContent %}
     {% endblock %}
     {% include "layouts/partials/footer.njk" %}
+    {% set fadeinjs %}
+    {% include "src/scripts/fadein.js" %}
+    {% endset %}
+    {% if page.url === '/' %}
+    <script>
+      {{ fadeinjs | jsmin | safe }}
+    </script>
+    {% endif %}
     <script>
     if (window.netlifyIdentity) {
       window.netlifyIdentity.on("init", user => {
