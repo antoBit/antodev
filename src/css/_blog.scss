@@ -19,6 +19,7 @@
         }
 
         article {
+            position: relative;
             height: auto;
             background-color: darken($background, 10%);
             padding: 1rem 2rem;
@@ -26,7 +27,29 @@
             border-radius: 0.4rem;
             transition: transform 0.3s ease;
             cursor: pointer;
-            @include box-shadow(0.1rem, 0.1rem, 2rem, rgba(black, 0.1));
+
+            &:before, &:after {
+                content: '';
+                position: absolute;
+                top: 90%;
+                bottom: 15px;
+                box-shadow: 0 10px 12px rgba(0, 0, 0, .4);
+                z-index: -1;
+            }
+
+            &:before {
+                background-color: transparent;
+                left: 3px;
+                right: 45px;
+                @include transform(rotate(-3deg))
+            }
+
+            &:after {
+                background-color: transparent;
+                left: 45px;
+                right: 3px;
+                @include transform(rotate(3deg))
+            }
 
             &:hover {
                 background-color: darken($background, 12%);

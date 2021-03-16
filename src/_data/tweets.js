@@ -14,7 +14,7 @@ const fetchTweets = async () => {
             user_id: '1207689379835191296',
             exclude_replies: true,
         })
-        return tweets.slice(0, 4)
+        return tweets.slice(0, 6)
     } catch (error) {
         console.log(error)
     }
