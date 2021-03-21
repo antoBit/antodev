@@ -2,10 +2,10 @@
 {% extends "layouts/base.njk" %}
 {% block mainContent %} 
 <div class="wrapper">
-    <div class="articles">
+    <ul class="articles">
         {% for post in collections.posts | reverse %}
             {% include "layouts/partials/blog-article.njk" %}
         {% endfor %}
-    </div>
+    </ul>
 </div>
 {% endblock %}

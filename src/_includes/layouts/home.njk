@@ -4,11 +4,11 @@
     <h1>{{ intro | nl2br | safe }}</h1>
   </div>
   <div class="wrapper blog_feed">
-    <div class="articles">
+    <ul class="articles">
       {% for post in collections.posts.slice(0, 3) | reverse %}
         {% include "layouts/partials/blog-article.njk" %}
       {% endfor %}
-    </div>
+    </ul>
     <a href="/blog" class="button" aria-label="Blog">To the blog</a>
   </div>
   <div class="wrapper twitter_feed">
