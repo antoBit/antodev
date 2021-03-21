@@ -1,9 +1,9 @@
 {% extends "layouts/base.njk" %}
 {% block mainContent %}
-  <div class="wrapper intro">
+  <div class="wrapper intro" role="banner">
     <h1>{{ intro | nl2br | safe }}</h1>
   </div>
-  <div class="wrapper blog_feed">
+  <div class="wrapper blog_feed" role="main">
     <ul class="articles">
       {% for post in collections.posts.slice(0, 3) | reverse %}
         {% include "layouts/partials/blog-article.njk" %}
