@@ -23,12 +23,13 @@
             display: flex;
             list-style-type: none;
 
-            article {
+            .post {
                 position: relative;
-                height: auto;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
                 background-color: darken($background, 10%);
                 padding: 1rem 2rem;
-                padding-top: 0;
                 border-radius: 0.4rem;
                 transition: transform 0.3s ease;
                 cursor: pointer;
@@ -69,60 +70,54 @@
                     background-color: darken($background, 12%);
                 }
 
-                .post {
-                    display: flex;
-                    flex-direction: column;
-                    height: 100%;
+                &__tags {
+                    text-align: right;
 
-                    &__tags {
-                        text-align: right;
-
-                        a {
-                            display: inline-block;
-                            font-family: 'Fira Code', monospace;
-                            font-size: 1.1rem;
-                            margin: 1rem 0;
-                            margin-left: 0.5rem;
-                            margin-bottom: 0;
-                            border-radius: 0.4rem;
-                        }
+                    a {
+                        display: inline-block;
+                        font-family: 'Fira Code', monospace;
+                        font-size: 1.1rem;
+                        margin: 1rem 0;
+                        margin-left: 0.5rem;
+                        margin-bottom: 0;
+                        border-radius: 0.4rem;
                     }
+                }
 
-                    h3 {
-                        text-align: left;
-                        margin-bottom: 0.5rem;
+                h3 {
+                    text-align: left;
+                    margin-bottom: 0.5rem;
 
-                        a:hover {
-                            color: $text;
-                        }
-                    }
-
-                    &__date {
-                        color: $light;
-                        font-size: 0.9rem;
-                        font-weight: 600;
-                        margin-top: 0;
-                        margin-bottom: 2rem;
-                    }
-
-                    &__content {
+                    a:hover {
                         color: $text;
                     }
+                }
 
-                    a.read_more {
-                        display: inline-block;
-                        width: 1.5rem;
-                        font-size: 1.5rem;
-                        text-align: right;
-                        margin-top: auto;
-                        margin-left: auto;
+                &__date {
+                    color: $light;
+                    font-size: 0.9rem;
+                    font-weight: 600;
+                    margin-top: 0;
+                    margin-bottom: 2rem;
+                }
 
-                        &:hover {
-                            animation-name: rubberBand;
-                            animation-duration: 1s;
-                            animation-iteration-count: 3;
-                            animation-fill-mode: both;
-                        }
+                &__content {
+                    color: $text;
+                }
+
+                a.read_more {
+                    display: inline-block;
+                    width: 1.5rem;
+                    font-size: 1.5rem;
+                    text-align: right;
+                    margin-top: auto;
+                    margin-left: auto;
+
+                    &:hover {
+                        animation-name: rubberBand;
+                        animation-duration: 1s;
+                        animation-iteration-count: 3;
+                        animation-fill-mode: both;
                     }
                 }
             }

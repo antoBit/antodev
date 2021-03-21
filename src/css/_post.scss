@@ -1,168 +1,150 @@
 @use 'use' as *;
 
-.post {
-    .wrapper {
-        &.header {
-            margin-bottom: 0.5rem;
+body.post {
+    section.blog__post {
+        height: 100%;
+        margin-top: 0;
 
-            @include tablet_landscape {
-                margin-bottom: 2rem;
-            }
+        @include phone {
+            padding: 0;
         }
 
-        &.footer {
-            margin-top: 0;
+        article {
+            background-color: #222733;
+            padding: 2rem 1.5rem;
 
             @include tablet_landscape {
-                margin-top: 4rem;
-            }
-        }
-
-        &.post {
-            height: 100%;
-            margin-top: 0;
-
-            @include phone {
-                padding: 0;
+                border-radius: 0.4rem;
+                padding: 2rem 3rem;
             }
 
-            article {
-                background-color: #222733;
-                padding: 2rem 1.5rem;
+            .post__title {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-between;
+                margin: 0.5rem 0;
 
                 @include tablet_landscape {
-                    border-radius: 0.4rem;
-                    padding: 2rem 3rem;
+                    flex-direction: row;
+                    align-items: center;
                 }
 
-                .post__title {
+                h1 {
+                    font-size: 2em;
+                    margin: 0;
+                }
+
+                .post__reading_time {
                     display: flex;
-                    flex-direction: column;
-                    align-items: flex-start;
-                    justify-content: space-between;
-                    margin: 0.5rem 0;
+                    align-items: center;
+                    justify-content: flex-end;
+                    align-self: flex-end;
+                    min-width: 20%;
 
                     @include tablet_landscape {
-                        flex-direction: row;
-                        align-items: center;
+                        align-self: flex-start;
                     }
 
-                    h1 {
-                        font-size: 2em;
-                        margin: 0;
-                    }
-
-                    .post__reading_time {
-                        display: flex;
-                        align-items: center;
-                        justify-content: flex-end;
-                        align-self: flex-end;
-                        min-width: 20%;
-
-                        @include tablet_landscape {
-                            align-self: flex-start;
-                        }
-
-                        p {
-                            font-family: 'Fira Code', monospace;
-                            font-size: 0.9rem;
-                            margin-right: 1rem;
-                        }
-
-                        svg {
-                            width: auto;
-                            height: 30px;
-                        }
-                    }
-                }
-
-                .post__content {
-                    h2,
-                    h3,
-                    h4 {
-                        position: relative;
-                        text-align: left;
-
-                        &::before {
-                            content: '';
-                            display: inline-block;
-                            font-family: 'Fira Code', monospace;
-                            margin-right: 0.5rem;
-                            opacity: 0.5;
-                            color: $accent_alt;
-                            @include transform(scale(0.8));
-                        }
-                    }
-
-                    h2 {
-                        &::before {
-                            content: '$';
-                        }
-                    }
-
-                    h3 {
-                        &::before {
-                            content: '#';
-                        }
-                    }
-
-                    h4 {
-                        &::before {
-                            content: '=>';
-                        }
-                    }
-
-                    img {
-                        display: block;
-                        max-width: 100%;
-                        height: auto;
-                        margin: 0 auto;
-                    }
-
-                    figure {
-                        display: flex;
-                        flex-direction: column;
-
-                        figcaption {
-                            font-size: 90%;
-                            text-align: right;
-                            margin: 0.5rem auto;
-                        }
-                    }
-
-                    a {
-                        position: relative;
-                        display: inline-block;
-                        font-weight: 600;
-                        z-index: 2;
-
-                        &.active,
-                        &:hover {
-                            color: $accent_alt;
-                        }
-
-                        &::before {
-                            content: '';
-                            position: absolute;
-                            top: auto;
-                            left: 0;
-                            bottom: 2px;
-                            width: 100%;
-                            height: 5px;
-                            background-color: rgba($accent_alt, 0.5);
-                            z-index: -1;
-                        }
-                    }
-                }
-
-                .post__tags {
                     p {
-                        display: inline;
-                        margin-top: 2rem;
-                        background-color: darken($background, 20%);
-                        padding: 0.2rem 0.8rem;
-                        border-radius: 0.8rem;
+                        font-family: 'Fira Code', monospace;
+                        font-size: 0.9rem;
+                        margin-right: 1rem;
                     }
+
+                    svg {
+                        width: auto;
+                        height: 30px;
+                    }
+                }
+            }
+
+            .post__content {
+                h2,
+                h3,
+                h4 {
+                    position: relative;
+                    text-align: left;
+
+                    &::before {
+                        content: '';
+                        display: inline-block;
+                        font-family: 'Fira Code', monospace;
+                        margin-right: 0.5rem;
+                        opacity: 0.5;
+                        color: $accent_alt;
+                        @include transform(scale(0.8));
+                    }
+                }
+
+                h2 {
+                    &::before {
+                        content: '$';
+                    }
+                }
+
+                h3 {
+                    &::before {
+                        content: '#';
+                    }
+                }
+
+                h4 {
+                    &::before {
+                        content: '=>';
+                    }
+                }
+
+                img {
+                    display: block;
+                    max-width: 100%;
+                    height: auto;
+                    margin: 0 auto;
+                }
+
+                figure {
+                    display: flex;
+                    flex-direction: column;
+
+                    figcaption {
+                        font-size: 90%;
+                        text-align: right;
+                        margin: 0.5rem auto;
+                    }
+                }
+
+                a {
+                    position: relative;
+                    display: inline-block;
+                    font-weight: 600;
+                    z-index: 2;
+
+                    &.active,
+                    &:hover {
+                        color: $accent_alt;
+                    }
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: auto;
+                        left: 0;
+                        bottom: 2px;
+                        width: 100%;
+                        height: 5px;
+                        background-color: rgba($accent_alt, 0.5);
+                        z-index: -1;
+                    }
+                }
+            }
+
+            .post__tags {
+                p {
+                    display: inline;
+                    margin-top: 2rem;
+                    background-color: darken($background, 20%);
+                    padding: 0.2rem 0.8rem;
+                    border-radius: 0.8rem;
                 }
             }
         }

@@ -69,7 +69,6 @@ html {
         nav {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            padding: 0 2rem;
 
             .logo {
                 display: flex;
@@ -188,7 +187,7 @@ html {
                             background-color: $light;
                             color: $background;
                             opacity: 0.7;
-                            padding: .2rem;
+                            padding: 0.2rem;
                             border-radius: 50%;
                         }
 
@@ -302,4 +301,4 @@ html {
         -webkit-transform: scale3d(1, 1, 1);
         transform: scale3d(1, 1, 1);
     }
-} 
+}

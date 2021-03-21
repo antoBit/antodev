@@ -1,19 +1,17 @@
 <li>
-    <article>
-        <section class="post">
-            {% if post.data.tags %}
-            <div class="post__tags">
-                {% if not ('/tags' in page.url) %}
-                    {% for tag in post.data.tags.slice(0, 2) %}
-                    <a class="gradient gradient_{{ range(1, 3) | random  }}" href="/tags/{{tag}}" aria-label="Category {{ tag }}">#{{ tag }}</a>
-                    {% endfor %}
-                {% endif %}
-            </div>
+    <article class="post">
+        {% if post.data.tags %}
+        <div class="post__tags">
+            {% if not ('/tags' in page.url) %}
+                {% for tag in post.data.tags.slice(0, 2) %}
+                <a class="gradient gradient_{{ range(1, 3) | random  }}" href="/tags/{{tag}}" aria-label="Category {{ tag }}">#{{ tag }}</a>
+                {% endfor %}
             {% endif %}
-            <h1 class="post__title"><a href="{{ post.url | url }}" aria-label="{{ post.data.title }}">{{ post.data.title }}</a></h1>
-            <p class="post__date">{{ post.data.date | readableDate }}</p>
-            <p class="post__content">{{ post.data.description }}</p>
-            <a href="{{ post.url | url }}" aria-label="Read more about {{ post.data.title }}" class="read_more"><i class="icon-arrow_forward" aria-hidden="true"></i></a>
-        </section>
+        </div>
+        {% endif %}
+        <h1 class="post__title"><a href="{{ post.url | url }}" aria-label="{{ post.data.title }}">{{ post.data.title }}</a></h1>
+        <p class="post__date">{{ post.data.date | readableDate }}</p>
+        <p class="post__content">{{ post.data.description }}</p>
+        <a href="{{ post.url | url }}" aria-label="Read more about {{ post.data.title }}" class="read_more"><i class="icon-arrow_forward" aria-hidden="true"></i></a>
     </article>
 </li>
