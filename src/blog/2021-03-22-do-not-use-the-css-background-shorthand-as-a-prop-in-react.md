@@ -1,7 +1,8 @@
 ---
 layout: layouts/post.njk
-title: Don't use the CSS background shorthand property in React
-description: Don't use the CSS background shorthand property in React
+title: Do not use the CSS background shorthand property in React
+description: Why the CSS background shorthand property in React can cause
+  problems if used with the backgroundSize property
 date: 2021-03-22T18:07:16.129Z
 metaDescription: Why the CSS background shorthand property in React can cause
   problems if used with the backgroundSize property
