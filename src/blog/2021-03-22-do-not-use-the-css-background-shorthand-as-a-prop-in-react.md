@@ -1,9 +1,10 @@
 ---
 layout: layouts/post.njk
-title: Do not use the CSS background shorthand as a prop in React
-description: Do not use the CSS background shorthand as a prop in React
+title: Don't use the CSS background shorthand property in React
+description: Don't use the CSS background shorthand property in React
 date: 2021-03-22T18:07:16.129Z
-metaDescription: Do not use the CSS background shorthand as a prop in React
+metaDescription: Why the CSS background shorthand property in React can cause
+  problems if used with the backgroundSize property
 metaKeywords:
   - web
   - developer
@@ -42,9 +43,9 @@ What I had was something like this:
 />
 ```
 
-After inspecting the output HTML and a bit of googling, I came across this [closed issue on React's Github](https://github.com/facebook/react/issues/5030).\
+After inspecting the output HTML and a bit of googling, I came across this [closed issue on React's Github](https://github.com/facebook/react/issues/5030).
 
-Apparently, using the CSS \`background\` shorthand property with a `backgroundSize` prop causes this last property to be cleared if and when the \`background\` property is updated.
+Apparently, using the CSS `background` shorthand property with a `backgroundSize` prop causes this last property to be cleared **if and when** the `background` property is updated.
 
 A quick and easy fix is to explicitly set every property by expanding the shorthand property:
 
