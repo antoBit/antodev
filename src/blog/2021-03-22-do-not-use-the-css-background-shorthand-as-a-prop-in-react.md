@@ -32,7 +32,9 @@ What I had was something like this:
 />
 ```
 
-Apparently, using the CSS \`background\` shorthand property with a `backgroundSize` prop causes this last property to be cleared if and when the \`background\` property is updated 
+Apparently, using the CSS \`background\` shorthand property with a `backgroundSize` prop causes this last property to be cleared if and when the \`background\` property is updated.
+
+A quick and easy fix is to explicitly set every property by expanding the shorthand property:
 
 ```js
 <div
@@ -43,7 +45,6 @@ Apparently, using the CSS \`background\` shorthand property with a `backgroundSi
         left: `${left}%`,
         width: `${width}%`,
         height: `${height}%`,
-        background: `transparent url(${image_url}) no-repeat center center`,
         backgroundColor: 'transparent',
         backgroundImage: `url(${image_url})`,
         backgroundRepeat: 'no-repeat',
@@ -52,5 +53,3 @@ Apparently, using the CSS \`background\` shorthand property with a `backgroundSi
    }}
 />
 ```
-
-CSS `backgroundSize` property lost when re-rendering an image URL inside of an adjacent `background` property
