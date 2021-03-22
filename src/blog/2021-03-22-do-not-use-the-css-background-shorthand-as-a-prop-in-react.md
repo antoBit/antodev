@@ -11,10 +11,20 @@ metaKeywords:
   - js
   - code
   - coding
+  - react
+  - css
+  - inline
+  - bug
+  - background
+  - shorthand
+  - backgroundSize
 tags:
-  - notes
+  - react
+  - javascript
+  - css
+  - tips
 ---
-I recently came across this bug at work and it took me a minute to figure it out, thanks to this [closed issue on React's Github](https://github.com/facebook/react/issues/5030).\
+I recently came across this bug at work and it took me a minute to figure it out.
 What I had was something like this:
 
 ```js
@@ -31,6 +41,8 @@ What I had was something like this:
    {% raw %}{{{% endraw %}
 />
 ```
+
+After inspecting the output HTML and a bit of googling, I came across this [closed issue on React's Github](https://github.com/facebook/react/issues/5030).\
 
 Apparently, using the CSS \`background\` shorthand property with a `backgroundSize` prop causes this last property to be cleared if and when the \`background\` property is updated.
 
