@@ -36,7 +36,8 @@ pre {
                 font-weight: 600;
             }
 
-            &.function:not(.function-variable) {
+            &.function:not(.function-variable),
+            &.operator {
                 color: $accent;
             }
 

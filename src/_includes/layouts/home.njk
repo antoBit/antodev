@@ -5,7 +5,7 @@
   </section>
   <section class="wrapper blog_feed" role="main">
     <ul class="articles">
-      {% for post in collections.posts.slice(0, 3) | reverse %}
+      {% for post in collections.posts.slice(0, 6) | reverse %}
         {% include "layouts/partials/blog-article.njk" %}
       {% endfor %}
     </ul>
