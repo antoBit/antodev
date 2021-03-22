@@ -29,7 +29,7 @@ tags:
 I recently came across this bug at work and it took me a minute to figure it out.
 What I had was something like this:
 
-```js
+```javascript
 <div
     className="image-container"
     style={% raw %}{{{% endraw %}
@@ -50,7 +50,7 @@ Apparently, using the CSS `background` shorthand property with a `backgroundSize
 
 A quick and easy fix is to explicitly set every property by expanding the shorthand property:
 
-```js
+```javascript
 <div
     className="image-container"
     style={% raw %}{{{% endraw %}
