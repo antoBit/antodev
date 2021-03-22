@@ -2,26 +2,26 @@
 layout: layouts/post.njk
 title: ^\w*\s\w*!$ and no, I'm not swearing!
 description: I've always had a "fake it 'till you make it" approach to writing
-    regexes. This ends today.
+  regexes. This ends today.
 date: 2021-03-13T11:03:10.466Z
 metaDescription: How I learned how to write regular expressions and spare myself
-    the usual headaches and intense googling.
+  the usual headaches and intense googling.
 metaImage: /images/uploads/how_to_regex.jpeg
 metaKeywords:
-    - regex
-    - web
-    - developer
-    - javascript
-    - js
-    - code
-    - coding
+  - regex
+  - web
+  - developer
+  - javascript
+  - js
+  - code
+  - coding
 tags:
-    - regex
-    - tips
-    - code
+  - regex
+  - tips
+  - code
 ---
 
-It's time for me to come out: I've been working as a professional developer for 6 years and I've never managed to write a regex without intense googling and the help of [regex 101](https://regex101.com/).
+It's time for me to come out: I've been working as a professional developer for 6 years and I've never managed to write a regex without intense googling and the help of <a href="https://regex101.com/" rel="noreferrer" target="_blank" aria-label="Regex 101">regex 101</a>.
 
 This needs to stop, so I decided to take advantage of the current lockdown and spend my Saturday morning doing some googling, and as it turns out... regular expressions are not that complicated. At all.
 
@@ -30,7 +30,7 @@ This needs to stop, so I decided to take advantage of the current lockdown and s
     <figcaption class="image-caption-text">Image from <a href="https://twitter.com/garabatokid" rel="noreferrer" target="_blank" aria-label="Image from garabatokid">garabatokid</a></figcaption>
 </figure>
 
-After a couple of minutes of googling, I landed on [RegexOne](https://regexone.com/) and found a great and exhaustive tutorial that takes you through the basics of writing regular expressions.
+After a couple of minutes of googling, I landed on <a href="https://regexone.com/" rel="noreferrer" target="_blank" aria-label="RegexOne">RegexOne</a> and found a great and exhaustive tutorial that takes you through the basics of writing regular expressions.
 The lessons are clear and concise and offer real-world examples with a nifty little exercise at the end of each chapter.
 
 It took me about an hour to go through the 15 lessons of the basic tutorial touching everything, from the ABCs to _capturing groups._
