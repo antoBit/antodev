@@ -20,7 +20,7 @@ What I had was something like this:
 ```js
 <div
     className="image-container"
-    style={{
+    style={% raw %}{{{% endraw %}
         position: 'absolute',
         top: `${top}%`,
         left: `${left}%`,
@@ -28,7 +28,7 @@ What I had was something like this:
         height: `${height}%`,
         background: `transparent url(${image_url}) no-repeat center center`,
         backgroundSize: 'contain'
-   }}
+   {% raw %}{{{% endraw %}
 />
 ```
 
@@ -39,7 +39,7 @@ A quick and easy fix is to explicitly set every property by expanding the shorth
 ```js
 <div
     className="image-container"
-    style={{
+    style={% raw %}{{{% endraw %}
         position: 'absolute',
         top: `${top}%`,
         left: `${left}%`,
@@ -50,6 +50,6 @@ A quick and easy fix is to explicitly set every property by expanding the shorth
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center center',
         backgroundSize: 'contain'
-   }}
+   {% raw %}{{{% endraw %}
 />
 ```
