@@ -2,29 +2,29 @@
 layout: layouts/post.njk
 title: Do not use the CSS background shorthand property in React
 description: Why the CSS background shorthand property in React can cause
-    problems if used with the backgroundSize property
+  problems if used with the backgroundSize property.
 date: 2021-03-22T18:07:16.129Z
 metaDescription: Why the CSS background shorthand property in React can cause
-    problems if used with the backgroundSize property
+  problems if used with the backgroundSize property.
 metaKeywords:
-    - web
-    - developer
-    - javascript
-    - js
-    - code
-    - coding
-    - react
-    - css
-    - inline
-    - bug
-    - background
-    - shorthand
-    - backgroundSize
+  - web
+  - developer
+  - javascript
+  - js
+  - code
+  - coding
+  - react
+  - css
+  - inline
+  - bug
+  - background
+  - shorthand
+  - backgroundSize
 tags:
-    - react
-    - javascript
-    - css
-    - tips
+  - react
+  - javascript
+  - css
+  - tips
 ---
 
 I recently came across this bug at work and it took me a minute to figure it out.
