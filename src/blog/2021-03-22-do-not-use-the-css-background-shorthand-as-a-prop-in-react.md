@@ -68,3 +68,5 @@ A quick and easy fix is to explicitly set every property by expanding the shorth
    {% raw %}{{{% endraw %}
 />
 ```
+
+That's all! Hope this is useful to you 💪🏻
