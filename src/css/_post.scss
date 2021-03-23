@@ -139,9 +139,15 @@ body.post {
             }
 
             .post__tags {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                justify-content: flex-start;
+                gap: 0.5rem;
+
                 p {
                     display: inline;
-                    margin-top: 2rem;
+                    margin: 0;
                     background-color: darken($background, 20%);
                     padding: 0.2rem 0.8rem;
                     border-radius: 0.8rem;
