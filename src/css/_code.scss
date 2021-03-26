@@ -20,7 +20,7 @@ pre {
                 content: counter(codeline);
                 display: inline-block;
                 min-width: 20px;
-                color: $accent;
+                color: $accent_alt;
                 border-right: 1px solid darken($background, 10%);
                 text-align: right;
                 margin-right: 1.5rem;
