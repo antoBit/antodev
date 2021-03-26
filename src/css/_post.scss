@@ -79,13 +79,13 @@ body.post {
 
                 h2 {
                     &::before {
-                        content: '$';
+                        content: '#';
                     }
                 }
 
                 h3 {
                     &::before {
-                        content: '#';
+                        content: '$';
                     }
                 }
 
