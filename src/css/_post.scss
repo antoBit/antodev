@@ -34,7 +34,7 @@ body.post {
                     font-size: 1.3em;
                     margin: 0;
 
-                    @include tablet_portrait {
+                    @include desktop {
                         font-size: 1.7rem;
                     }
                 }
