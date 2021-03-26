@@ -3,7 +3,8 @@
 body.post {
     section.blog__post {
         height: 100%;
-        margin-top: 0;
+        margin-top: -1.5rem;
+        padding: 0;
 
         article {
             background-color: lighten($background, 5%);
