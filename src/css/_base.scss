@@ -40,7 +40,7 @@ html {
 
             &.active,
             &:hover {
-                color: $accent;
+                color: $light;
             }
 
             &.animated {
@@ -54,7 +54,7 @@ html {
                     width: 0;
                     height: 2px;
                     transition: width 0.5s linear;
-                    background-color: $accent;
+                    background-color: $light;
                 }
 
                 &:hover,
