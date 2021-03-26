@@ -72,7 +72,7 @@ body.post {
                         font-family: 'Fira Code', monospace;
                         margin-right: 0.5rem;
                         opacity: 0.5;
-                        color: $accent_alt;
+                        color: $light;
                         @include transform(scale(0.8));
                     }
                 }
@@ -121,7 +121,7 @@ body.post {
 
                     &.active,
                     &:hover {
-                        color: $accent_alt;
+                        color: $light;
                     }
 
                     &::before {
@@ -132,7 +132,7 @@ body.post {
                         bottom: 2px;
                         width: 100%;
                         height: 5px;
-                        background-color: rgba($accent_alt, 0.5);
+                        background-color: rgba($light, 0.5);
                         z-index: -1;
                     }
                 }

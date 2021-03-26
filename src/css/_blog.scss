@@ -84,12 +84,12 @@
                     }
                 }
 
-                h3 {
+                h1 {
                     text-align: left;
                     margin-bottom: 0.5rem;
 
                     a:hover {
-                        color: $text;
+                        color: $light_alt;
                     }
                 }
 
@@ -114,6 +114,7 @@
                     margin-left: auto;
 
                     &:hover {
+                        color: $light_alt;
                         animation-name: rubberBand;
                         animation-duration: 1s;
                         animation-iteration-count: 3;

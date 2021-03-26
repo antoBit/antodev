@@ -38,11 +38,11 @@ pre {
 
             &.function:not(.function-variable),
             &.operator {
-                color: $accent;
+                color: $light;
             }
 
             &.function-variable {
-                color: $light;
+                color: $accent;
             }
 
             &.keyword {
@@ -60,7 +60,7 @@ pre {
             &.comment {
                 font-size: 90%;
                 font-style: italic;
-                color: $light;
+                color: $accent;
             }
         }
     }
