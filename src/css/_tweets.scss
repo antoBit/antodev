@@ -37,11 +37,7 @@
                     'tweet tweet tweet';
                 column-gap: 1rem;
                 row-gap: 1rem;
-                background: linear-gradient(
-                    to bottom right,
-                    lighten($background, 7%) 45%,
-                    lighten($background, 9%)
-                );
+                background-color: lighten($background, 15%);
                 border-radius: 0.4rem;
                 padding: 1rem;
                 padding-bottom: 1.5rem;
@@ -59,7 +55,6 @@
 
                     &__img {
                         grid-area: image;
-                        border: 1px solid lighten($background, 10%);
                         border-radius: 50%;
                         align-self: center;
                         filter: grayscale(1);
@@ -68,10 +63,7 @@
                         grid-area: name;
                         align-self: center;
                         height: fit-content;
-                        font-family: 'Fira Code', monospace;
-                        background-color: $background;
-                        padding: 0.2rem 0.8rem;
-                        border-radius: 0.8rem;
+                        font-size: 95%;
                     }
                     &__tweet {
                         grid-area: tweet;
@@ -83,7 +75,7 @@
                         font-size: 80%;
                         font-weight: 600;
                         text-align: right;
-                        color: $light;
+                        color: $light_alt;
                     }
                 }
 

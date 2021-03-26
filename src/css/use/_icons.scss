@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'icomoon';
-    src:  url('/fonts/icomoon.eot?kdscwv');
-    src:  url('/fonts/icomoon.eot?kdscwv#iefix') format('embedded-opentype'),
-        url('/fonts/icomoon.ttf?kdscwv') format('truetype'),
-        url('/fonts/icomoon.woff?kdscwv') format('woff'),
-        url('/fonts/icomoon.svg?kdscwv#icomoon') format('svg');
+    src: url('/fonts/icomoon.eot?w4mws2');
+    src: url('/fonts/icomoon.eot?w4mws2#iefix') format('embedded-opentype'),
+        url('/fonts/icomoon.ttf?w4mws2') format('truetype'),
+        url('/fonts/icomoon.woff?w4mws2') format('woff'),
+        url('/fonts/icomoon.svg?w4mws2#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -26,20 +26,20 @@ i {
 }
 
 .icon-arrow_upward:before {
-    content: "\e904";
+    content: '\e904';
 }
 .icon-arrow_forward:before {
-    content: "\e903";
+    content: '\e903';
 }
 .icon-retweet:before {
-    content: "\e905";
+    content: '\e905';
 }
 .icon-github:before {
-    content: "\e900";
+    content: '\e900';
 }
 .icon-instagram:before {
-    content: "\e901";
+    content: '\e901';
 }
 .icon-twitter:before {
-    content: "\e902";
-}  
+    content: '\e902';
+}

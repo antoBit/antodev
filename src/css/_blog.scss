@@ -11,7 +11,7 @@
         gap: 1rem;
         padding-left: 0;
 
-        @include tablet_landscape {
+        @include tablet {
             grid-template-columns: repeat(2, 1fr);
         }
 
@@ -100,18 +100,6 @@
                     align-items: center;
                     justify-content: space-between;
                     margin-top: auto;
-
-                    .post__tags {
-                        text-align: right;
-
-                        a {
-                            display: inline-block;
-                            font-family: 'Fira Code', monospace;
-                            font-size: 1.1rem;
-                            margin: 0;
-                            margin-right: 0.5rem;
-                        }
-                    }
                 }
 
                 a.read_more {

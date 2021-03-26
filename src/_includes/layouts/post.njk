@@ -15,7 +15,7 @@
             </div>
             <div class="post__tags">
                 {% for tag in tags %}
-                <p><a class="gradient gradient_{{ range(1, 3) | random  }}" href="/tags/{{tag}}" aria-label="Category {{ tag }}">#{{ tag }}</a></p>
+                <a class="pill" href="/tags/{{tag}}" aria-label="Category {{ tag }}"><span class="gradient gradient_{{ range(1, 3) | random  }}" >#{{ tag }}</span></a>
                 {% endfor %}
             </div>
         </section>
