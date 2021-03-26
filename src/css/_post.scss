@@ -1,6 +1,10 @@
 @use 'use' as *;
 
 body.post {
+    .wrapper.header {
+        margin-bottom: 0;
+    }
+
     section.blog__post {
         height: 100%;
         margin-top: 0;
@@ -10,7 +14,7 @@ body.post {
         }
 
         article {
-            background-color: lighten($background, 10%);
+            background-color: lighten($background, 5%);
             padding: 2rem 1.5rem;
 
             @include tablet_landscape {

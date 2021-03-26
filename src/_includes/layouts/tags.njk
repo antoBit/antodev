@@ -2,7 +2,7 @@
 {% extends "layouts/base.njk" %}
 {% block mainContent %} 
 <section class="wrapper">
-    <h2>#{{ tag }}</h2>
+    <h1>#{{ tag }}</h1>
     <ul class="articles">
         {% for post in collections[ tag ] | reverse %}
             {% include "layouts/partials/blog-article.njk" %}
