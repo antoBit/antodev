@@ -97,9 +97,18 @@
                 &__footer {
                     display: flex;
                     flex-direction: row;
+                    flex-wrap: wrap;
                     align-items: center;
                     justify-content: space-between;
                     margin-top: auto;
+
+                    .post__tags {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        gap: 0.5rem;
+                        font-size: 95%;
+                    }
                 }
 
                 a.read_more {
