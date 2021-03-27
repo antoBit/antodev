@@ -7,6 +7,7 @@
 ::selection {
     color: $text;
     background-color: $light;
+    -webkit-text-fill-color: $text;
 }
 
 html {
