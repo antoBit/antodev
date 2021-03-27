@@ -117,6 +117,13 @@ body.post {
                     }
                 }
             }
+
+            .post__tags {
+                display: flex;
+                flex-direction: revert;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+            }
         }
     }
 }
