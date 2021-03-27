@@ -2,7 +2,7 @@
     <div class="logo"><img src="/images/panda.png" title="Panda" alt="" width="32" height="32"/> <a href="/" class="animated" aria-label="Home">anto<span class="logo__thin">Dev</span></a></div>
     <ul class="menu">
         {% if not (page.url == '/') %}
-            <li class="menu__item"><a href="/" class="animated" aria-label="Home">home</a></li>
+        <li class="menu__item"><a href="/" class="animated" aria-label="Home">home</a></li>
         {% endif %}
         <li class="menu__item"><a href="/blog" class="animated {{ 'active' if '/blog' in page.url }}" aria-label="Blog">blog</a></li>
         {# <li class="menu__item"><a href="/uses" class="animated {{ 'active' if '/uses' in page.url }}" aria-label="What I use">uses</a></li> #}
