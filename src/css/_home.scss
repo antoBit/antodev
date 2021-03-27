@@ -24,15 +24,6 @@
             @include desktop {
                 font-size: 1.25rem;
             }
-
-            span {
-                &:nth-of-type(2) {
-                    @include gradient(1);
-                }
-                &:nth-of-type(3) {
-                    @include gradient(2);
-                }
-            }
         }
     }
 

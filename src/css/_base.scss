@@ -38,24 +38,15 @@ html {
             }
 
             &.animated {
-                position: relative;
-
-                &:before {
-                    content: '';
-                    position: absolute;
-                    left: 0;
-                    bottom: -0.1rem;
-                    width: 0;
-                    height: 2px;
-                    transition: width 0.5s linear;
-                    background-color: $light;
-                }
+                background-image: linear-gradient($light, $light);
+                background-position: 0% 100%;
+                background-repeat: no-repeat;
+                background-size: 0% 2px;
+                transition: background-size 0.3s;
 
                 &:hover,
                 &.active {
-                    &:before {
-                        width: 100%;
-                    }
+                    background-size: 100% 2px;
                 }
             }
         }
@@ -204,6 +195,14 @@ html {
     margin: 0;
     padding: 0.2rem 0.8rem;
     border-radius: 0.8rem;
+
+    &.hover {
+        transition: transform 0.3s ease;
+
+        &:hover {
+            @include transform(scale(1.05));
+        }
+    }
 }
 
 .button {

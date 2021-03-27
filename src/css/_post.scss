@@ -1,4 +1,5 @@
 @use 'use' as *;
+@use 'base' as base;
 
 body.post {
     main.blog__post {
@@ -94,27 +95,9 @@ body.post {
                 }
 
                 a {
-                    position: relative;
-                    display: inline-block;
                     font-weight: 600;
-                    z-index: 2;
-
-                    &.active,
-                    &:hover {
-                        color: $light;
-                    }
-
-                    &::before {
-                        content: '';
-                        position: absolute;
-                        top: auto;
-                        left: 0;
-                        bottom: 2px;
-                        width: 100%;
-                        height: 5px;
-                        background-color: $light;
-                        z-index: -1;
-                    }
+                    @extend .animated;
+                    color: $light;
                 }
             }
 
