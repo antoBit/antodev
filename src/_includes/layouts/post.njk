@@ -1,24 +1,20 @@
 {% set bodyClass = "post" %}
 {% extends "layouts/base.njk" %}
 {% block mainContent %}  
-<section class="wrapper blog blog__post">
-    <article>
-        <section class="post">
-            <div class="post__title">
-                <h1>{{ title }}</h1>
-                <div class="post__reading_time">
-                    <p>{{ content | timeToRead }}</p> <img src="/images/stopwatch.png" title="" alt="" width="32" height="32" aria-hidden="true" />
-                </div>
-            </div>
-            <div class="post__content">
-                {{ content | safe }}
-            </div>
-            <div class="post__tags">
-                {% for tag in tags %}
-                <a class="pill" href="/tags/{{tag}}" aria-label="Category {{ tag }}"><span class="gradient gradient_{{ range(1, 3) | random  }}" >#{{ tag }}</span></a>
-                {% endfor %}
-            </div>
-        </section>
+<main class="wrapper blog blog__post">
+    <article class="post">
+        <h1 class="post__title">{{ title }}</h1>
+        <div class="post__reading_time">
+            <p>{{ content | timeToRead }} ⏳</p>
+        </div>
+        <div class="post__content">
+            {{ content | safe }}
+        </div>
+        <div class="post__tags">
+            {% for tag in tags %}
+            <a class="pill" href="/tags/{{tag}}" aria-label="Category {{ tag }}"><span class="gradient gradient_{{ range(1, 3) | random  }}" >#{{ tag }}</span></a>
+            {% endfor %}
+        </div>
     </article>
-</section>
+</main>
 {% endblock %}

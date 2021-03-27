@@ -1,7 +1,7 @@
 @use 'use' as *;
 
 body.post {
-    section.blog__post {
+    main.blog__post {
         height: 100%;
 
         @include phone {
@@ -9,7 +9,7 @@ body.post {
             padding: 0;
         }
 
-        article {
+        article.post {
             background-color: lighten($background, 5%);
             padding: 2rem 1.5rem;
 
@@ -19,48 +19,28 @@ body.post {
             }
 
             .post__title {
+                margin: 0;
+            }
+
+            .post__reading_time {
                 display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                justify-content: space-between;
-                margin: 0.5rem 0;
+                align-items: center;
+                justify-content: flex-end;
+                align-self: flex-end;
+                min-width: 20%;
+                margin: 1rem 0;
 
                 @include tablet_landscape {
-                    flex-direction: row;
-                    align-items: center;
+                    align-self: flex-start;
                 }
 
-                h1 {
-                    font-size: 1.5rem;
-                    margin: 0;
-
-                    @include desktop {
-                        font-size: 2rem;
-                    }
-                }
-
-                .post__reading_time {
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-end;
-                    align-self: flex-end;
-                    min-width: 20%;
-
-                    @include tablet_landscape {
-                        align-self: flex-start;
-                    }
-
-                    p {
-                        font-family: 'Fira Code', monospace;
-                        font-size: 0.9rem;
-                        margin-right: 0.5rem;
-                    }
+                p {
+                    font-family: 'Fira Code', monospace;
+                    font-size: 90%;
                 }
             }
 
             .post__content {
-                margin-top: 3rem;
-
                 h2,
                 h3,
                 h4 {
