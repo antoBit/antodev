@@ -17,19 +17,15 @@
             font-family: 'Fira Code', monospace;
             font-size: 1.05rem;
 
-            big {
-                font-size: 1.25rem;
+            .hi {
+                font-size: 2rem;
             }
 
             @include desktop {
                 font-size: 1.25rem;
-
-                big {
-                    font-size: 1.5rem;
-                }
             }
 
-            span {
+            span:not(.hi) {
                 &:first-of-type {
                     @include gradient(1);
                 }

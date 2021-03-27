@@ -5,7 +5,7 @@ description: "Yet another place where a developer rants"
 metaDescription: "Web Developer personal blog"
 metaKeywords: ['web', 'developer', 'javascript', 'js', 'code', 'coding']
 eleventyExcludeFromCollections: true
-intro: "<big>👋🏻 Ciao!</big>\n
+intro: "<span class=\"hi\">👋🏻 Ciao!</span>\n
 \n
 I'm a web developer from Italy, madly in love with Javascript
 and everything web related!\n\n This is where I usually rant about web development things like React JS, 11ty and wathever catches my attention at the moment...🚀 \n

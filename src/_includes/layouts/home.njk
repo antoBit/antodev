@@ -3,7 +3,7 @@
   <section class="wrapper intro" aria-label="intro">
     <h1>{{ intro | nl2br | safe }}</h1>
   </section>
-  <main class="wrapper blog_feed" role="main">
+  <main class="wrapper blog_feed">
     <ul class="articles">
       {% for post in collections.posts.slice(0, 6) | reverse %}
         {% include "layouts/partials/blog-article.njk" %}
