@@ -68,7 +68,8 @@
                     @include transform(rotate(3deg));
                 }
 
-                &:hover {
+                &:hover,
+                &:focus {
                     background-color: lighten($background, 7%);
                 }
 
@@ -76,7 +77,8 @@
                     text-align: left;
                     margin: 0.5rem 0;
 
-                    a:hover {
+                    a:hover,
+                    &:focus {
                         color: $light;
                     }
                 }
@@ -119,7 +121,8 @@
                     margin-top: auto;
                     margin-left: auto;
 
-                    &:hover {
+                    &:hover,
+                    &:focus {
                         color: $light;
                         animation-name: rubberBand;
                         animation-duration: 1s;

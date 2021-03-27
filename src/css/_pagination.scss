@@ -23,7 +23,8 @@ nav.pagination {
                 transition: color 0.3s ease;
             }
 
-            &:hover {
+            &:hover,
+            &:focus {
                 i {
                     color: $light;
                 }

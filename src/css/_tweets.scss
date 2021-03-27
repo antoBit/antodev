@@ -42,7 +42,8 @@
                 padding: 1rem;
                 padding-bottom: 1.5rem;
 
-                &:hover {
+                &:hover,
+                &:focus {
                     color: inherit;
                 }
 

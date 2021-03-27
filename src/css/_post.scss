@@ -103,7 +103,8 @@ body.post {
                     @include desktop {
                         transition: transform 0.3s ease;
 
-                        &:hover {
+                        &:hover,
+                        &:focus {
                             position: relative;
                             top: -0.1rem;
                         }
