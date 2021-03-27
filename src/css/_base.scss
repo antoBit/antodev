@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+::selection {
+    color: $text;
+    background-color: $light;
+}
+
 html {
     scroll-behavior: smooth;
 
