@@ -46,7 +46,7 @@ What I had was something like this:
 />
 ```
 Everything seems okay, right? Well, in theory. 
-But as soon as the application started, I noticed that the `backgroundSize`property was not working!
+But as soon as the application started, I noticed that the `backgroundSize` property was not working!
 
 ## Let’s get googling
 
@@ -76,4 +76,4 @@ A quick and easy fix is to explicitly set every property by expanding the shorth
 />
 ```
 
-That's all! Hope this is useful to you 💪🏻
+That's all! I hope this is useful to you 💪🏻
