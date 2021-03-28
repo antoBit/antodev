@@ -27,6 +27,7 @@ tags:
   - tips
 ---
 
+## The problem 
 I recently came across this bug at work and it took me a minute to figure it out.
 What I had was something like this:
 
@@ -44,10 +45,16 @@ What I had was something like this:
    {% raw %}{{{% endraw %}
 />
 ```
+Everything seems okay, right? Well, in theory. 
+But as soon as the application started, I noticed that the `backgroundSize` property was not working!
+
+## Let’s get googling
 
 After inspecting the output HTML and a bit of googling, I came across this <a href="https://github.com/facebook/react/issues/5030" rel="noreferrer" target="_blank" aria-label="closed issue on React's Github">closed issue on React's Github</a>.
 
 Apparently, using the CSS `background` shorthand property with a `backgroundSize` prop causes this last property to be cleared **if and when** the `background` property is updated.
+
+## Fair enough, let’s fix it
 
 A quick and easy fix is to explicitly set every property by expanding the shorthand property:
 
@@ -69,4 +76,4 @@ A quick and easy fix is to explicitly set every property by expanding the shorth
 />
 ```
 
-That's all! Hope this is useful to you 💪🏻
+That's all! I hope this is useful to you 💪🏻
