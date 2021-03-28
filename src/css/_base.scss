@@ -123,7 +123,7 @@ html {
             &.footer {
                 display: grid;
                 grid-template-rows: auto;
-                grid-template-columns: auto;
+                grid-template-columns: 30ch auto;
                 grid-template-areas:
                     'social scroll-to-top'
                     'made-by scroll-to-top'
@@ -131,10 +131,13 @@ html {
                 row-gap: 0.5rem;
                 align-items: center;
                 color: $text;
-                margin-top: 4rem;
                 margin-bottom: 1rem;
                 padding: 2rem;
                 padding-bottom: 0;
+
+                @include tablet {
+                    grid-template-columns: auto;
+                }
 
                 .social {
                     grid-area: social;
@@ -162,13 +165,17 @@ html {
                 .scroll_to_top {
                     grid-area: scroll-to-top;
                     align-self: center;
-                    justify-self: flex-end;
+                    justify-self: center;
                     position: sticky;
                     bottom: 0;
                     display: flex;
                     justify-content: flex-end;
                     width: auto;
                     height: auto;
+
+                    @include tablet {
+                        justify-self: flex-end;
+                    }
 
                     a {
                         width: 1.3rem;
