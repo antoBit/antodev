@@ -97,6 +97,70 @@ body.post {
                     }
                 }
 
+                blockquote {
+                    position: relative;
+                    display: flow-root;
+                    text-align: center;
+                    margin: 1rem 0;
+                    padding: 1rem 0;
+                    border: 1px solid $light;
+                    border-left: none;
+                    border-right: none;
+
+                    @include tablet {
+                        p {
+                            max-width: 80%;
+                            margin: 0 auto;
+                        }
+
+                        &:before,
+                        &:after {
+                            content: '\201C';
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: auto;
+                            height: 100%;
+                            font-size: 8rem;
+                            font-weight: 700;
+                            color: lighten($background, 30%);
+                            opacity: 0.3;
+                            z-index: 2;
+                        }
+
+                        &:after {
+                            content: '\201D';
+                            top: auto;
+                            bottom: 0;
+                            left: auto;
+                            right: 0;
+                        }
+                    }
+
+                    span.author {
+                        font-style: italic;
+                        float: right;
+                    }
+                }
+
+                div.resources {
+                    border: 2px solid $light;
+                    margin: 1rem 0;
+
+                    ul {
+                        list-style-type: none;
+
+                        li {
+                            &:before {
+                                content: '\1F516';
+                                font-size: 1.125rem;
+                                margin-left: -1.25rem;
+                                margin-right: 0.625rem;
+                            }
+                        }
+                    }
+                }
+
                 a {
                     font-weight: 600;
                     @extend .animated;
