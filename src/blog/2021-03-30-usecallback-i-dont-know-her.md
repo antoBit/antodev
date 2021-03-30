@@ -55,7 +55,7 @@ Therefore, *optimize responsibly*.
 <span class="author">Kent C. Dodds</span>
 </blockquote>
 
-Pretty much every article I read touched on this: it’s wrong to optimize before profiling the application and every optimization comes with a cost that can easily outweigh the benefit.
+Pretty much every article I read said something along the lines of "it’s wrong to optimize before profiling the application and every optimization comes with a cost that can easily outweigh the benefit".
 
 In all the articles and comments on Stack Overflow, I could find, pretty much everyone agreed that there are cases where it’s pretty clear that memoization help:
 
