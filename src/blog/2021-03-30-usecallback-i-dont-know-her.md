@@ -6,6 +6,7 @@ description: Should you wrap every single function in useCallback? Or should you
 date: 2021-03-30T11:26:29.725Z
 metaDescription: A small journey into the world of React memoization and when to
   use (or not!) useCallback and useMemo.
+metaImage: /images/uploads/carbon.png
 metaKeywords:
   - web
   - developer
