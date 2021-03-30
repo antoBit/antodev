@@ -13,7 +13,7 @@ p {
 pre {
     font-family: Fira Code, monospace;
     color: $text;
-    background-color: darken($background, 10%);
+    background-color: darken($background, 1%);
     border-radius: 0.2rem;
     padding: 1rem 2rem;
     padding-left: 1rem;
@@ -30,7 +30,7 @@ pre {
                 display: inline-block;
                 min-width: 20px;
                 color: $accent_alt;
-                border-right: 1px solid $background;
+                border-right: 1px solid lighten($background, 5%);
                 text-align: right;
                 margin-right: 1.5rem;
                 padding: 0 1rem;
