@@ -70,8 +70,10 @@ My goal is to keep digging into this argument and try to profile the application
 
 📚 As promised, I’ll leave here the list of articles I read on the subject:
 
+<div class="resources">
 * [When to useMemo and useCallback](https://kentcdodds.com/blog/usememo-and-usecallback)
 * [Your Guide to React.useCallback()](https://dmitripavlutin.com/dont-overuse-react-usecallback/)
 * [When to use React.useCallback() | Ahead Creative](https://aheadcreative.co.uk/articles/when-to-use-react-usecallback/#:~:text=You%20should%20avoid%20seeing%20useCallback,a%20detrimental%20impact%20on%20performance.)
 * [React Training: React, Inline Functions, and Performance](https://reacttraining.com/blog/react-inline-functions-and-performance/)
 * [Lodash Memoize: You should not use lodash for memoization - DEV Community](https://dev.to/nioufe/you-should-not-use-lodash-for-memoization-3441)
+</div>
