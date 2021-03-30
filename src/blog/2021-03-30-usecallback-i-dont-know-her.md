@@ -46,11 +46,13 @@ Lately, I’ve been reading a lot on the use of `useCallback` and `useMemo` in a
 
 ## You shall not optimize (blindly)
 
-> **Performance optimizations are not free. They ALWAYS come with a cost but do NOT always come with a benefit to offset that cost.**  
->
-> Therefore, *optimize responsibly*.  
->
-> * Kent C. Dodds, [When to useMemo and useCallback](https://kentcdodds.com/blog/usememo-and-usecallback)  
+<blockquote cite="https://kentcdodds.com/blog/usememo-and-usecallback">
+**Performance optimizations are not free. They ALWAYS come with a cost but do NOT always come with a benefit to offset that cost.**
+
+Therefore, *optimize responsibly*. 
+
+<span class="author">Kent C. Dodds</span>
+</blockquote>
 
 Pretty much every article I read touched on this: it’s wrong to optimize before profiling the application and every optimization comes with a cost that can easily outweigh the benefit.
 
