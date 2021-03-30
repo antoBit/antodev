@@ -75,10 +75,10 @@ My goal is to keep digging into this argument and try to profile the application
 
 <div class="resources">
 <ul>
-</ul>
 <li><a href="https://kentcdodds.com/blog/usememo-and-usecallback" rel="noreferrer" target="_blank" aria-label="When to useMemo and useCallback">When to useMemo and useCallback</a>
-<li><a href="https://dmitripavlutin.com/dont-overuse-react-usecallback/" rel="noreferrer" target="_blank" aria-label="Your Guide to React.useCallback()"></a>Your Guide to React.useCallback()</li>
+<li><a href="https://dmitripavlutin.com/dont-overuse-react-usecallback/" rel="noreferrer" target="_blank" aria-label="Your Guide to React.useCallback()">Your Guide to React.useCallback()</a></li>
 <li><a href="https://aheadcreative.co.uk/articles/when-to-use-react-usecallback/#:~:text=You%20should%20avoid%20seeing%20useCallback,a%20detrimental%20impact%20on%20performance." rel="noreferrer" target="_blank" aria-label="When to use React.useCallback() | Ahead Creative">When to use React.useCallback() | Ahead Creative</a></li>
 <li><a href="https://reacttraining.com/blog/react-inline-functions-and-performance/" rel="noreferrer" target="_blank" aria-label="React Training: React, Inline Functions, and Performance">React Training: React, Inline Functions, and Performance</a></li>
 <li><a href="https://dev.to/nioufe/you-should-not-use-lodash-for-memoization-3441" rel="noreferrer" target="_blank" aria-label="Lodash Memoize: You should not use lodash for memoization - DEV Community">Lodash Memoize: You should not use lodash for memoization - DEV Community</a></li>
+</ul>
 </div>
