@@ -44,6 +44,7 @@ body.post {
             }
 
             .post__content {
+                h1,
                 h2,
                 h3,
                 h4 {
@@ -62,13 +63,13 @@ body.post {
 
                 h2 {
                     &::before {
-                        content: '#';
+                        content: '</>';
                     }
                 }
 
                 h3 {
                     &::before {
-                        content: '$';
+                        content: '#';
                     }
                 }
 
