@@ -47,17 +47,14 @@ pre {
 
             &.function:not(.function-variable),
             &.operator {
-                color: $light;
+                color: $accent_alt;
             }
 
             &.function-variable {
                 color: $light_alt;
             }
 
-            &.keyword {
-                color: $accent;
-            }
-
+            &.keyword,
             &.boolean {
                 color: $accent;
             }
