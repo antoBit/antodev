@@ -38,7 +38,7 @@ Of course, thanks to my beloved impostor syndrome I immediately thought “Oh go
 
 ## PR Review anxiety
 
-Since I was not familiar with the concept of useCallback, useMemo (and loadash `memoize`!) I immediately documented myself, but all I could find were articles and tutorials about how to use these hooks and functions, and none of them touched deeply on the dependency array, which is something I constantly screw up!
+Since I was not familiar with the concept of useCallback, useMemo (and lodash `memoize`!) I immediately documented myself, but all I could find were articles and tutorials about how to use these hooks and functions, and none of them touched deeply on the dependency array, which is something I constantly screw up!
 
 Lately, I’ve been reading a lot on the use of `useCallback` and `useMemo` in a React app (useful links at the end of the post ✏️) because I wasn’t comfortable with my *fake it ‘till you make it* approach to this part of the framework and what I read was… well, more confusing than ever.
 
