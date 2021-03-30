@@ -84,7 +84,7 @@
                     &:hover,
                     &:focus {
                         & + h2 {
-                            color: $light;
+                            color: $accent;
                         }
                     }
                 }
@@ -95,7 +95,7 @@
                 }
 
                 &__date {
-                    color: $light_alt;
+                    color: $accent_alt;
                     font-size: 0.9rem;
                     font-weight: 600;
                     margin-top: 0;
@@ -136,7 +136,7 @@
 
                     &:hover,
                     &:focus {
-                        color: $light;
+                        color: $accent;
                         animation-name: rubberBand;
                         animation-duration: 1s;
                         animation-iteration-count: 3;

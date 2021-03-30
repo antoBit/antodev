@@ -55,7 +55,7 @@ body.post {
                         display: inline-block;
                         font-family: 'Fira Code', monospace;
                         margin-right: 0.5rem;
-                        color: $light;
+                        color: $accent;
                         @include transform(scale(0.8));
                     }
                 }
@@ -99,7 +99,7 @@ body.post {
                 a {
                     font-weight: 600;
                     @extend .animated;
-                    color: $light;
+                    color: $accent;
 
                     @include desktop {
                         transition: transform 0.3s ease;
