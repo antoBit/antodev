@@ -21,31 +21,49 @@ tags:
   - developer
   - coding
 ---
-## I don’t know React
+Spoiler alert: this is a rant that _might turn into something useful_. Maybe.
 
+## I don’t know React
 My React journey has been a constant learning experience, but there’s something about React that has been bugging me lately.
 
-![Example of useCallback from the React docs](/images/uploads/carbon.png "Example of useCallback from the React docs")
-
-Ever since I changed company last year, I found myself in a new codebase and with it came something I never saw before: an /odd quantity/ of useCallback in every single component of the app.
+Ever since I changed company last year, I found myself in a new codebase and with it came something I never saw before: an _odd quantity_ of useCallback in every single component of the app.
 
 I have to admit I was responsible for most of a medium/big react app at my previous company and it always ran smoothly even without this heavy optimisation. 
 Of course, thanks to my beloved impostor syndrome I immediately thought “oh god, I’m a terrible developer, I don’t know React, I never use memoization”. You know, the usual. 
 
 ## PR Review anxiety
-
 Since I was not familiar with the concept of useCallback, useMemo (and loads `memoize`!) 
 
 I immediately documented myself, but all I could find where articles and tutorials about how to use these hooks and functions, and none of them touched deeply on the dependency array, which is something I constantly screw up!
 
-Lately I’ve been reading a lot on the use of `useCallback` and `useMemo` in a React app (useful links at the end of the post ✏️) because I wasn’t comfortable with my /fake it ‘till you make it/ approach to this part of the framework and what I read was… well, more confusing than ever.
+Lately I’ve been reading a lot on the use of `useCallback` and `useMemo` in a React app (useful links at the end of the post ✏️) because I wasn’t comfortable with my _fake it ‘till you make it_ approach to this part of the framework and what I read was… well, more confusing than ever.
 
 ## You shall not optimise (blindly)
+> **Performance optimizations are not free. They ALWAYS come with a cost but do NOT always come with a benefit to offset that cost.**  
+>   
+> Therefore, _optimize responsibly_.  
+> - Kent C. Dodds, [When to useMemo and useCallback](https://kentcdodds.com/blog/usememo-and-usecallback)  
 
-> *Performance optimizations are not free. They ALWAYS come with a cost but do NOT always come with a benefit to offset that cost.*
->
-> Therefore, /optimize responsibly/.
->
-> * Kent C. Dodds, [When to useMemo and useCallback](https://kentcdodds.com/blog/usememo-and-usecallback)
+Pretty much every article I read touched on this: it’s wrong to optimise before profiling the application and every optimisation comes with a cost that can easily outweigh the benefit.
 
-\#personali/blog
+In all the articles and comments on Stack Overflow I could find, pretty much everyone agreed that there are cases where it’s pretty clear that memoization help:
+
+* Big, _very big_ lists
+* Passing down components to optimised children
+* Referential equality checks in hooks dependencies
+* Computationally expensive functions (we’re talking prime numbers calculations!) 
+
+I’ll stop here, for now. 
+My goal is to keep digging into this argument and try to profile the application I maintain at work and come up with definitive data on which components actually benefit from memoization and which are actually slower thanks to it.
+
+…stay tuned!
+
+📚 As promised, I’ll leave here the list of articles I read on the subject:
+* [When to useMemo and useCallback](https://kentcdodds.com/blog/usememo-and-usecallback)
+* [Your Guide to React.useCallback()](https://dmitripavlutin.com/dont-overuse-react-usecallback/)
+* [When to use React.useCallback() | Ahead Creative](https://aheadcreative.co.uk/articles/when-to-use-react-usecallback/#:~:text=You%20should%20avoid%20seeing%20useCallback,a%20detrimental%20impact%20on%20performance.)
+* [React Training: React, Inline Functions, and Performance](https://reacttraining.com/blog/react-inline-functions-and-performance/)
+* [Lodash Memoize: You should not use lodash for memoization - DEV Community](https://dev.to/nioufe/you-should-not-use-lodash-for-memoization-3441)
+
+
+#personali/blog
