@@ -47,15 +47,15 @@ pre {
 
             &.function:not(.function-variable),
             &.operator {
-                color: $light_alt;
-            }
-
-            &.function-variable {
                 color: $light;
             }
 
+            &.function-variable {
+                color: $light_alt;
+            }
+
             &.keyword {
-                color: $accent_alt;
+                color: $accent;
             }
 
             &.boolean {
@@ -69,7 +69,7 @@ pre {
             &.comment {
                 font-size: 90%;
                 font-style: italic;
-                color: $light;
+                color: $light_alt;
             }
         }
     }
