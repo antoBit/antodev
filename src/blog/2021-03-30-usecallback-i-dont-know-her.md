@@ -47,6 +47,7 @@ Lately, I’ve been reading a lot on the use of `useCallback` and `useMemo` in a
 ## You shall not optimize (blindly)
 
 <blockquote cite="https://kentcdodds.com/blog/usememo-and-usecallback">
+
 **Performance optimizations are not free. They ALWAYS come with a cost but do NOT always come with a benefit to offset that cost.**
 
 Therefore, *optimize responsibly*. 
