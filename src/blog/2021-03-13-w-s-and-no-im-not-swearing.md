@@ -1,24 +1,24 @@
 ---
 layout: layouts/post.njk
-title: ^\w*\s\w*!$ and no, I'm not swearing!
+title: Time to start learning how to regex
 description: I've always had a "fake it 'till you make it" approach to writing
-    regexes. This ends today.
+  regexes. This ends today.
 date: 2021-03-13T11:03:10.466Z
 metaDescription: How I learned how to write regular expressions and spare myself
-    the usual headaches and intense googling.
+  the usual headaches and intense googling.
 metaImage: /images/uploads/how_to_regex.jpeg
 metaKeywords:
-    - regex
-    - web
-    - developer
-    - javascript
-    - js
-    - code
-    - coding
+  - regex
+  - web
+  - developer
+  - javascript
+  - js
+  - code
+  - coding
 tags:
-    - regex
-    - tips
-    - code
+  - regex
+  - tips
+  - code
 ---
 
 It's time for me to come out: I've been working as a professional developer for 6 years and I've never managed to write a regex without intense googling and the help of <a href="https://regex101.com/" rel="noreferrer" target="_blank" aria-label="regex 101">regex 101</a>.
