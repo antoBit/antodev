@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: useCallback? I don't know her.
+title: useCallback? I don't know her
 description: Should you wrap every single function in useCallback? Or should you
   go for code readability and hope for the best? Well, it depends.
 date: 2021-03-30T11:26:29.725Z
