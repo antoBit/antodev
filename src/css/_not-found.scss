@@ -11,7 +11,7 @@ body.fourofour {
                 width: 100px;
                 height: auto;
                 margin-right: 1rem;
-                filter: invert(1);
+                @include filter(invert(1));
             }
 
             h2 {

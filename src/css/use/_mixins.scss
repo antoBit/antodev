@@ -14,6 +14,11 @@
     transform: $transforms;
 }
 
+@mixin filter($filters) {
+    -webkit-filter: $filters;
+    filter: $filters;
+}
+
 @mixin gradient($number) {
     $colors: nth(theme.$gradients, $number);
     background: linear-gradient(90deg, $colors);
