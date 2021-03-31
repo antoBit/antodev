@@ -5,6 +5,10 @@ body.post {
     main.blog__post {
         height: 100%;
 
+        @include desktop {
+            max-width: 1100px;
+        }
+
         @include phone {
             margin-top: -1.5rem;
             margin-bottom: 0;
