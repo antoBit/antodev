@@ -1,6 +1,6 @@
 <img src="https://user-images.githubusercontent.com/22414962/113021753-2f49ac00-9184-11eb-890c-f511de0ce6b2.png" alt="Panda" width="50"/>
 
-# antodev - Yet another place where a developer rants
+# antoDev - Yet another place where a developer rants
 
 This website is based on [11ty](https://www.11ty.dev/).
 Icons made by [Smashicons](https://www.flaticon.com/authors/smashicons) from [Flaticon](https://www.flaticon.com/).
