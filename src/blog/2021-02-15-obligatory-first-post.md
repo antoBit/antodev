@@ -16,7 +16,7 @@ tags:
     - notes
 ---
 
-![](/images/uploads/terminal.png)
+![](/images/uploads/panda_big.png)
 
 I probably won't update this blog as much, but I felt like I needed someplace to store the occasional experiment as I continue (hopefully 🤞🏻) to learn during my career as a software developer for the web.
 

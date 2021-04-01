@@ -14,7 +14,9 @@ module.exports = function (eleventyConfig) {
         breaks: true,
         linkify: true,
     }
-    const markdownLib = markdownIt(markdownItOptions).use(markdownItAttrs)
+    const markdownLib = markdownIt(markdownItOptions).use(markdownItAttrs, {
+        allowedAttributes: ['rel', 'target'],
+    })
 
     eleventyConfig.setLibrary('md', markdownLib)
 
