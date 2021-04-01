@@ -1,4 +1,6 @@
 const fs = require('fs')
+const markdownIt = require('markdown-it')
+const markdownItAttrs = require('markdown-it-attrs')
 const { DateTime } = require('luxon')
 const { minify } = require('terser')
 const eleventyGoogleFonts = require('eleventy-google-fonts')
@@ -7,6 +9,15 @@ const timeToRead = require('eleventy-plugin-time-to-read')
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 
 module.exports = function (eleventyConfig) {
+    const markdownItOptions = {
+        html: true,
+        breaks: true,
+        linkify: true,
+    }
+    const markdownLib = markdownIt(markdownItOptions).use(markdownItAttrs)
+
+    eleventyConfig.setLibrary('md', markdownLib)
+
     eleventyConfig.setBrowserSyncConfig({
         callbacks: {
             ready: function (err, bs) {
