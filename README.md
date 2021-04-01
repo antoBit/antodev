@@ -1,4 +1,4 @@
-<img src="https://user-images.githubusercontent.com/22414962/109974799-38b53500-7cfa-11eb-8680-2662ce13bb55.png" alt="Panda" width="50"/>
+<img src="https://user-images.githubusercontent.com/22414962/113021753-2f49ac00-9184-11eb-890c-f511de0ce6b2.png" alt="Panda" width="50"/>
 
 # antodev - Yet another place where a developer rants
 
