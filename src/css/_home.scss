@@ -13,6 +13,15 @@ body.home {
                 margin-bottom: 5rem;
             }
 
+            .emoji {
+                display: inline-block;
+                animation-name: wave;
+                animation-duration: 1s;
+                animation-iteration-count: 2;
+                animation-direction: alternate-reverse;
+                animation-fill-mode: backwards;
+            }
+
             h1 {
                 max-width: 75ch;
                 font-family: 'Fira Code', monospace;
@@ -43,5 +52,19 @@ body.home {
                 margin-top: 3rem;
             }
         }
+    }
+}
+
+@keyframes wave {
+    from {
+        @include transform(rotate(-10deg) scale(1.5));
+    }
+
+    50% {
+        @include transform(rotate(10deg) scale(1.5));
+    }
+
+    to {
+        @include transform(rotate(0) scale(1));
     }
 }
