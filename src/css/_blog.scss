@@ -1,5 +1,14 @@
 @use 'use' as *;
 
+body.blog {
+    .wrapper {
+        h1 {
+            font-family: 'Fira Code', monospace;
+            text-align: center;
+        }
+    }
+}
+
 .wrapper {
     h2 {
         text-align: center;

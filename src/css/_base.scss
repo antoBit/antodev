@@ -363,7 +363,7 @@ html {
     overflow: hidden;
 
     border-radius: 1.5rem;
-    background-color: $light;
+    background-color: darken($light, 5%);
     color: white;
 
     &:hover,
