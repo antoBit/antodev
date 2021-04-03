@@ -27,7 +27,7 @@ This needs to stop, so I decided to take advantage of the current lockdown and s
 
 <figure>
     <img src="/images/uploads/how_to_regex.jpeg" alt="How to regex" title="How to regex" />
-    <figcaption class="image-caption-text">Image from <a href="https://twitter.com/garabatokid" rel="noreferrer" target="_blank" aria-label="Image from garabatokid">garabatokid</a></figcaption>
+    <figcaption class="image-caption-text">Image from <a href="https://twitter.com/garabatokid" rel="noopener noreferrer" target="_blank" aria-label="Image from garabatokid">garabatokid</a></figcaption>
 </figure>
 
 After a couple of minutes of googling, I landed on [RegexOne](https://regexone.com/){rel="noopener noreferrer" target="\_blank"} and found a great and exhaustive tutorial that takes you through the basics of writing regular expressions.
