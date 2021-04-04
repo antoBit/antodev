@@ -257,7 +257,8 @@ html {
                 grid-template-areas:
                     'social scroll-to-top'
                     'made-by scroll-to-top'
-                    'credits scroll-to-top';
+                    'credits scroll-to-top'
+                    'copyright copyright';
                 row-gap: 0.5rem;
                 align-items: center;
                 color: $text;
@@ -290,6 +291,13 @@ html {
 
                     &.credits {
                         grid-area: credits;
+                        font-size: 85%;
+                    }
+
+                    &.copyright {
+                        grid-area: copyright;
+                        text-align: center;
+                        margin-top: 1rem;
                     }
                 }
 
