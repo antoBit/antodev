@@ -2,7 +2,7 @@
 
 p {
     code {
-        background-color: $background;
+        background-color: lighten($background, 5%);
         font-family: 'Fira Code', monospace;
         font-size: 95%;
         padding: 0.2rem 0.4rem;
@@ -13,7 +13,7 @@ p {
 pre {
     font-family: Fira Code, monospace;
     color: $text;
-    background-color: darken($background, 1%);
+    background-color: lighten($background, 10%);
     border-radius: 0.2rem;
     padding: 1rem 2rem;
     padding-left: 1rem;
@@ -30,7 +30,7 @@ pre {
                 display: inline-block;
                 min-width: 20px;
                 color: $light_alt;
-                border-right: 1px solid lighten($background, 5%);
+                border-right: 1px solid $background;
                 text-align: right;
                 margin-right: 1.5rem;
                 padding: 0 1rem;

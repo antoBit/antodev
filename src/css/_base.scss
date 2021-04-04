@@ -156,11 +156,11 @@ html {
         }
 
         p {
-            font-size: 1.063rem;
+            font-size: 1.125rem;
             font-weight: 400;
 
             @include desktop {
-                font-size: 1rem;
+                font-size: 1.25rem;
             }
         }
 
@@ -281,6 +281,7 @@ html {
                 }
 
                 p {
+                    font-size: 1rem;
                     margin: 0;
 
                     &.made_by {
