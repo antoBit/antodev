@@ -5,17 +5,20 @@ progress#reading-progress {
     top: 0;
     width: 100%;
     height: 4px;
+    background-color: transparent;
+    border: none;
     z-index: 1;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
 
-    &[value='0'] {
-        display: none;
+    &::-moz-progress-bar {
+        background-color: $accent;
     }
 
-    &::-moz-progress-bar {
-        background-color: $background;
+    /* Force indeterminate bars to have zero width */
+    &:indeterminate::-moz-progress-bar {
+        width: 0;
     }
 
     &::-webkit-progress-bar {
