@@ -1,7 +1,6 @@
 {% set bodyClass = "post" %}
 {% extends "layouts/base.njk" %}
 {% block mainContent %}
-{% include "layouts/partials/read-progress.njk" %}
 <main class="wrapper blog blog__post">
     <article class="post">
         <h1 class="post__title">{{ title }}</h1>
@@ -21,6 +20,7 @@
         </div>
     </article>
 </main>
+{% include "layouts/partials/read-progress.njk" %}
 {% set readProgress %}
 {% include "src/scripts/readProgress.js" %}
 {% endset %}
