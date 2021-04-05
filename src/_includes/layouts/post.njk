@@ -20,11 +20,11 @@
         </div>
     </article>
 </main>
-{% include "layouts/partials/read-progress.njk" %}
-{% set readProgress %}
-{% include "src/scripts/readProgress.js" %}
+{% include "layouts/partials/reading-progress-indicator.njk" %}
+{% set readingProgressIndicator %}
+{% include "src/scripts/readingProgressIndicator.js" %}
 {% endset %}
 <script>
-    {{ readProgress | jsmin | safe }}
+    {{ readingProgressIndicator | jsmin | safe }}
 </script>
 {% endblock %}
