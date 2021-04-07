@@ -48,10 +48,72 @@ body.home {
             }
 
             .button {
+                position: relative;
                 margin: 2rem 0;
                 margin-top: 3rem;
+                padding: 1rem 2.5rem;
+                border-radius: 0.4rem;
+                transition: background-color 300ms ease-out;
+
+                span {
+                    display: inline-flex;
+                    position: relative;
+                    transition: transform 300ms ease-out;
+
+                    i {
+                        position: absolute;
+                        right: 1rem;
+                        opacity: 0;
+                        transition: transform 300ms ease-out;
+                        transform: translateY(-50%);
+                    }
+                }
+
+                &:hover {
+                    span {
+                        transform: translate3d(-1rem, 0, 0);
+
+                        i {
+                            right: -2rem;
+                            opacity: 1;
+                        }
+                    }
+                }
             }
         }
+    }
+}
+
+.btn-arrow {
+    position: relative;
+    transition: background-color 300ms ease-out;
+    span {
+        display: inline-block;
+        position: relative;
+        transition: all 300ms ease-out;
+        will-change: transform;
+    }
+    &:hover span {
+        transform: translate3d(-1rem, 0, 0);
+    }
+    svg {
+        position: absolute;
+        width: 1.1em;
+        right: 0px;
+        right: 0rem;
+        opacity: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all 300ms ease-out;
+        will-change: right, opacity;
+        * {
+            stroke-width: 5;
+            stroke-color: transparent;
+        }
+    }
+    &:hover svg {
+        opacity: 1;
+        right: -2rem;
     }
 }
 
