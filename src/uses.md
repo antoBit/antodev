@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: antodev uses
+title: antoDev uses
 description: This is what I use every day to develop... and relax 💪🏻
 metaDescription: What a web developer uses on his every day life
 metaKeywords:
