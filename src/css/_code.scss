@@ -1,4 +1,5 @@
 @use 'use' as *;
+@use 'base' as base;
 
 p {
     code {
@@ -17,11 +18,7 @@ pre {
     border-radius: 0.2rem;
     padding: 1rem 2rem;
     padding-left: 1rem;
-
-    &:focus {
-        outline: none;
-        box-shadow: 0 0 0 0.3rem $background, 0 0 0 0.35rem $accent;
-    }
+    @extend .focus-pill;
 
     code {
         display: block;

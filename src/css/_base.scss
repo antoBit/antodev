@@ -10,14 +10,9 @@
     -webkit-text-fill-color: #333;
 }
 
-:focus {
+:focus-visible {
     outline: $accent solid 2px;
     outline-offset: 0.5rem;
-}
-
-:active {
-    outline: none !important;
-    box-shadow: none;
 }
 
 html {
@@ -241,7 +236,7 @@ html {
 }
 
 .focus-pill {
-    &:focus {
+    &:focus-visible {
         outline: none;
         box-shadow: 0 0 0 0.2rem $background, 0 0 0 0.3rem $accent;
     }
