@@ -51,12 +51,25 @@ I have a bazillion plugins installed on it, but my favorites are:
 
 ## Messaging
 
-* Spark
-* Slack
+* **Spark**
+
+  It's a great email client, with a "smart" inbox, with the option to send delayed emails so you don't bother people outside of office hours
+* **Slack**
 
 ## Utility
 
-* Font Fira Code
-* Paste
-* CleanShotX
-* Rocket
+These are all the little pieces of software I couldn't like without. Seriously, Mac OS should have these built-in.
+
+* **Paste**
+
+  Fast clipboard manager, I wouldn't be able to function without it.
+* **CleanShotX**
+
+  Working 100% remotely I'm constantly taking screenshots and videos of my work to share on Slack and this app does it best.
+* **Rocket**
+
+  A fantastic emoji picker 🚀 💯
+
+## Font
+
+It's Fira Code. It's great, free, and has ligatures 💅🏻
