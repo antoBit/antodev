@@ -2,28 +2,28 @@
 layout: layouts/post.njk
 title: useCallback? I don't know her
 description: Should you wrap every single function in useCallback? Or should you
-  go for code readability and hope for the best? Well, it depends.
+    go for code readability and hope for the best? Well, it depends.
 date: 2021-03-30T11:26:29.725Z
 metaDescription: A small journey into the world of React memoization and when to
-  use (or not!) useCallback and useMemo.
+    use (or not!) useCallback and useMemo.
 metaImage: /images/uploads/the_general_problem.png
 metaKeywords:
-  - web
-  - developer
-  - javascript
-  - js
-  - code
-  - coding
-  - optimization
-  - useCallback
-  - useMemo
-  - React
+    - web
+    - developer
+    - javascript
+    - js
+    - code
+    - coding
+    - optimization
+    - useCallback
+    - useMemo
+    - React
 tags:
-  - react
-  - js
-  - optimisation
-  - developer
-  - coding
+    - react
+    - js
+    - optimisation
+    - developer
+    - coding
 ---
 
 Spoiler alert: this is a rant that _might turn into something useful_. Maybe.
@@ -60,8 +60,11 @@ Pretty much every article I read said something along the lines of "it’s wrong
 In all the articles and comments on Stack Overflow I could find, pretty much everyone agreed that there are cases where it’s pretty clear that memoization help:
 
 -   Big, _very big_ lists
+
 -   Passing down components to optimized children
+
 -   Referential equality checks in hooks dependencies
+
 -   Computationally expensive functions (we’re talking prime numbers calculations!)
 
 I’ll stop here, for now.

@@ -4,17 +4,17 @@ title: antoDev uses
 description: This is what I use every day to develop... and more 💪🏻
 date: 2021-04-09T18:59:37.540Z
 metaDescription: Web developer tools and Mac OS utilities for working, blogging
-  and taking the system to the next level.
+    and taking the system to the next level.
 metaImage: /images/uploads/cleanshot-2021-04-09-at-20.11.19-2x.jpg
 metaKeywords:
-  - web
-  - developer
-  - code
-  - coding
-  - tools
-  - software
-  - uses
-  - utilities
+    - web
+    - developer
+    - code
+    - coding
+    - tools
+    - software
+    - uses
+    - utilities
 ---
 
 Blatantly copied from [Wes Bos' /uses page](https://wesbos.com/uses){rel="noopener noreferrer" target="\_blank"}, I decided to list what I use in my everyday life. I don't know, you may be curious?!? 😆
@@ -27,8 +27,11 @@ I spend _a lot_ of time on my terminal and I have to say I freaking love **iTerm
 I have a bazillion plugins installed on it, but my favorites are:
 
 -   Oh-my-zsh, seriously it's the best
+
 -   autojump (lets you `cd` into a previously visited directory, even if you misspell it!)
+
 -   zsh-syntax-highlighting and zsh-autosuggestions
+
 -   emojiparty (theme that prepends a random emoji to the command line 🥳)
 
 ### Main tools
