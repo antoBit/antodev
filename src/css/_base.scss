@@ -10,6 +10,16 @@
     -webkit-text-fill-color: #333;
 }
 
+:focus {
+    outline: $accent solid 2px;
+    outline-offset: 0.5rem;
+}
+
+:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
 html {
     scroll-behavior: smooth;
 
@@ -50,10 +60,8 @@ html {
 
         a {
             text-decoration: none;
-            outline: none !important;
 
             &:hover,
-            &:focus,
             &.active {
                 color: $accent;
             }
@@ -66,7 +74,6 @@ html {
                 transition: background-size 0.3s;
 
                 &:hover,
-                &:focus,
                 &.active {
                     background-size: 100% 2px;
                 }
@@ -220,8 +227,7 @@ html {
                             border-radius: 50%;
                         }
 
-                        &:hover,
-                        &:focus {
+                        &:hover {
                             animation-name: rubberBand;
                             animation-duration: 1s;
                             animation-iteration-count: 3;
@@ -234,18 +240,25 @@ html {
     }
 }
 
+.focus-pill {
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0 0.2rem $background, 0 0 0 0.3rem $accent;
+    }
+}
+
 .pill {
     font-family: 'Fira Code', monospace;
     background-color: darken($background, 5%);
     margin: 0;
     padding: 0.2rem 0.8rem;
     border-radius: 0.8rem;
+    @extend .focus-pill;
 
     &.hover {
         transition: transform 0.3s ease;
 
-        &:hover,
-        &:focus {
+        &:hover {
             @include transform(scale(1.05));
         }
     }
@@ -258,15 +271,14 @@ html {
     font-weight: 700;
     text-transform: uppercase;
     color: white;
+    background-color: darken($light, 5%);
     padding: 1rem 1.5rem;
+    border-radius: 1.5rem;
     overflow: hidden;
 
-    border-radius: 1.5rem;
-    background-color: darken($light, 5%);
-    color: white;
+    @extend .focus-pill;
 
-    &:hover,
-    &:focus {
+    &:hover {
         color: white;
         background-color: darken($light, 10%);
 
@@ -276,6 +288,10 @@ html {
             animation-iteration-count: 3;
             animation-fill-mode: both;
         }
+    }
+
+    &::-moz-focus-inner {
+        border: none;
     }
 
     i {
