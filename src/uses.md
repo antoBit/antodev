@@ -7,13 +7,12 @@ metaDescription: Web developer tools and Mac OS utilities for working, blogging
 metaKeywords:
   - web
   - developer
-  - javascript
-  - js
   - code
   - coding
   - tools
   - software
   - uses
+  - utilities
 eleventyExcludeFromCollections: true
 metaImage: /images/uploads/cleanshot-2021-04-09-at-20.11.19-2x.jpg
 ---
