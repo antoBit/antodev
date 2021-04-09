@@ -1,8 +1,9 @@
 ---
 layout: layouts/post.njk
 title: antoDev uses
-description: This is what I use every day to develop... and relax 💪🏻
-metaDescription: What a web developer uses on his every day life
+description: This is what I use every day to develop... and more 💪🏻
+metaDescription: Web developer tools and Mac OS utilities for working, blogging
+  and taking the system to the next level.
 metaKeywords:
   - web
   - developer
