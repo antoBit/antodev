@@ -22,7 +22,7 @@ Blatantly copied from [Wes Bos' /uses page](https://wesbos.com/uses){rel="noopen
 
 ### Shell configuration
 
-I spend *a lot* of time on my terminal and I have to say I freaking love iTerm2. I tried other terminals over the years, but I always come back to it.\
+I spend *a lot* of time on my terminal and I have to say I freaking love **iTerm2**. I tried other terminals over the years, but I always come back to it.\
 I have a bazillion plugins installed on it, but my favorites are:
 
 * Oh-my-zsh, seriously it's the best
