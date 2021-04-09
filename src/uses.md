@@ -17,7 +17,7 @@ eleventyExcludeFromCollections: true
 metaImage: /images/uploads/cleanshot-2021-04-09-at-20.11.19-2x.jpg
 ---
 
-Blatantly copied from [Wes Bos' /uses page](https://wesbos.com/uses), I decided to list what I use in my everyday life. I don't know, you may be curious?!? 😆
+Blatantly copied from [Wes Bos' /uses page](https://wesbos.com/uses){rel="noopener noreferrer" target="\_blank"}, I decided to list what I use in my everyday life. I don't know, you may be curious?!? 😆
 
 ## Shell configuration 
 * iTerm2
