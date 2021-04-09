@@ -30,21 +30,25 @@ I have a bazillion plugins installed on it, but my favorites are:
 * zsh-syntax-highlighting and zsh-autosuggestions
 * emojiparty (theme that prepends a random emoji to the command line 🥳)
 
+
+
 ### Main tools
 
 * VS Code, because yes.
 * Insomnia, an app for testing APIs, 'cause people who instantly remember the `curl` syntax and all its options have nothing to do with me.
 * Brave, it's my browser of choice mainly because it's basically Chrome, but faster and with built-in privacy protection. Yes, it's made by a homophobe, I'm looking at alternatives, but it's hard to leave the Chrome ecosystem.
 
+
+
 ## Productivity
 
-### Bear App
+* Bear App
 
 I could talk for hours about Bear. It's a markdown note-taking app, but it's more than that. I use it to write my work tasks every week, blog posts, plan holidays, jot down quick notes. It's perfectly fine on the free plan, but I can assure you: it's one of those apps where you actively *feel the need to pay for the paid plan* because they deserve it. \
 \
 I swear, I have an Android phone and I'm considering switching to iPhone just for their mobile app, I'm not kidding.
 
-Notion
+* Notion, it's fine. Slow as hell, but they're working on it, apparently.
 
 ## Messaging
 
