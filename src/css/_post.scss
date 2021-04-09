@@ -30,7 +30,7 @@ body.post {
             }
 
             .post__date {
-                border-bottom: 1px dashed $accent;
+                border-bottom: 1px dashed rgba($accent, 0.4);
                 padding-bottom: 2rem;
 
                 p {
@@ -109,9 +109,12 @@ body.post {
                     display: flex;
                     flex-direction: column;
 
+                    img.rounded-corners {
+                        border-radius: 0.8rem;
+                    }
+
                     figcaption {
-                        font-size: 90%;
-                        text-align: right;
+                        text-align: center;
                         margin: 0.5rem auto;
                     }
                 }
@@ -201,6 +204,9 @@ body.post {
                 flex-direction: revert;
                 flex-wrap: wrap;
                 gap: 0.5rem;
+                margin-top: 2rem;
+                padding-bottom: 2.5rem;
+                border-bottom: 1px dashed rgba($accent, 0.4);
             }
         }
     }
