@@ -2,18 +2,19 @@
 layout: layouts/post.njk
 title: antoDev uses
 description: This is what I use every day to develop... and more 💪🏻
+date: 2021-04-09T18:59:37.540Z
 metaDescription: Web developer tools and Mac OS utilities for working, blogging
-    and taking the system to the next level.
-metaKeywords:
-    - web
-    - developer
-    - code
-    - coding
-    - tools
-    - software
-    - uses
-    - utilities
+  and taking the system to the next level.
 metaImage: /images/uploads/cleanshot-2021-04-09-at-20.11.19-2x.jpg
+metaKeywords:
+  - web
+  - developer
+  - code
+  - coding
+  - tools
+  - software
+  - uses
+  - utilities
 ---
 
 Blatantly copied from [Wes Bos' /uses page](https://wesbos.com/uses){rel="noopener noreferrer" target="\_blank"}, I decided to list what I use in my everyday life. I don't know, you may be curious?!? 😆
