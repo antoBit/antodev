@@ -9,7 +9,8 @@
     <script>
       AOS.init({
         once: true,
-        easing: 'ease-in-out'
+        easing: 'ease-in-out',
+        disable: window.matchMedia('(prefers-reduced-motion: reduce)').matches
       })
     </script>
     {% endif %}
