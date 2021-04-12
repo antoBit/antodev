@@ -313,15 +313,6 @@ html {
     }
 }
 
-.fade {
-    opacity: 0;
-    transition: opacity 1s ease-in;
-
-    &.in {
-        opacity: 1;
-    }
-}
-
 @keyframes gradient_out {
     0% {
         background-position: 0% 0%;
