@@ -4,7 +4,7 @@
     {% block mainContent %}
     {% endblock %}
     {% include "layouts/partials/footer.njk" %}
-    {% if page.url === '/' %}
+    {% if page.url === '/' or page.url === '/blog/' %}
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
