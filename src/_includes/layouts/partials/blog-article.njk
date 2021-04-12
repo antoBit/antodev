@@ -1,4 +1,4 @@
-<li {% if page.url === '/' %}data-aos="zoom-out-down"{% endif %}>
+<li {% if page.url === '/' %}data-aos="fade-down" data-aos-duration="600"{% endif %}>
     <article class="post">
         <a href="{{ post.url | url }}" aria-label="Read more about {{ post.data.title }}" class="post__link"></a>
         <h2 class="post__title">{{ post.data.title }}</h2>
