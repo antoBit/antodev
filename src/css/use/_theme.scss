@@ -1,12 +1,12 @@
-$background: #1a2634;
-$accent: #f9b536;
-$accent_alt: #54c1dc;
-$light: #8f78c5;
-$light_alt: #ddf0ff;
-$text: white;
+$background: hsl(212, 33%, 15%);
+$accent: hsl(39, 94%, 59%);
+$accent_alt: hsl(192, 66%, 60%);
+$light: hsl(258, 40%, 62%);
+$light_alt: hsl(206, 100%, 93%);
+$text: hsl(0, 0%, 100%);
 
-$gradient_1: #fc6b6b 0%, #3f5efb 100%;
-$gradient_2: #fc6b6b 0%, #e8ef00 100%;
-$gradient_3: #f148fb 0%, #7122fa 100%;
+$gradient_1: hsl(0, 96%, 70%) 0%, hsl(230, 96%, 62%) 100%;
+$gradient_2: hsl(0, 96%, 70%) 0%, hsl(62, 100%, 47%) 100%;
+$gradient_3: hsl(297, 96%, 63%) 0%, hsl(262, 96%, 56%) 100%;
 
 $gradients: $gradient_1, $gradient_2, $gradient_3;
