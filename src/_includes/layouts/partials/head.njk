@@ -34,4 +34,8 @@
       <link rel="preload" href="https://unpkg.com/aos@next/dist/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
       <noscript><link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"></noscript>
       <script async data-respect-dnt data-no-cookie src="https://cdn.splitbee.io/sb.js"></script>
+      <script>
+        if ("serviceWorker" in navigator)
+          navigator.serviceWorker.register("/service-worker.js");
+      </script>
   </head>
