@@ -1,5 +1,6 @@
 const fs = require('fs')
 const markdownIt = require('markdown-it')
+const markdownItAnchor = require('markdown-it-anchor')
 const markdownItAttrs = require('markdown-it-attrs')
 const { DateTime } = require('luxon')
 const { minify } = require('terser')
@@ -15,9 +16,13 @@ module.exports = function (eleventyConfig) {
         breaks: true,
         linkify: true,
     }
-    const markdownLib = markdownIt(markdownItOptions).use(markdownItAttrs, {
-        allowedAttributes: ['rel', 'target'],
-    })
+    const markdownLib = markdownIt(markdownItOptions)
+        .use(markdownItAnchor, {
+            permalink: false,
+        })
+        .use(markdownItAttrs, {
+            allowedAttributes: ['rel', 'target'],
+        })
 
     eleventyConfig.setLibrary('md', markdownLib)
 
@@ -57,7 +62,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy('src/fonts')
     eleventyConfig.addPassthroughCopy('src/images')
     eleventyConfig.addPassthroughCopy('src/scripts')
-    eleventyConfig.addPassthroughCopy('src/manifest.json')
+
     eleventyConfig.addWatchTarget('src/css/')
 
     eleventyConfig.addPlugin(eleventyGoogleFonts)
