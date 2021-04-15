@@ -7,6 +7,7 @@ const eleventyGoogleFonts = require('eleventy-google-fonts')
 const lazyImagesPlugin = require('eleventy-plugin-lazyimages')
 const timeToRead = require('eleventy-plugin-time-to-read')
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
+const pluginPWA = require('eleventy-plugin-pwa')
 
 module.exports = function (eleventyConfig) {
     const markdownItOptions = {
@@ -56,6 +57,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy('src/fonts')
     eleventyConfig.addPassthroughCopy('src/images')
     eleventyConfig.addPassthroughCopy('src/scripts')
+    eleventyConfig.addPassthroughCopy('src/manifest.json')
     eleventyConfig.addWatchTarget('src/css/')
 
     eleventyConfig.addPlugin(eleventyGoogleFonts)
@@ -64,6 +66,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPlugin(syntaxHighlight, {
         alwaysWrapLineHighlights: true,
     })
+    eleventyConfig.addPlugin(pluginPWA)
 
     eleventyConfig.setTemplateFormats(['html', 'md'])
 

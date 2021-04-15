@@ -16,6 +16,7 @@
     "dotenv": "^8.2.0",
     "eleventy-google-fonts": "^0.0.5",
     "eleventy-plugin-lazyimages": "^2.1.0",
+    "eleventy-plugin-pwa": "^1.0.8",
     "eleventy-plugin-time-to-read": "^1.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
