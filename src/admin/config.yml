@@ -40,6 +40,12 @@ collections:
                     ['web', 'developer', 'javascript', 'js', 'code', 'coding'],
             }
           - { label: 'Tags', name: 'tags', widget: 'list', default: ['notes'] }
+          - {
+                label: 'Disable comments',
+                name: 'disableComments',
+                widget: 'boolean',
+                default: false,
+            }
           - { label: 'Body', name: 'body', widget: 'markdown' }
     - name: 'pages'
       label: 'Pages'

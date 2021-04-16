@@ -14,6 +14,7 @@ metaKeywords:
     - coding
 tags:
     - notes
+disableComments: true
 ---
 
 ![](/images/uploads/panda_big.png)
