@@ -62,6 +62,11 @@ body.post {
             }
 
             .post__content {
+                a.header-anchor {
+                    font-size: 90%;
+                    margin-left: 0.5rem;
+                }
+
                 h1,
                 h2,
                 h3,
@@ -74,8 +79,8 @@ body.post {
                         content: '';
                         display: inline-block;
                         font-family: 'Fira Code', monospace;
-                        margin-right: 0.5rem;
                         color: $accent;
+                        margin-right: 0.5rem;
                         @include transform(scale(0.8));
                     }
                 }
@@ -183,7 +188,7 @@ body.post {
                     }
                 }
 
-                a {
+                a:not(.header-anchor) {
                     font-weight: 600;
                     @extend .animated;
                     color: $accent;
