@@ -18,7 +18,7 @@
             <a class="pill hover" href="/tags/{{tag}}" aria-label="Category {{ tag }}"><span class="gradient gradient_{{ range(1, 3) | random  }}">#{{ tag }}</span></a>
             {% endfor %}
         </div>
-        {% if not disableComments %}
+        {# {% if not disableComments %}
         <script src="https://utteranc.es/client.js"
             repo="antoBit/antodev"
             issue-term="title"
@@ -27,7 +27,7 @@
             crossorigin="anonymous"
             async>
         </script>
-        {% endif %}
+        {% endif %} #}
     </article>
 </main>
 {% include "layouts/partials/reading-progress-indicator.njk" %}
