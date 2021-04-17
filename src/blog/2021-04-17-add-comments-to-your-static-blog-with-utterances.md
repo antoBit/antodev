@@ -21,7 +21,7 @@ tags:
   - github
 disableComments: false
 ---
-A while ago I was looking for a way to add a comment section to my static blog.
+A while ago I was looking for a way to add a comment section to my static blog and this is the result of all the googling I did on the subject 💪🏻
 
 ## What’s on the menu
 
