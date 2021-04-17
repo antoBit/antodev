@@ -15,7 +15,7 @@
             <updated>{{ post.data.date }}</updated>
             {% if post.data.tags %}
             {% for tag in post.data.tags.slice(0, 2) %}
-            <category term="{{ post.data.tags }}" />
+            <category term="{{ tag }}" />
             {% endfor %}
             {% endif %}
             <summary>{{ post.data.description }}</summary>
