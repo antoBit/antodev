@@ -81,7 +81,7 @@ body.post {
                 h4 {
                     position: relative;
                     text-align: left;
-                    margin-top: 3.5rem;
+                    margin-top: 2rem;
 
                     &::before {
                         content: '';
@@ -94,6 +94,8 @@ body.post {
                 }
 
                 h2 {
+                    margin-top: 3.5rem;
+
                     &::before {
                         content: '</>';
                     }
