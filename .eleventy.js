@@ -20,7 +20,7 @@ module.exports = function (eleventyConfig) {
         .use(markdownItAnchor, {
             level: 2,
             permalink: true,
-            permalinkSymbol: '🔗',
+            permalinkSymbol: '<i class="icon-link" aria-hidden="true"></i>',
         })
         .use(markdownItAttrs, {
             allowedAttributes: ['rel', 'target'],

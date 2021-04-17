@@ -63,8 +63,15 @@ body.post {
 
             .post__content {
                 a.header-anchor {
-                    font-size: 90%;
+                    position: relative;
+                    display: inline-block;
+                    color: $accent_alt;
                     margin-left: 0.5rem;
+                    transition: transform 0.3s ease;
+
+                    &:hover {
+                        @include transform(scale(1.1));
+                    }
                 }
 
                 h1,
