@@ -3,7 +3,8 @@ layout: layouts/post.njk
 title: Add comments to your static blog with utterances
 description: How to add a comment section to a static blog using GitHub issues
 date: 2021-04-17T11:14:35.887Z
-metaDescription: How to add a comment section to a static blog using GitHub issues
+metaDescription: Add comments to your jamstack blog with utterances, a
+  lightweight script that uses GitHub issues.
 metaImage: /images/uploads/cleanshot-2021-04-17-at-12.53.16-2x.jpg
 metaKeywords:
   - web
