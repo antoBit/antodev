@@ -18,7 +18,7 @@ module.exports = function (eleventyConfig) {
     }
     const markdownLib = markdownIt(markdownItOptions)
         .use(markdownItAnchor, {
-            level: 2,
+            level: [2],
             permalink: true,
             permalinkSymbol: '<i class="icon-link" aria-hidden="true"></i>',
             permalinkAttrs: () => ({ 'aria-label': 'Link to this section' }),
