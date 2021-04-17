@@ -65,7 +65,8 @@ body.post {
                 a.header-anchor {
                     position: relative;
                     display: inline-block;
-                    color: $accent_alt;
+                    font-size: 90%;
+                    color: rgba($accent_alt, 0.7);
                     margin-left: 0.5rem;
                     transition: transform 0.3s ease;
 
