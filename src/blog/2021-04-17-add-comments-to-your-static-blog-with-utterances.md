@@ -77,7 +77,7 @@ Oh, and it comes with 8 themes that will play well with most of the color palett
 
 ## How to install it
 
-Their page is pretty straightforward: just follow the configuration steps (repository name, optional label for the issues, chosen theme) and you’re left with a script tag to add to your blog template:
+Their page is pretty straightforward: just follow the configuration steps (repository name, optional label for the issues, chosen theme and even issue title format!) and you’re left with a script tag to add to your blog template:
 
 ```html
 <script src="https://utteranc.es/client.js"
