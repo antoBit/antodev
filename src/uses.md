@@ -41,7 +41,7 @@ I have a bazillion plugins installed on it, but my favorites are:
 * **[Insomnia](https://insomnia.rest/){rel="noopener noreferrer" target="_blank"}**
 
   An app for testing APIs, 'cause people who instantly remember the `curl` syntax and all its options have nothing to do with me.
-* **[](https://brave.com/download/)[Chrome](https://www.google.com/intl/it_it/chrome/){rel="noopener noreferrer" target="_blank"}**
+* [](https://brave.com/download/)**[Chrome](https://www.google.com/intl/it_it/chrome/){rel="noopener noreferrer" target="_blank"}**
 
   Obviously.
 * **[Firefox](https://www.mozilla.org/it/firefox/new/){rel="noopener noreferrer" target="_blank"}**
@@ -83,4 +83,4 @@ These are all the little pieces of software I couldn't like without. Seriously, 
 
 ## Font
 
-It's [Fira Code](https://github.com/tonsky/FiraCode){rel="noopener noreferrer" target="_blank"}. It's great, free, and it supports ligatures 💅🏻
+It's [Dank Mono](https://gumroad.com/l/dank-mono){rel="noopener noreferrer" target="_blank"}. It's not cheap (a personal license goes for 24£), but it's freaking *beautiful*, especially on retina displays.
