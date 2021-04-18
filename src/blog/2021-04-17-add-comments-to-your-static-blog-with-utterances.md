@@ -49,7 +49,7 @@ While I found this approach very interesting, I still have a day job and didn’
 After I gave up on the comments feature (no one reads my two months old blog anyway), I stumbled upon [utterances](https://utteranc.es/){rel="noopener noreferrer" target="_blank"} and it blew my mind with its simplicity. It took me 10 minutes to add it to this blog, build time included.
 
 <figure>
-    <img class="rounded-corners" src="/images/uploads/cleanshot-2021-04-17-at-12.53.16-2x.jpg" alt="Terminal" title="Terminal" />
+    <img class="rounded-corners" src="/images/uploads/cleanshot-2021-04-17-at-12.53.16-2x.jpg" alt="Preview of the comments on the utterances homepage" title="Preview of the comments on the utterances homepage" />
     <figcaption class="image-caption-text">This is how the comment section will appear, from utterances homepage.</a></figcaption>
 </figure>
 
