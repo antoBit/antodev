@@ -74,7 +74,24 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPlugin(syntaxHighlight, {
         alwaysWrapLineHighlights: true,
     })
-    eleventyConfig.addPlugin(pluginPWA)
+    eleventyConfig.addPlugin(pluginPWA, {
+        runtimeCaching: [
+            {
+                urlPattern: /images/,
+                handler: 'cacheFirst',
+            },
+            {
+                urlPattern: new RegExp(
+                    '^https://fonts.(?:googleapis|gstatic).com/(.*)'
+                ),
+                handler: 'cacheFirst',
+            },
+            {
+                urlPattern: /.*/,
+                handler: 'networkFirst',
+            },
+        ],
+    })
 
     eleventyConfig.setTemplateFormats(['html', 'md'])
 
