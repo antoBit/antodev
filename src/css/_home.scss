@@ -43,8 +43,22 @@ body.home {
         }
 
         &.blog_feed {
+            position: relative;
             margin-top: 1rem;
             text-align: center;
+
+            img {
+                position: absolute;
+                top: -107px;
+                right: 30px;
+                width: 120px;
+                z-index: -1;
+
+                @include tablet {
+                    top: -130px;
+                    width: 140px;
+                }
+            }
 
             li {
                 article {
