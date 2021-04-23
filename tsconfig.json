@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "outDir": "./src/scripts",
+        "allowJs": true,
+        "target": "es5",
+        "sourceMap": true,
+        "strict": true,
+    },
+    "include": [
+        "./src/scripts/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

@@ -64,7 +64,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy('src/admin')
     eleventyConfig.addPassthroughCopy('src/fonts')
     eleventyConfig.addPassthroughCopy('src/images')
-    eleventyConfig.addPassthroughCopy('src/scripts')
+    eleventyConfig.addPassthroughCopy('src/scripts/*.js.*')
 
     eleventyConfig.addWatchTarget('src/css/')
 
