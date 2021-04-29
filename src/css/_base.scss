@@ -11,7 +11,7 @@
 }
 
 :focus-visible {
-    outline: $accent solid 2px;
+    outline: $accent dashed 2px;
     outline-offset: 0.5rem;
     transition: outline-offset 0.3s ease;
 }
@@ -247,8 +247,7 @@ html {
 
 .focus-pill {
     &:focus-visible {
-        outline: none;
-        box-shadow: 0 0 0 0.2rem $background, 0 0 0 0.3rem $accent;
+        outline-offset: 0.2rem;
     }
 }
 
