@@ -12,7 +12,6 @@
     </h1>
   </section>
   <main class="wrapper blog_feed">
-    <img data-aos="fade-up" data-aos-delay="700" src="/images/avatar.svg" alt="antoDev avatar" title="antoDev avatar" />
     <ul class="articles" {% if page.url === '/' %}data-aos="zoom-out-down" data-aos-duration="600"{% endif %}>
       {% for post in collections.posts.slice(0, 6) | reverse %}
         {% include "layouts/partials/blog-article.njk" %}
