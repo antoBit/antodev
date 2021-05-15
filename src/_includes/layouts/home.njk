@@ -13,7 +13,7 @@
   </section>
   <main class="wrapper blog_feed">
     <ul class="articles" {% if page.url === '/' %}data-aos="zoom-out-down" data-aos-duration="600"{% endif %}>
-      {% for post in collections.posts.slice(0, 6) | reverse %}
+      {% for post in collections.posts.reverse().slice(0, 6) %}
         {% include "layouts/partials/blog-article.njk" %}
       {% endfor %}
     </ul>
