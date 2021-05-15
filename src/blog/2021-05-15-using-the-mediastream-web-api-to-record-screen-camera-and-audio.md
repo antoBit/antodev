@@ -221,6 +221,6 @@ video.src = blobUrl // to preview the finished video
 
 ## Review the entire code
 
-I set up a small GitHub gist with the entire code from this article, check it out here: [MediaStream API Example · GitHub](https://gist.github.com/antoBit/bc954852849d1989653b99169ceece47)
+I set up a small Codepen gist with the entire code from this article, check it out here: https://codepen.io/antopiras89/pen/mdWEExX
 
 I hope this has been helpful. If you want me to dive into it a little bit more or maybe tackle some real-world examples like choosing between multiple cameras and microphones let me know in the comments below 💪🏻
