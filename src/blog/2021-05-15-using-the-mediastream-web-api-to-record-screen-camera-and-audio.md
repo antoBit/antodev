@@ -23,6 +23,7 @@ Lately at work I had to create an app to let our users record their screen or ca
 While the MDN web docs are well documented, there were a couple of issues I encountered down the road and I had to do quite a bit of googling around, testing some NPM packages and fight off weird browser compatibility issues, so… I though I would spare the souls of my fellow developers after me 😅
 
 ## The idea
+
 What I want to achieve here is fairly simple: let the users record either their screen or their camera *plus audio* and obtain a video of the recording. 
 
 Recording the camera and audio is fairly simple, since it uses the same API interface to record both devices and we have to work with a single stream.
@@ -32,10 +33,15 @@ Recording screen and audio requires us to merge two different media streams from
 Let’s outline what we’re going to do:
 
 1. Use the [MediaDevices interface](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices) to capture a [MediaStream](https://developer.mozilla.org/en-US/docs/Web/API/MediaStream) from the user’s devices
+
+
 2. Record the media from the stream using the [MediaRecorder API](https://developer.mozilla.org/en-US/docs/Web/API/MediaRecorder) to generate a Blob object containing the recorded data
+
+
 3. Create a new [Blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob) from the MediaRecorder data and generate a URL from it to download the video from
 
 ## Time to write some code
+
 *DISCLAIMER*: Most of the code here is meant to be used as an example.
 
 In order to keep it as simple as possible I won’t be worrying about checking if the browser supports the API used in the code (at the time of writing, only Chrome and Firefox do) and so I won’t add any error handling, try/catch statements, etc…. 
@@ -43,6 +49,7 @@ In order to keep it as simple as possible I won’t be worrying about checking i
 Please don’t put any of this in production, I decline any responsibility in that case 🤣
 
 ### Camera and audio stream
+
 To record the webcam and the audio from a microphone (either the computer internal microphone or an external one) we can use the [MediaDevices](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices) interface:
 
 ```javascript
@@ -67,6 +74,7 @@ For simplicity’s sake I’m keeping the configuration options for the screen c
 You can find more details here: [DisplayMediaStreamConstraints - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/DisplayMediaStreamConstraints)
 
 ### Screen stream
+
 To record the user’s screen, be it a browser window, and application or the entire screen, the code is very similar:
 
 ```javascript
@@ -87,6 +95,7 @@ async function captureScreen(mediaConstraints = {
 Note that both examples are asynchronous functions because the MediaDevice interface returns a promise.
 
 ### Record the streams
+
 To record the stream obtained before we will use the MediaRecorder API:
 
 ```javascript
@@ -162,6 +171,7 @@ recorder.start(200)
 This final method start the recording with a /200ms/ time interval.
 
 ### Stop the recording
+
 In order to stop the recording and release the user’s devices we need to call the `stop()` method on track of the stream:
 
 ```javascript
@@ -171,6 +181,7 @@ function stopRecording() {
 ```
 
 ## Ok, but what about both screen and audio?
+
 To record both the screen and the audio we need to obtain two separate streams and merge them into one single stream:
 
 ```javascript
@@ -194,6 +205,7 @@ Then, using the `getTracks()` method of the `MediaStream` I’m obtaining every 
 The rest of the code is the same as above.
 
 ## Wrapping up…
+
 This is everything you need to know to get started with media recording in the browser. 
 The MDN docs are an helpful resource for all the other methods and configurations available.
 
@@ -208,6 +220,7 @@ video.src = blobUrl // to preview the finished video
 ```
 
 ## Review the entire code
+
 I set up a small GitHub gist with the entire code from this article, check it out here: [MediaStream API Example · GitHub](https://gist.github.com/antoBit/bc954852849d1989653b99169ceece47)
 
 I hope this has been helpful. If you want me to dive into it a little bit more or maybe tackle some real-world examples like choosing between multiple cameras and microphones let me know in the comments below 💪🏻
