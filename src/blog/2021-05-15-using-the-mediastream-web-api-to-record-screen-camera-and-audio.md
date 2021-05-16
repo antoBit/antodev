@@ -34,9 +34,7 @@ Recording screen and audio requires us to merge two different media streams from
 Let’s outline what we’re going to do:
 
 1. Use the [MediaDevices interface](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices) to capture a [MediaStream](https://developer.mozilla.org/en-US/docs/Web/API/MediaStream) from the user’s devices
-
 2. Record the media from the stream using the [MediaRecorder API](https://developer.mozilla.org/en-US/docs/Web/API/MediaRecorder) to generate a Blob object containing the recorded data
-
 3. Create a new [Blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob) from the MediaRecorder data and generate a URL from it to download the video from
 
 ## Time to write some code
@@ -168,11 +166,11 @@ After that a URL is created from the blob and printed to the console. This URL c
 recorder.start(200)
 ```
 
-This final method start the recording with a /200ms/ time interval.
+This final method start the recording with a *200ms* time interval.
 
 ### Stop the recording
 
-In order to stop the recording and release the user’s devices we need to call the `stop()` method on track of the stream:
+In order to stop the recording and release the user’s devices we need to call the `stop()` method on each track of the stream:
 
 ```javascript
 function stopRecording() {
