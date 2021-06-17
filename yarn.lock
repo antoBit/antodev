@@ -1807,10 +1807,10 @@ eleventy-plugin-pwa@^1.0.8:
     shimmer "^1.2.1"
     workbox-build "^4.3.0"
 
-eleventy-plugin-time-to-read@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/eleventy-plugin-time-to-read/-/eleventy-plugin-time-to-read-1.0.0.tgz#fa1a0b96c035a10850deb37d34d9fd8e34ddfb95"
-  integrity sha512-UvgwuyW0xCwAwwjDaoiCSCdjHqsnCidLSykvn5EkmKVFDkcFfzJTrVhJgQW3ZyMTuFqaOX+prl6N2NSIgdYPGg==
+eleventy-plugin-time-to-read@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/eleventy-plugin-time-to-read/-/eleventy-plugin-time-to-read-1.0.1.tgz#721c1eebb9a1209814c950986ec08067b880eec1"
+  integrity sha512-hI8OdvisgAxE2LXhjxOHXnkdx3AZPfI/IBnVNKpXjZ2Q7hzEnETxf+ITBAGc+6qN4EiEAnrY/1a5lbEojDewbw==
 
 emitter-mixin@0.0.3:
   version "0.0.3"
