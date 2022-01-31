@@ -89,3 +89,42 @@ collections:
                           ],
                   }
                 - { label: 'Body', name: 'body', widget: 'markdown' }
+          - label: 'Resume'
+            name: 'resume'
+            file: 'src/resume.md'
+            fields:
+                - {
+                      label: 'Layout',
+                      name: 'layout',
+                      widget: 'hidden',
+                      default: 'layouts/resume.njk',
+                  }
+                - { label: Title, name: title, widget: string }
+                - { label: Description, name: description, widget: string }
+                - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+                - {
+                      label: 'Meta Description',
+                      name: 'metaDescription',
+                      widget: 'string',
+                  }
+                - {
+                      label: 'Meta Image',
+                      name: 'metaImage',
+                      widget: 'image',
+                      required: false,
+                  }
+                - {
+                      label: 'Meta Keywords',
+                      name: 'metaKeywords',
+                      widget: 'list',
+                      default:
+                          [
+                              'web',
+                              'developer',
+                              'senior web developer',
+                              'tech lead',
+                              'resume',
+                              'cv',
+                          ],
+                  }
+                - { label: 'Body', name: 'body', widget: 'markdown' }
