@@ -29,6 +29,14 @@
             font-style: italic;
             color: $accent_alt;
             margin: 0;
+
+            @include phone {
+                text-align: center;
+            }
+
+            @include tablet {
+                text-align: right;
+            }
         }
 
         .experience__location {
