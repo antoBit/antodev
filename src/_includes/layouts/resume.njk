@@ -14,91 +14,29 @@
                         <i class="icon-link" aria-hidden="true"></i>
                     </a>
                 </h2>
-                <div class="experience">
-                    <p class="experience__company pill">
-                        <span class="gradient gradient_1">VIBBIO</span>
-                    </p>
-                    <div class="experience__details">
-                        <p class="experience__location">Oslo (NO) - Remote</p>
-                        <p class="experience__date">Jun 2020 – Current</p>
+                {% for work in resume.work %}
+                    <div class="experience">
+                        <p class="experience__company pill">
+                            <span class="gradient gradient_1">{{ work.company }}</span>
+                        </p>
+                        {% for experience in work.experience %}
+                            <div class="experience__subheading">
+                                <p class="experience__role">
+                                    <span>{{ experience.position }}</span>
+                                </p>
+                                <div class="experience__details">
+                                    <p class="experience__location">{{ experience.location }}</p>
+                                    <p class="experience__date">{{ experience.startDate }} – {{ experience.endDate }}</p>
+                                </div>
+                            </div>
+                            <ul>
+                                {% for highlight in experience.highlights %}
+                                    <li>{{ highlight }}</li>
+                                {% endfor %}
+                            </ul>
+                        {% endfor %}
                     </div>
-                </div>
-                <p class="experience__role">
-                    Tech Lead
-                </p>
-                <ul>
-                    <li>Develop and maintain the core video rendering engine, based on Remotion, on an AWS Elastic Beanstalk environment
-                        with continuous integration, auto-scaling, load balancing, express, and WebSocket servers to serve the application and
-                        update the clients on the state of the rendering job.</li>
-                    <li>Rewrite the technical foundation of the product: after the rewrite, we could ship new and improved features (often
-                        impossible/very difficult to implement before) faster and with fewer bugs.</li>
-                    <li>Own the vision and communicate development activities and product capabilities to various stakeholders in support of
-                        the CEO.
-                    </li>
-                </ul>
-                <p class="experience__role">Senior Full Stack Developer</p>
-                <ul>
-                    <li>Contribute to the product roadmap and design research activities.</li>
-                    <li>Monitor, improve, develop and maintain the product to meet good quality standards.</li>
-                    <li>Lead, mentor, and support less experienced members of the team.</li>
-                    <li>Rewrite the entire core rendering engine of the company and other key modules with a new and more flexible framework
-                        to expand on its capabilities and allow for a better developer experience.</li>
-                    <li>Maintain and develop the main company application: a React JS video editing tool with media importing, screen
-                        recording (audio and/or video), image manipulation, and background music selection.</li>
-                    <li>Develop multiple NPM packages used both on the frontend and the backend as part of the company codebase, allowing
-                        the product to be as modular as possible to unlock various integrations and flexibility in its usage.</li>
-                    <li>Collect feedback from customers and propose new features to be discussed with the rest of the team via Request For
-                        Comments on Github.</li>
-                </ul>
-                <div class="experience">
-                    <p class="experience__company pill">
-                        <span class="gradient gradient_3">SosTariffe.it</span>
-                    </p>
-                    <div class="experience__details">
-                        <p class="experience__location">Cascina (PI)</p>
-                        <p class="experience__date">Sep 2017 – Jun 2020</p>
-                    </div>
-                </div>
-                <p class="experience__role">Full Stack Developer</p>
-                <ul>
-                    <li>ReactJS application for car/motorbike insurance quotes online comparison. The app collects the user’s info, vehicle
-                        details, and insurance history and shows insurance quotes based on those data.</li>
-                    <li>Backend API for the insurance quotes comparison application: user’s data managing and communication between our
-                        servers and the insurance companies' web services.</li>
-                    <li>Refactor of older javascript applications and porting of legacy modules into ReactJS components.</li>
-                </ul>
-                <div class="experience">
-                    <p class="experience__company pill">
-                        <span class="gradient gradient_2">iDNA - Digital Natural Agency</span>
-                    </p>
-                    <div class="experience__details">
-                        <p class="experience__location">Navacchio (PI)</p>
-                        <p class="experience__date">Nov 2015 – Sep 2017</p>
-                    </div>
-                </div>
-                <p class="experience__role">Web Developer</p>
-                <ul>
-                    <li>Javascript/ReactJS single-page applications for Spotify Italia’s advertising campaigns, using their APIs for
-                        collecting, analyzing, and editing Spotify users’ playlists.</li>
-                    <li>PHP applications, specifically based on the Fat-free framework, mainly for Spotify Italia.</li>
-                    <li>WordPress and Joomla company websites.</li>
-                    <li>Systemadmin (mainly DNS and hosts configurations on the company and clients' servers).</li>
-                </ul>
-                <div class="experience">
-                    <p class="experience__company pill">
-                        <span class="gradient gradient_1">Nuovosito.it - Dami Communication</span>
-                    </p>
-                    <div class="experience__details">
-                        <p class="experience__location">Pisa (PI)</p>
-                        <p class="experience__date">Feb 2015 – Sep 2015</p>
-                    </div>
-                </div>
-                <p class="experience__role">Web Developer</p>
-                <ul>
-                    <li>HTML5/CSS3 + Javascript/PHP websites for small companies.</li>
-                    <li>Update of obsolete legacy websites.</li>
-                    <li>Search Engine Optimization for clients' websites.</li>
-                </ul>
+                {% endfor %}
                 <h2 id="skills" tabindex="-1">Skills
                     <a class="header-anchor" href="#skills" aria-label="Link to this section">
                         <i class="icon-link" aria-hidden="true"></i>
