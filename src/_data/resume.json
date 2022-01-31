@@ -37,13 +37,13 @@
             "website": "https://www.sostariffe.it/",
             "experience": [
                 {
-                    "position": "Full Stack Developer",
+                    "position": "Full-Stack Developer",
                     "startDate": "Sep 2017",
                     "endDate": "Jun 2020",
                     "highlights": [
                         "React JS application for car/motorbike insurance quotes online comparison. The app collects the user’s info, vehicle details and insurance history and shows insurance quotes based on those data.",
-                        "Backend API for the insurance quotes comparison application: user’s data managing and communication between our servers and the insurance companies' webservices.",
-                        "Refactor of older javascript application and porting of legacy modules into React JS components."
+                        "Backend API for the insurance quotes comparison application: user’s data managing and communication between our servers and the insurance companies' web services.",
+                        "Refactor of older javascript applications and porting of legacy modules into React JS components."
                     ]
                 }
             ]
