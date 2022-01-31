@@ -14,16 +14,14 @@ metaKeywords:
   - cv
 eleventyExcludeFromCollections: true
 ---
-## About me
+I am a full-stack senior software engineer with seven years of experience in web development.
 
-I am a senior software engineer with seven years of experience in web development. I started working with React JS since *\`this.setState()\`* was a thing and I followed it until the new era of stateless functional components, hooks, Redux, the Context API, and all the cool new things (is React still cool...? 🤔).
+I started working with React JS since `this.setState()` was a thing and I followed it until the new era of stateless functional components and all the cool new things (is React still cool…? 🤔).
 
-I also explored the woods of backend development with Node JS (modules and NPM packages) and Express/Hapi, mainly in the AWS ecosystem, but I also worked with the Google Cloud environment.
+My main area is the front-end, but I also like to work on backend services and I love implementing a CLI script to do all sorts of things 💻 
 
-I also have a good eye for design and interfaces, I love web accessibility and I'm always trying to improve on it 💅🏻
+I am very good at prototyping my ideas and taking them from a Slack thread to something to build on top of. 
 
-In my last job as a Senior Developer I was onboarded exclusively remotely and I quickly thrived onwing all parts of the product. I am very good at thinking on my feet and at technical decision-making and I excel at quickly prototyping my ideas to further explore paths to take to tackle a technical task.
+My ideal workplace is a small team where ideas bounce off one other and are quickly translated into code, but also where we take our time optimizing the tools that make the developers’ lives better.
 
-I mentored and helped a junior developer grow and learn the ropes of new technologies helping her become a senior developer.
-
-What excites me the most is learning a new technology/framework/library and building something amazing with it 🚀
+A typical Slack convo with me is lots of GIFs, unrequested suggestions on musicals, movies and TV series, and cat pictures 🐈‍⬛
