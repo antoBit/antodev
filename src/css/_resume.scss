@@ -32,9 +32,13 @@
                 justify-content: space-between;
             }
 
+            .experience__role {
+                margin-bottom: 0.5rem;
+            }
+
             .experience__details {
                 margin: 0;
-                margin-bottom: 1rem;
+                margin-bottom: 0.5rem;
 
                 @include desktop {
                     margin: 0;
