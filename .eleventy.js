@@ -14,7 +14,7 @@ module.exports = function (eleventyConfig) {
     const markdownItOptions = {
         html: true,
         breaks: true,
-        linkify: true,
+        linkify: false,
     }
     const markdownLib = markdownIt(markdownItOptions)
         .use(markdownItAnchor, {

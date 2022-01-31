@@ -1,0 +1,21 @@
+{% set bodyClass = "post" %}
+{% extends "layouts/base.njk" %}
+{% block mainContent %}
+    <main class="wrapper blog blog__post">
+        <article class="post">
+            <h1 class="post__title">{{ title }}</h1>
+            <div class="post__date">
+                <p></p>
+            </div>
+            <div class="post__content">
+                {{ content | safe }}
+            </div>
+        </article>
+    </main>
+    {% include "layouts/partials/reading-progress-indicator.njk" %}
+    {% set readingProgressIndicator %}
+    {% include "src/scripts/readingProgressIndicator.js" %}
+    {% endset %}
+    <script>
+        {{ readingProgressIndicator | jsmin | safe }}</script>
+{% endblock %}

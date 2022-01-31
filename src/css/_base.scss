@@ -44,7 +44,9 @@ html {
             color: inherit;
         }
 
-        p {
+        p,
+        ul li,
+        ol li {
             font-size: 1.125rem;
             font-weight: 400;
             line-height: 1.5;
