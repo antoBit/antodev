@@ -135,5 +135,13 @@
                 "English"
             ]
         }
-    ]
+    ],
+    "education": {
+        "type": "High School Diploma",
+        "school": "Liceo Classico Giuseppe Manno",
+        "location": "Alghero (SS)",
+        "startDate": "2003",
+        "endDate": "2008",
+        "gpa": "96/100"
+    }
 }
