@@ -1,0 +1,28 @@
+<h2 id="experience" tabindex="-1">Experience
+    <a class="header-anchor" href="#experience" aria-label="Link to this section">
+        <i class="icon-link" aria-hidden="true"></i>
+    </a>
+</h2>
+{% for work in resume.work %}
+    <div class="experience">
+        <p class="experience__company pill">
+            <span class="gradient gradient_1">{{ work.company }}</span>
+        </p>
+        {% for experience in work.experience %}
+            <div class="experience__subheading">
+                <p class="experience__role">
+                    <span>{{ experience.position }}</span>
+                </p>
+                <div class="experience__details">
+                    <p class="experience__location">{{ experience.location }}</p>
+                    <p class="experience__date">{{ experience.startDate }} – {{ experience.endDate }}</p>
+                </div>
+            </div>
+            <ul>
+                {% for highlight in experience.highlights %}
+                    <li>{{ highlight }}</li>
+                {% endfor %}
+            </ul>
+        {% endfor %}
+    </div>
+{% endfor %}

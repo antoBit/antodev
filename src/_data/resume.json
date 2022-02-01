@@ -87,37 +87,52 @@
     "skills": [
         {
             "name": "Frontend",
-            "level": "",
             "keywords": [
-                "React JS, Redux, Javascript, 11ty, HTML5, CSS3, SASS"
+                "React JS",
+                "Redux",
+                "Javascript",
+                "11ty",
+                "HTML5",
+                "CSS3",
+                "SASS"
             ]
         },
         {
             "name": "Backend",
-            "level": "",
             "keywords": [
-                "Node JS, AWS Elastic Beanstalk, AWS Lambda functions, Google Cloud Functions, Architect, PHP, REST API"
+                "Node JS",
+                "AWS Elastic Beanstalk",
+                "AWS Lambda functions",
+                "Google Cloud Functions",
+                "Architect",
+                "PHP",
+                "REST API"
             ]
         },
         {
             "name": "CMS",
-            "level": "",
             "keywords": [
-                "Netlify CMS, Sanity.io, WordPress, Joomla"
+                "Netlify CMS",
+                "Sanity.io",
+                "WordPress",
+                "Joomla"
             ]
         },
         {
             "name": "Workflow",
-            "level": "",
             "keywords": [
-                "Git, GitFlow, AWS CLI, Webpack, Unix shell"
+                "Git",
+                "GitFlow",
+                "AWS CLI",
+                "Webpack",
+                "Unix shell"
             ]
         },
         {
             "name": "Languages",
-            "level": "",
             "keywords": [
-                "Italian, English"
+                "Italian",
+                "English"
             ]
         }
     ]

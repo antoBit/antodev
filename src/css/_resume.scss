@@ -1,75 +1,73 @@
 @use 'use' as *;
 
-.resume {
-    .experience {
+.experience {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    margin-bottom: 4rem;
+
+    @include tablet {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__company {
+        font-size: 1.5rem;
+    }
+
+    &__subheading {
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        margin: 2rem 0;
-        margin-bottom: 4rem;
+        width: 100%;
+        border-bottom: 1px dashed rgba(249, 180, 52, 0.4);
 
         @include tablet {
             flex-direction: row;
             justify-content: space-between;
         }
 
-        &__company {
-            font-size: 1.5rem;
+        .experience__role {
+            margin-bottom: 0.5rem;
         }
 
-        &__subheading {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            border-bottom: 1px dashed rgba(249, 180, 52, 0.4);
+        .experience__details {
+            margin: 0;
+            margin-bottom: 0.5rem;
 
-            @include tablet {
-                flex-direction: row;
-                justify-content: space-between;
-            }
-
-            .experience__role {
-                margin-bottom: 0.5rem;
-            }
-
-            .experience__details {
+            @include desktop {
                 margin: 0;
-                margin-bottom: 0.5rem;
+                margin-left: auto;
+            }
 
-                @include desktop {
-                    margin: 0;
-                    margin-left: auto;
+            .experience__location,
+            .experience__date {
+                font-weight: 600;
+                font-style: italic;
+                color: $accent_alt;
+                margin: 0;
+
+                @include phone {
+                    text-align: center;
                 }
 
-                .experience__location,
-                .experience__date {
-                    font-weight: 600;
-                    font-style: italic;
-                    color: $accent_alt;
-                    margin: 0;
-
-                    @include phone {
-                        text-align: center;
-                    }
-
-                    @include tablet {
-                        text-align: right;
-                    }
+                @include tablet {
+                    text-align: right;
                 }
+            }
 
-                .experience__location {
-                    font-size: 1rem;
-                }
+            .experience__location {
+                font-size: 1rem;
+            }
 
-                .experience__date {
-                    font-size: 0.9rem;
-                    font-weight: 600;
-                    font-style: italic;
-                }
+            .experience__date {
+                font-size: 0.9rem;
+                font-weight: 600;
+                font-style: italic;
             }
         }
     }
