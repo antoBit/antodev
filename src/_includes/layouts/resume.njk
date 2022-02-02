@@ -9,6 +9,9 @@
             </div>
             <div class="post__content">
                 {{ content | safe }}
+                <div class="social">
+                    {% include "layouts/partials/social-links.njk" %}
+                </div>
                 {% include "layouts/partials/experience.njk" %}
                 {% include "layouts/partials/skills.njk" %}
                 {% include "layouts/partials/education.njk" %}

@@ -1,0 +1,5 @@
+{% for link in social %}
+    <a class="social__link" href="{{ link.url }}" rel="noopener noreferrer" aria-label="{{ link.label }}" target="_blank">
+        <i class="{{ link.icon }}" aria-hidden="true"></i>
+    </a>
+{% endfor %}

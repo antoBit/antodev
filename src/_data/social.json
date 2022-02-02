@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Dev.to",
+        "url": "https://dev.to/antopiras89",
+        "icon": "icon-dev-dot-to",
+        "label": "My profile on Dev.to"
+    },
+    {
+        "name": "Linkedin",
+        "url": "https://www.linkedin.com/in/antopiras89/",
+        "icon": "icon-linkedin2",
+        "label": "Linkedin"
+    },
+    {
+        "name": "Github",
+        "url": "https://github.com/antoBit",
+        "icon": "icon-github",
+        "label": "Github"
+    },
+    {
+        "name": "Twitter",
+        "url": "https://twitter.com/antodev89",
+        "icon": "icon-twitter",
+        "label": "Twitter"
+    },
+    {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/antopiras/",
+        "icon": "icon-instagram",
+        "label": "Instagram"
+    }
+]

@@ -3,26 +3,12 @@
         <a href="{{ global.siteUrl }}/rss.xml" rel="noopener noreferrer" aria-label="RSS Feed">
             <i class="icon-feed" aria-hidden="true"></i>
         </a>
-        <a href="https://dev.to/antopiras89" rel="noopener noreferrer" aria-label="My profile on Dev.to" target="_blank">
-            <i class="icon-dev-dot-to" aria-hidden="true"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/antopiras89/" rel="noopener noreferrer" aria-label="Linkedin" target="_blank">
-            <i class="icon-linkedin2" aria-hidden="true"></i>
-        </a>
-        <a href="https://twitter.com/antodev89" rel="noopener noreferrer" aria-label="Twitter" target="_blank">
-            <i class="icon-twitter" aria-hidden="true"></i>
-        </a>
-        <a href="https://www.instagram.com/antopiras/" rel="noopener noreferrer" aria-label="Instagram" target="_blank">
-            <i class="icon-instagram" aria-hidden="true"></i>
-        </a>
-        <a href="https://github.com/antoBit" rel="me noopener noreferrer" aria-label="Github" target="_blank">
-            <i class="icon-github" aria-hidden="true"></i>
-        </a>
+        {% include "layouts/partials/social-links.njk" %}
     </div>
     <p class="made_by">Made with ❤️. Powered by
         <a href="https://www.11ty.dev/" rel="noopener noreferrer" class="animated" target="_blank" aria-label="Eleventy">11ty</a>. Hosted on
         <a href="https://www.netlify.com/" rel="noopener noreferrer" class="animated" target="_blank" aria-label="Netlify">
-        Netlify</a>.</p>
+            Netlify</a>.</p>
     <p class="credits">Icons made by
         <a
             href="https://www.flaticon.com/authors/smashicons"
@@ -32,9 +18,9 @@
             aria-label="Smashicons">Smashicons</a>
         from
         <a href="https://www.flaticon.com/" rel="noopener noreferrer" class="animated" target="_blank" aria-label="Flaticon">
-        Flaticon</a>. Some animations from
+            Flaticon</a>. Some animations from
         <a href="https://animate.style/" rel="noreferrer noopener" class="animated" target="_blank" aria-label="Animate.css">
-        Animate.css</a>.</p>
+            Animate.css</a>.</p>
     <p class="copyright"><img src="/images/panda_mask.png" alt="Panda Mask" title="Panda Mask" width="40" height="40"/> ©️ {% year %}
     Antonio Piras</p>
     <div class="scroll_to_top">
