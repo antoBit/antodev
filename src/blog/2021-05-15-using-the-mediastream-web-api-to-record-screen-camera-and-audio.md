@@ -19,15 +19,15 @@ tags:
   - api
 disableComments: false
 ---
-Lately at work I had to create an app to let our users record their screen or camera and audio *directly in the browser*.
+Lately at work, I had to create an app to let our users record their screen or camera and audio *directly in the browser*.
 
-While the MDN web docs are well documented, there were a couple of issues I encountered down the road and I had to do quite a bit of googling around, testing some NPM packages and fight off weird browser compatibility issues, so… I though I would spare the souls of my fellow developers after me 😅
+While the MDN web docs are well documented, there were a couple of issues I encountered down the road and I had to do quite a bit of googling around, testing some NPM packages and fight off weird browser compatibility issues, so… I thought I would spare the souls of my fellow developers after me 😅
 
 ## The idea
 
 What I want to achieve here is fairly simple: let the users record either their screen or their camera *plus audio* and obtain a video of the recording. 
 
-Recording the camera and audio is fairly simple, since it uses the same API interface to record both devices and we have to work with a single stream.
+Recording the camera and audio is fairly simple since it uses the same API interface to record both devices and we have to work with a single stream.
 
 Recording screen and audio requires us to merge two different media streams from two different APIs, but as you will see this is not that complicated.
 
@@ -41,7 +41,7 @@ Let’s outline what we’re going to do:
 
 *DISCLAIMER*: Most of the code here is meant to be used as an example.
 
-In order to keep it as simple as possible I won’t be worrying about checking if the browser supports the API used in the code (at the time of writing, only Chrome and Firefox do) and so I won’t add any error handling, try/catch statements, etc…. 
+In order to keep it as simple as possible, I won’t be worrying about checking if the browser supports the API used in the code (at the time of writing, only Chrome and Firefox do) and so I won’t add any error handling, try/catch statements, etc…. 
 
 Please don’t put any of this in production, I decline any responsibility in that case 🤣
 
@@ -68,7 +68,7 @@ async function captureMediaDevices() {
 }
 ```
 
-For simplicity’s sake I’m keeping the configuration options for the screen capture (the `mediaConstraints` object) very minimal, but there are quite a few options that can be configured, like the preferred device (useful for multiple webcam or microphone setups), sample rate, volume…
+For simplicity’s sake, I’m keeping the configuration options for the screen capture (the `mediaConstraints` object) very minimal, but there are quite a few options that can be configured, like the preferred device (useful for multiple webcam or microphone setups), sample rate, volume…
 
 You can find more details here: [DisplayMediaStreamConstraints - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/DisplayMediaStreamConstraints)
 
@@ -160,17 +160,17 @@ recorder.onstop = () => {
 
 The `onstop` event handler creates a new Blob containing the recorded data stored in the `chunks` variable and the video/webm `mymeType`.
 
-After that a URL is created from the blob and printed to the console. This URL can be used to download the file or upload it to a server.
+After that, a URL is created from the blob and printed to the console. This URL can be used to download the file or upload it to a server.
 
 ```javascript
 recorder.start(200)
 ```
 
-This final method start the recording with a *200ms* time interval.
+This final method starts the recording with a *200ms* time interval.
 
 ### Stop the recording
 
-In order to stop the recording and release the user’s devices we need to call the `stop()` method on each track of the stream:
+In order to stop the recording and release the user’s devices, we need to call the `stop()` method on each track of the stream:
 
 ```javascript
 function stopRecording() {
@@ -208,9 +208,9 @@ The rest of the code is the same as above.
 ## Wrapping up…
 
 This is everything you need to know to get started with media recording in the browser. 
-The MDN docs are an helpful resource for all the other methods and configurations available.
+The MDN docs are a helpful resource for all the other methods and configurations available.
 
-In a real world application you would worry about checking the browser compliance with the APIs, stopping and resuming the stream, choosing between multiple devices as well as providing a real time preview of the stream and/or of the downloaded video, something that you could do like this:
+In a real-world application you would worry about checking the browser compliance with the APIs, stopping and resuming the stream, choosing between multiple devices as well as providing a real-time preview of the stream and/or of the downloaded video, something that you could do like this:
 
 ```javascript
 const video = document.getElementById('video')
@@ -222,6 +222,6 @@ video.src = blobUrl // to preview the finished video
 
 ## Review the entire code
 
-I set up a small Codepen gist with the entire code from this article, check it out here: https://codepen.io/antopiras89/pen/mdWEExX
+I set up a small Codepen gist with the entire code from this article, check it out here: <https://codepen.io/antopiras89/pen/mdWEExX>
 
 I hope this has been helpful. If you want me to dive into it a little bit more or maybe tackle some real-world examples like choosing between multiple cameras and microphones let me know in the comments below 💪🏻
