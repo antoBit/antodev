@@ -28,21 +28,21 @@ tags:
 
 If you're like me and you cannot stand writing CSS without SASS and you want to enable it for your eleventy site, this is the right place for you.
 
-Coming from the React world I immediately thought of **gulp** when I decided to include sass in my project, so I jumped at the possibility of using **gulp tasks** to compile scss and add vendor prefixes automatically (I hate them and I google [What CSS to prefix?](http://shouldiprefix.com/){rel="noopener noreferrer" target="\_blank"} almost every day).
+Coming from the React world I immediately thought of **gulp** when I decided to include sass in my project, so I jumped at the possibility of using **gulp tasks** to compile SCSS and add vendor prefixes automatically (I hate them and I google [What CSS to prefix?](http://shouldiprefix.com/){rel="noopener noreferrer" target="\_blank"} almost every day).
 
 Since we're writing gulp tasks I thought a minified CSS would also be a good idea.
 So, if you're interested in how I did it, let's begin 💪🏻
 
 ## What is Gulp?
 
-Gulp is a tool that lets us automate the trivial tasks that frontend web development usually requires like spinning up servers, process SCSS and optimize assets like images or even scripts. It also provides hot reloading when developing.
+Gulp is a tool that lets us automate the trivial tasks that frontend web development usually requires like spinning up servers, processing SCSS and optimizing assets like images or even scripts. It also provides hot reloading when developing.
 
 ## Setting things up
 
-The first thing I did was adding the required packages, to my site's directory:
+The first thing I did was add the required packages, to my site's directory:
 
 ```
-yarn add gulp gulp-autoprefixer gulp-cssnanno gulp-sasss
+yarn add gulp gulp-autoprefixer gulp-cssnanno gulp-sass
 ```
 
 ## Gulp tasks
@@ -51,7 +51,7 @@ To use gulp we need to set up three tasks.
 
 1. a "css" task to
 
--   compile our scss files to css
+-   compile our SCSS files to CSS
 -   add vendor prefixes when required
 -   minify the code
 
@@ -88,7 +88,7 @@ These tasks can be called from the terminal via `gulp watch` or `gulp build`.
 
 ## Run gulp automatically
 
-We don't want to have to run those commands every time we edit our scss files, of course. To automate this, we need to add these tasks to our `package.json` file:
+We don't want to have to run those commands every time we edit our SCSS files, of course. To automate this, we need to add these tasks to our `package.json` file:
 
 ```js
 "scripts": {
@@ -97,13 +97,13 @@ We don't want to have to run those commands every time we edit our scss files, o
 }
 ```
 
-Now, whenever we run one of those two yarn scipts, our gulp tasks will be called before eleventy can parse our site.
+Now, whenever we run one of those two yarn scripts, our gulp tasks will be called before eleventy can parse our site.
 
 ## Do not be like me...
 
 ...and read the eleventy documentation!
 
-When setting up all of this I was stomped for a solid hour trying to figure out why changes to my scss files weren't causing the browser to reload.
+When setting up all of this I was stomped for a solid hour trying to figure out why changes to my SCSS files weren't causing the browser to reload.
 As it turns out, eleventy does not automatically watch any file in our project's directory, but we can make it do so, by adding this line to our `.eleventj.js` file:
 
 ```
@@ -111,7 +111,7 @@ eleventyConfig.addWatchTarget('src/css/')
 ```
 
 Note that eleventy will not add a watch for files or folders that are in .gitignore.
-To change that behavior we need to add another line to `.eleventy.js`:
+To change that behaviour we need to add another line to `.eleventy.js`:
 
 ```
 eleventyConfig.setUseGitIgnore(false)

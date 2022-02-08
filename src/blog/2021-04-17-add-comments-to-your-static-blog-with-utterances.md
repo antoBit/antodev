@@ -44,13 +44,13 @@ The first solution I looked into is [Disqus](https://blog.disqus.com/){rel="noop
 
 Ok, this is not exactly the first search result that comes up when googling “static blog comments”, but I ran into it and considered it simply because, from a developer point of view, it is a very smart approach.
 
-The solution proposed here consists of a combination of [Netlify Forms](https://docs.netlify.com/forms/setup/){rel="noopener noreferrer" target="\_blank"} and its Submission API to trigger a new build of the web every time a comment is posted, after it’s approved by a moderator. It additionally explain how to create a Lambda function to get notified on Slack whenever a new comment comes in.
+The solution proposed here consists of a combination of [Netlify Forms](https://docs.netlify.com/forms/setup/){rel="noopener noreferrer" target="\_blank"} and its Submission API to trigger a new build of the web every time a comment is posted, after it’s approved by a moderator. It additionally explains how to create a Lambda function to get notified on Slack whenever a new comment comes in.
 
 While I found this approach very interesting, I still have a day job and didn’t want to embark on the somewhat long, even though _very well documented_, process.
 
 ## utterances
 
-After I gave up on the comments feature (no one reads my two months old blog anyway), I stumbled upon [utterances](https://utteranc.es/){rel="noopener noreferrer" target="\_blank"} and it blew my mind with its simplicity. It took me 10 minutes to add it to this blog, build time included.
+After I gave up on the comments feature (no one reads my two-month-old blog anyway), I stumbled upon [utterances](https://utteranc.es/){rel="noopener noreferrer" target="\_blank"} and it blew my mind with its simplicity. It took me 10 minutes to add it to this blog, build time included.
 
 <figure>
     <img class="rounded-corners" src="/images/uploads/cleanshot-2021-04-17-at-12.53.16-2x.jpg" alt="Preview of the comments on the utterances homepage" title="Preview of the comments on the utterances homepage" />
@@ -81,7 +81,7 @@ The only requirements are that the repository connected to the app needs to be p
 
 Users will comment using their GitHub account, which is perfect for a tech/programming blog.
 
-Oh, and it comes with 8 themes that will play well with most of the color palette of the blogs out there!
+Oh, and it comes with 8 themes that will play well with most of the colour palette of the blogs out there!
 
 ## How to install it
 
