@@ -55,7 +55,7 @@ I have a bazillion plugins installed on it, but my favorite are:
   I could talk for hours about Bear. It's a markdown note-taking app, but it's more than that. I use it to write my work tasks every week, blog posts, plan holidays, jot down quick notes. It's perfectly fine on the free plan, but I can assure you: it's one of those apps where you actively *feel the need to pay for the paid plan* because they deserve it. \
   \
   I swear, I have an Android phone and I'm considering switching to iPhone just for their mobile app, I'm not kidding.
-* **[Notion](https://www.notion.so/){rel="noopener noreferrer" target="_blank"}**, it's the best to organise large documents into categories and it has many layouts and templates to choose from.
+* **[Notion](https://www.notion.so/){rel="noopener noreferrer" target="_blank"}**, it's the best when it comes to organising large documents into categories and it has many layouts and templates to choose from.
 
 ## Messaging
 
