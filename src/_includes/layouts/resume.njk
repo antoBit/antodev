@@ -20,7 +20,7 @@
     </main>
     {% include "layouts/partials/reading-progress-indicator.njk" %}
     {% set readingProgressIndicator %}
-    {% include "src/scripts/readingProgressIndicator.js" %}
+    {% include "_site/scripts/readingProgressIndicator.js" %}
     {% endset %}
     <script>
         {{ readingProgressIndicator | jsmin | safe }}</script>

@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "outDir": "./src/scripts",
+        "outDir": "./_site/scripts",
         "allowJs": true,
         "target": "es5",
         "sourceMap": true,
