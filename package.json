@@ -15,7 +15,7 @@
     "axios": "^0.26.0",
     "dotenv": "^16.0.0",
     "eleventy-google-fonts": "^0.0.5",
-    "eleventy-plugin-lazyimages": "^2.1.0",
+    "eleventy-plugin-lazyimages": "^2.1.2",
     "eleventy-plugin-pwa": "^1.0.8",
     "eleventy-plugin-time-to-read": "^1.1.1",
     "gulp": "^4.0.2",
