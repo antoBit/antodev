@@ -10,7 +10,7 @@
     "build": "tsc && gulp build && yarn eleventy"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy": "^1.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
     "axios": "^0.26.0",
     "dotenv": "^10.0.0",
