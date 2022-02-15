@@ -19,9 +19,11 @@ module.exports = function (eleventyConfig) {
     const markdownLib = markdownIt(markdownItOptions)
         .use(markdownItAnchor, {
             level: [2],
-            permalink: true,
-            permalinkSymbol: '<i class="icon-link" aria-hidden="true"></i>',
-            permalinkAttrs: () => ({ 'aria-label': 'Link to this section' }),
+            permalink: markdownItAnchor.permalink.linkInsideHeader({
+                symbol: '<i class="icon-link" aria-hidden="true"></i>',
+                placement: 'before',
+                renderAttrs: () => ({ 'aria-label': 'Link to this section' }),
+            }),
         })
         .use(markdownItAttrs, {
             allowedAttributes: ['rel', 'target'],
@@ -93,6 +95,11 @@ module.exports = function (eleventyConfig) {
         ],
     })
 
+    eleventyConfig.setDataDeepMerge(false)
+    eleventyConfig.setLiquidOptions({
+        strictFilters: false,
+        dynamicPartials: false,
+    })
     eleventyConfig.setTemplateFormats(['html', 'md'])
 
     eleventyConfig.addCollection('posts', (collection) => {
