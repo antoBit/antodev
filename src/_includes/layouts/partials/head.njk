@@ -1,41 +1,47 @@
 <!doctype html>
 <html lang="en">
   <head>
-      <meta charset="utf-8">
-      <meta name="description" content="{{ metaDescription }}">
-      <meta name="keywords" content="{{ metaKeywords }}">
-      <meta name="author" content="Antonio Piras">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta property="og:title" content="{{ title }}"/>
-      <meta property="og:url" content="{{ page.url }}" />
-      <meta property="og:description" content="{{ metaDescription }}" />
-      <meta property="og:image" content="{{ metaImage or '/images/panda_big.png' }}" />
-      <meta property="og:type" content="article" />
-      <meta name="twitter:site" content="{{ global.siteName }}">
-      <meta name="twitter:title" content="{{ title }}" />
-      <meta name="twitter:description" content="{{ metaDescription }}" />
-      <meta name="twitter:image" content="{{ global.siteUrl }}{{ metaImage or '/images/panda_big.png' }}" />
-      <meta name="twitter:image:alt" content="{{ metaDescription }}" />
-      <meta name="twitter:creator" content="{{ global.twitterHandle }}" />
-      <title>{{ title }} - {{ global.siteName }}</title>
-      <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
-      <link rel="manifest" href="/images/favicon/site.webmanifest">
-      <link rel="shortcut icon" href="/images/favicon/favicon.ico">
-      <link rel="webmention" href="https://webmention.io/www.antopiras.dev/webmention" />
-      <link rel="pingback" href="https://webmention.io/www.antopiras.dev/xmlrpc" />
-      <meta name="msapplication-TileColor" content="#da532c">
-      <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
-      <meta name="theme-color" content="#ffffff">
-      <link rel="alternate" type="application/rss+xml" title="{{ title }} - {{ global.siteName }}" href="{{ global.siteUrl }}/rss.xml" />
-      <link rel="stylesheet" href="/css/style.css">
-      {% eleventyGoogleFonts 'https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;800;900&family=Fira+Code:wght@300;400;500&family=Arvo:wght@700&display=swap' %}
-      <link rel="preload" href="https://unpkg.com/aos@next/dist/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-      <noscript><link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"></noscript>
-      <script async data-respect-dnt data-no-cookie src="https://cdn.splitbee.io/sb.js"></script>
-      <script>
-        if ("serviceWorker" in navigator)
-          navigator.serviceWorker.register("/service-worker.js");
-      </script>
+    <meta charset="utf-8">
+    <meta name="description" content="{{ metaDescription }}">
+    <meta name="keywords" content="{{ metaKeywords }}">
+    <meta name="author" content="Antonio Piras">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="{{ title }}"/>
+    <meta property="og:url" content="{{ page.url }}"/>
+    <meta property="og:description" content="{{ metaDescription }}"/>
+    <meta property="og:image" content="{{ metaImage or '/images/panda_big.png' }}"/>
+    <meta property="og:type" content="article"/>
+    <meta name="twitter:site" content="{{ global.siteName }}">
+    <meta name="twitter:title" content="{{ title }}"/>
+    <meta name="twitter:description" content="{{ metaDescription }}"/>
+    <meta name="twitter:image" content="{{ global.siteUrl }}{{ metaImage or '/images/panda_big.png' }}"/>
+    <meta name="twitter:image:alt" content="{{ metaDescription }}"/>
+    <meta name="twitter:creator" content="{{ global.twitterHandle }}"/>
+    <title>{{ title }} - {{ global.siteName }}</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicon/site.webmanifest">
+    <link rel="shortcut icon" href="/images/favicon/favicon.ico">
+    <link rel="webmention" href="https://webmention.io/www.antopiras.dev/webmention"/>
+    <link rel="pingback" href="https://webmention.io/www.antopiras.dev/xmlrpc"/>
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="alternate" type="application/rss+xml" title="{{ title }} - {{ global.siteName }}" href="{{ global.siteUrl }}/rss.xml"/>
+    <link rel="stylesheet" href="/css/style.css">
+    {% eleventyGoogleFonts 'https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;800;900&family=Fira+Code:wght@300;400;500&family=Arvo:wght@700&display=swap' %}
+    <link
+      rel="preload"
+      href="https://unpkg.com/aos@next/dist/aos.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"></noscript>
+    <script async data-respect-dnt data-no-cookie src="https://cdn.splitbee.io/sb.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) 
+        navigator.serviceWorker.register("/service-worker.js");
+    </script>
   </head>
+</html>
