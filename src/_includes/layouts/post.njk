@@ -5,7 +5,9 @@
         <article class="post">
             <h1 class="post__title">{{ title }}</h1>
             <div class="post__date">
-                <p>{{ date | readableDate }}</p>
+                <p>
+                    <time datetime="{{ date }}">{{ date | readableDate }}</time>
+                </p>
             </div>
             <div class="post__reading_time">
                 <p>{{ content | timeToRead }} ⏳</p>
