@@ -2,9 +2,9 @@
     <article class="post">
         <a href="{{ post.url | url }}" aria-label="Read more about {{ post.data.title }}" class="post__link"></a>
         <h2 class="post__title">{{ post.data.title }}</h2>
-        <p class="post__date">
-            <time datetime="{{ post.data.date }}">{{ post.data.date | readableDate }}</time>
-        </p>
+        {# <p class="post__date">
+                    <time datetime="{{ post.data.date }}">{{ post.data.date | readableDate }}</time>
+                </p> #}
         <p class="post__content">{{ post.data.description }}</p>
         <div class="post__footer">
             {% if post.data.tags %}
