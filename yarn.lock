@@ -1755,10 +1755,10 @@ electron-to-chromium@^1.3.723:
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.742.tgz#7223215acbbd3a5284962ebcb6df85d88b95f200"
   integrity sha512-ihL14knI9FikJmH2XUIDdZFWJxvr14rPSdOhJ7PpS27xbz8qmaRwCwyg/bmFwjWKmWK9QyamiCZVCvXm5CH//Q==
 
-eleventy-google-fonts@0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/eleventy-google-fonts/-/eleventy-google-fonts-0.0.5.tgz#9f46948e8e32661a1c28de0852886c7b8bc14c3e"
-  integrity sha512-zeAtLoLkV3BTYcfLc74K/5eDv3IgKmiTO1+tnktlqgx5DQzyxjvrXVjCDaJpZUv0p6a1gxwpwSyqxCodJ7/uMQ==
+eleventy-google-fonts@0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/eleventy-google-fonts/-/eleventy-google-fonts-0.1.0.tgz#adf5f2d91d647b1c1feb2343e940fbb741b29b82"
+  integrity sha512-icaJjAPEvGMFvbdogLt+gZXor8JQRh6+ZA9v1yxx/fZ2/d+XPYDZIG1HYmvSqScN4AMx3f1Vq+RQ6iE8my6p8Q==
 
 eleventy-plugin-lazyimages@^2.1.2:
   version "2.1.2"
