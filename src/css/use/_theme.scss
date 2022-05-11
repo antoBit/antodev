@@ -10,3 +10,25 @@ $gradient_2: hsl(0, 96%, 70%) 0%, hsl(62, 100%, 47%) 100%;
 $gradient_3: hsl(297, 96%, 63%) 0%, hsl(262, 96%, 56%) 100%;
 
 $gradients: $gradient_1, $gradient_2, $gradient_3;
+
+body {
+    --background: hsl(0, 0%, 96%);
+    --background-dark: hsl(0, 0%, 85%);
+    --background-light: hsl(0, 0%, 91%);
+    --accent: hsl(258, 40%, 62%);
+    --accent-alt: hsl(192, 66%, 60%);
+    --light: hsl(258, 40%, 62%);
+    --light-alt: hsl(206, 100%, 93%);
+    --text: hsl(185, 14%, 17%);  
+}
+
+body.darktheme {
+    --background: hsl(212, 33%, 15%);
+    --background-dark: hsl(212, 33%, 10%);
+    --background-light: hsl(212, 33%, 20%);
+    --accent: hsl(39, 94%, 59%);
+    --accent-alt: hsl(192, 66%, 60%);
+    --light: hsl(258, 40%, 62%);
+    --light-alt: hsl(206, 100%, 93%);
+    --text: hsl(0, 0%, 100%);   
+}

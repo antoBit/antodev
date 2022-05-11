@@ -1,5 +1,6 @@
 function loadTheme() {
     const prefersDarkTheme = localStorage.getItem('darkTheme') !== null
+    console.log('prefersDarkTheme: ', prefersDarkTheme);
     document.body.classList.toggle('darktheme', prefersDarkTheme)   
 }
 

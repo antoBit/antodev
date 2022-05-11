@@ -49,16 +49,16 @@ pre {
 
             &.function:not(.function-variable),
             &.operator {
-                color: $accent_alt;
+                color: var(--accent-alt);
             }
 
             &.function-variable {
-                color: $light_alt;
+                color: var(--light-alt);
             }
 
             &.keyword,
             &.boolean {
-                color: $accent;
+                color: var(--accent);
             }
 
             &.string {
@@ -68,7 +68,7 @@ pre {
             &.comment {
                 font-size: 90%;
                 font-style: italic;
-                color: $light_alt;
+                color: var(--accent-alt);
             }
         }
     }

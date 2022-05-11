@@ -27,7 +27,7 @@ body.fourofour {
 
             a.animated {
                 font-weight: 600;
-                color: $accent;
+                color: var(--accent);
             }
         }
     }

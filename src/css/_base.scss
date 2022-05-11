@@ -6,12 +6,12 @@
 
 ::selection {
     color: #333;
-    background-color: $accent;
+    background-color: var(--accent);
     -webkit-text-fill-color: #333;
 }
 
 :focus-visible {
-    outline: $accent dashed 2px;
+    outline: var(--accent) dashed 2px;
     outline-offset: 0.5rem;
     transition: outline-offset 0.3s ease;
 }
@@ -24,8 +24,8 @@ html {
         flex-direction: column;
         min-height: 100vh;
         font-family: 'Nunito Sans', sans-serif;
-        color: $text;
-        background-color: $background;
+        color: var(--text);
+        background-color: var(--background);
         margin: 0;
         padding: 0;
 
@@ -61,11 +61,11 @@ html {
 
             &:hover,
             &.active {
-                color: $accent;
+                color: var(-accent);
             }
 
             &.animated {
-                background-image: linear-gradient($accent, $accent);
+                background-image: linear-gradient(var(--accent), var(--accent));
                 background-position: 0% 100%;
                 background-repeat: no-repeat;
                 background-size: 0% 2px;
@@ -118,6 +118,11 @@ html {
                     font-weight: 900;
                     padding: 1rem;
                 }
+                
+                #theme-switcher {
+                    display: flex;
+                    cursor: pointer;
+                }
             }
         }
 
@@ -151,7 +156,7 @@ html {
                     'copyright copyright';
                 row-gap: 0.5rem;
                 align-items: center;
-                color: $text;
+                color: var(--text);
                 margin-top: auto;
                 margin-bottom: 0;
                 padding: 2rem;
@@ -228,8 +233,8 @@ html {
 
                         i {
                             font-size: 1.3rem;
-                            background-color: $accent;
-                            color: $background;
+                            background-color: var(--accent);
+                            color: var(--background);
                             padding: 0.2rem;
                             border-radius: 50%;
                         }
@@ -256,7 +261,7 @@ html {
 .pill {
     font-family: 'Fira Code', monospace;
     font-weight: 500;
-    background-color: darken($background, 5%);
+    background-color: var(--background-dark);
     margin: 0;
     padding: 0.2rem 0.8rem;
     border-radius: 0.8rem;

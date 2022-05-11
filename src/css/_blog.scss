@@ -38,7 +38,7 @@ body.blog {
                 flex-direction: column;
                 width: 100%;
                 height: 100%;
-                background-color: lighten($background, 5%);
+                background-color: var(--background-light);
                 padding: 1rem 2rem;
                 padding-top: 1.5rem;
                 border-radius: 0.4rem;
@@ -78,7 +78,7 @@ body.blog {
                 }
 
                 &:hover {
-                    background-color: lighten($background, 7%);
+                    background-color: var(--background-light);
                 }
 
                 &__link {
@@ -91,7 +91,7 @@ body.blog {
 
                     &:hover {
                         & + h2 {
-                            color: $accent;
+                            color: var(--accent);
                         }
                     }
                 }
@@ -104,7 +104,7 @@ body.blog {
 
                 &__content {
                     font-size: 1.063rem;
-                    color: darken($text, 7%);
+                    color: var(--text);
                     margin-top: auto;
                     margin-bottom: 1.5rem;
                 }
@@ -137,7 +137,7 @@ body.blog {
                     margin-left: auto;
 
                     &:hover {
-                        color: $accent;
+                        color: var(--acent);
                         animation-name: rubberBand;
                         animation-duration: 1s;
                         animation-iteration-count: 3;
