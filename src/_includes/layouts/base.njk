@@ -1,20 +1,20 @@
 {% include "layouts/partials/head.njk" %}
-  <body id="top" class="{{ bodyClass }}">
-    {% include "layouts/partials/nav.njk" %}
-    {% block mainContent %}
-    {% endblock %}
-    {% include "layouts/partials/footer.njk" %}
-    {% if page.url === '/' %}
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<body id="top" class="{{ bodyClass }}">
+  {% include "layouts/partials/nav.njk" %}
+  {% block mainContent %}{% endblock %}
+  {% include "layouts/partials/footer.njk" %}
+  {% set themeSwitcher %}
+  {% include "_site/scripts/themeSwitcher.js" %}
+  {% endset %}
+  <script>
+    {{ themeSwitcher | jsmin | safe }}</script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  {% if page.url === '/' %}
     <script>
-      AOS.init({
-        once: true,
-        easing: 'ease-in-out',
-        disable: window.matchMedia('(prefers-reduced-motion: reduce)').matches
-      })
+      AOS.init({once: true, easing: 'ease-in-out', disable: window.matchMedia('(prefers-reduced-motion: reduce)').matches})
     </script>
-    {% endif %}
-    <script>
+  {% endif %}
+  <script>
     if (window.netlifyIdentity) {
       window.netlifyIdentity.on("init", user => {
         if (!user) {
@@ -24,7 +24,5 @@
         }
       });
     }
-    </script>
-  </body>
-</html>
-
+  </script>
+</body></html>
