@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.1.0",
     "axios": "^0.26.1",
     "dotenv": "^16.0.0",
     "eleventy-google-fonts": "0.0.5",
