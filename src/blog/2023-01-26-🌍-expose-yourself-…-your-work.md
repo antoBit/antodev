@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: 🌍 Expose -yourself-… your work.
+title: Expose -yourself-… your work.
 description: Local development made easy with ngrok and localtunnel.
 date: 2023-01-26T08:43:54.247Z
 metaDescription: Expose a webserver to the public with a local tunnel powered by
