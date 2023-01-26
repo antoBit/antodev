@@ -1,23 +1,23 @@
 ---
 layout: layouts/post.njk
-title: Expose your work with ngrok and localtunnel
+title: Share your work with ngrok and localtunnel
 description: Local development made easy with ngrok and localtunnel.
 date: 2023-01-26T08:43:54.247Z
 metaDescription: Expose a webserver to the public with a local tunnel powered by
-    ngrok. Easily connect to public APIs and show work to clients everywhere.
+  ngrok. Easily connect to public APIs and show work to clients everywhere.
 metaKeywords:
-    - web
-    - developer
-    - javascript
-    - js
-    - code
-    - coding
-    - localtunnel
-    - ngrok
-    - api
+  - web
+  - developer
+  - javascript
+  - js
+  - code
+  - coding
+  - localtunnel
+  - ngrok
+  - api
 tags:
-    - javascript
-    - tips
+  - javascript
+  - tips
 disableComments: false
 ---
 
