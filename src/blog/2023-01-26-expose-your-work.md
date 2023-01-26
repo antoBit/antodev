@@ -1,25 +1,26 @@
 ---
 layout: layouts/post.njk
-title: Expose -yourself-… your work.
+title: Expose your work with ngrok and localtunnel
 description: Local development made easy with ngrok and localtunnel.
 date: 2023-01-26T08:43:54.247Z
 metaDescription: Expose a webserver to the public with a local tunnel powered by
-  ngrok. Easily connect to public APIs and show work to clients everywhere.
+    ngrok. Easily connect to public APIs and show work to clients everywhere.
 metaKeywords:
-  - web
-  - developer
-  - javascript
-  - js
-  - code
-  - coding
-  - localtunnel
-  - ngrok
-  - api
+    - web
+    - developer
+    - javascript
+    - js
+    - code
+    - coding
+    - localtunnel
+    - ngrok
+    - api
 tags:
-  - javascript
-  - tips
+    - javascript
+    - tips
 disableComments: false
 ---
+
 Have you ever found yourself wanting to show your work to a client, but didn’t want to setup a server only for that reason? Or maybe you wanted to use the APIs of a particular service, but they didn’t allow /localhost/ as a valid IP address in their access whitelist?
 
 If the answer is yes, then this post is for you.
@@ -32,11 +33,10 @@ From ngrok’s [official website](https://ngrok.com) :
 
 What!? Let’s translate this: ngrok is an application that creates a tunnel between your computer and the internet, solving a couple of the most commons hiccups when developing web applications:
 
-```ba
-brew install ngrok/ngrok/ngrok
-```
+1. Show someone else your work in progress without having to deploy it to a remote branch and running it on a hosting space
+2. Consume APIs that only accepts secure HTTPS connections (and complain when you try to whitelist /localhost/!)
 
-Ngrok can be installed in all major operating systems as a standalone service. Its developer license is *free* (with some restrictions like bandwidth and usage), but /it requires the creation of an account/.
+Ngrok can be installed in all major operating systems as a standalone service. Its developer license is _free_ (with some restrictions like bandwidth and usage), but /it requires the creation of an account/.
 
 To install it in MacOS we can use brew:
 
@@ -123,7 +123,7 @@ Once we have connected, we can retrieve the ngrok URL and use it inside our appl
 
 ## An alternative to ngrok
 
-If you find ngrok too complex to use and want an easy and quick-to-use alternative for Node, check out  [localtunnel](https://theboroer.github.io/localtunnel-www/):
+If you find ngrok too complex to use and want an easy and quick-to-use alternative for Node, check out [localtunnel](https://theboroer.github.io/localtunnel-www/):
 
 ```bash
 npm install -g localtunnel //use -g if you want to install it globally on your machine
@@ -139,10 +139,10 @@ const localtunnel = require('localtunnel')
 //…
 
 app.listen(port, async () => {
-  const tunnel = await localtunnel({ port })
+    const tunnel = await localtunnel({ port })
 
-  console.log(`Example app listening on port ${port}`)
-  console.log('localtunnel tunnel url: ', tunnel.url)
+    console.log(`Example app listening on port ${port}`)
+    console.log('localtunnel tunnel url: ', tunnel.url)
 })
 ```
 
