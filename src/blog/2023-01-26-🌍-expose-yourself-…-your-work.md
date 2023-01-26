@@ -29,7 +29,7 @@ From ngrok’s [official website](https://ngrok.com) :
 
 > ngrok is a simplified API-first ingress-as-a-service that adds connectivity, security, and observability to your apps with no code changes.
 
-What!? Let’s translate this: ngrok is an application that creates a tunnel between you computer and the internet, solving a couple of the most commons hiccups when developing web applications:
+What!? Let’s translate this: ngrok is an application that creates a tunnel between your computer and the internet, solving a couple of the most commons hiccups when developing web applications:
 
 ```ba
 brew install ngrok/ngrok/ngrok
@@ -47,7 +47,7 @@ Instructions for different operating systems can be found [in the docs](https://
 
 ## But how does it work?
 
-When using ngrok, we can expose a web server on our machine, for example a Node.js application running on /localhost:8000/ to the outer world by starting ngrok. The service will create a tunnel between our machine and the internet using a /random URL/ that we can share with other people.
+When using ngrok, we can expose a web server on our machine, for example, a Node.js application running on /localhost:8000/ to the outer world by starting ngrok. The service will create a tunnel between our machine and the internet using a /random URL/ that we can share with other people.
 
 ```bash
 ngrok http 8000
@@ -57,14 +57,14 @@ ngrok http 8000
 
 ### Automated SSL/TLS certificates
 
-Ngrok supports https out of the box, and we have a couple of ways to set this up.
+Ngrok supports HTTPS out of the box, and we have a couple of ways to set this up.
 The easiest way is to specify it as a complete address:
 
 ```bash
 ngrok http https://localhost:8000
 ```
 
-Another way to do that is connecting ngrok on the port 443. It will assume by default that we want to use the https protocol:
+Another way to do that is by connecting ngrok on port 443. It will assume by default that we want to use the HTTPS protocol:
 
 ```bash
 ngrok http 443
@@ -80,7 +80,7 @@ ngrok http --subdomain=antopiras 80
 
 ### Authentication
 
-Ngrok also supports basic authentication (specify user and password when setting it up), OAuth 2.0 (Google/GitHub account) and other forms of authentication.
+Ngrok also supports basic authentication (specify user and password when setting it up), OAuth 2.0 (Google/GitHub account), and other forms of authentication.
 We can add authentication with:
 
 ```bash
@@ -95,7 +95,7 @@ ngrok http 8000 --oauth google
 
 ## Use it in your Node.js application
 
-If we don’t want to have to set up and manually start ngrok every time we come back to our laptop or we are looking for a more automated solution, we can use [this Node.js wrapper](https://github.com/bubenshchykov/ngrok) .
+If we don’t want to have to set up and manually start ngrok every time we come back to our laptop or we are looking for a more automated solution, we can use [this Node.js wrapper](https://github.com/bubenshchykov/ngrok).
 
 ```javascript
 const express = require('express')
@@ -122,7 +122,7 @@ Once we have connected, we can retrieve the ngrok URL and use it inside our appl
 
 ## An alternative to ngrok
 
-If you find ngrok too complex to use and want an easy and quick to use alternative for Node, check out  [localtunnel](https://theboroer.github.io/localtunnel-www/) :
+If you find ngrok too complex to use and want an easy and quick-to-use alternative for Node, check out  [localtunnel](https://theboroer.github.io/localtunnel-www/):
 
 ```bash
 npm install -g localtunnel //use -g if you want to install it globally on your machine
@@ -145,6 +145,4 @@ app.listen(port, async () => {
 })
 ```
 
-…and that’s it! I hope you found this little guide useful. Let me know if you have more questions about this.
-
-\#personali/blog
+…and that’s it! I hope you found this little guide useful. Leave a comment if you have more questions about this 😄
