@@ -20,8 +20,7 @@ tags:
   - tips
 disableComments: false
 ---
-
-Have you ever found yourself wanting to show your work to a client, but didn’t want to setup a server only for that reason? Or maybe you wanted to use the APIs of a particular service, but they didn’t allow /localhost/ as a valid IP address in their access whitelist?
+Have you ever found yourself wanting to show your work to a client, but didn’t want to setup a server only for that reason? Or maybe you wanted to use the APIs of a particular service, but they didn’t allow *localhost* as a valid IP address in their access whitelist?
 
 If the answer is yes, then this post is for you.
 
@@ -34,9 +33,9 @@ From ngrok’s [official website](https://ngrok.com) :
 What!? Let’s translate this: ngrok is an application that creates a tunnel between your computer and the internet, solving a couple of the most commons hiccups when developing web applications:
 
 1. Show someone else your work in progress without having to deploy it to a remote branch and running it on a hosting space
-2. Consume APIs that only accepts secure HTTPS connections (and complain when you try to whitelist /localhost/!)
+2. Consume APIs that only accepts secure HTTPS connections (and complain when you try to whitelist *localhost*!)
 
-Ngrok can be installed in all major operating systems as a standalone service. Its developer license is _free_ (with some restrictions like bandwidth and usage), but /it requires the creation of an account/.
+Ngrok can be installed in all major operating systems as a standalone service. Its developer license is *free* (with some restrictions like bandwidth and usage), but *it requires the creation of an account*.
 
 To install it in MacOS we can use brew:
 
@@ -48,7 +47,7 @@ Instructions for different operating systems can be found [in the docs](https://
 
 ## But how does it work?
 
-When using ngrok, we can expose a web server on our machine, for example, a Node.js application running on /localhost:8000/ to the outer world by starting ngrok. The service will create a tunnel between our machine and the internet using a /random URL/ that we can share with other people.
+When using ngrok, we can expose a web server on our machine, for example, a Node.js application running on *localhost:8000* to the outer world by starting ngrok. The service will create a tunnel between our machine and the internet using a *random URL* that we can share with other people.
 
 ```bash
 ngrok http 8000
