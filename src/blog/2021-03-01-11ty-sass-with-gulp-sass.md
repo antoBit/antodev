@@ -45,7 +45,7 @@ The first thing I did was add the required packages, to my site's directory:
 yarn add --dev gulp gulp-autoprefixer gulp-cssnano gulp-sass
 ```
 
-*as **[hillonyechekwa](https://github.com/hillonyechekwa)** pointed out in the comments, you also need to have a sass compiler installed in your project. You can install it with:*
+As [hillonyechekwa](https://github.com/hillonyechekwa) pointed out in the comments, you also need to have a *sass compiler* installed in your project. You can install it with:
 
 ```
 yarn add --dev sass
