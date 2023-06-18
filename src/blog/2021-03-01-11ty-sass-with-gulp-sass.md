@@ -42,7 +42,13 @@ Gulp is a tool that lets us automate the trivial tasks that frontend web develop
 The first thing I did was add the required packages, to my site's directory:
 
 ```
-yarn add gulp gulp-autoprefixer gulp-cssnano gulp-sass
+yarn add --dev gulp gulp-autoprefixer gulp-cssnano gulp-sass
+```
+
+As [hillonyechekwa](https://github.com/hillonyechekwa) pointed out in the comments, you also need to have a *sass compiler* installed in your project. You can install it with:
+
+```
+yarn add --dev sass
 ```
 
 ## Gulp tasks
