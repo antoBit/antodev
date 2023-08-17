@@ -1,6 +1,22 @@
 {
     "work": [
         {
+            "company": "ON24",
+            "location": "San Francisco (CA) - Remote",
+            "website": "https://www.on24.com",
+            "experience": [
+                {
+                    "position": "Senior Software Engineer",
+                    "startDate": "Apr 2022",
+                    "endDate": "Current",
+                    "highlights": [
+                        "Integrate the newly acquired VIBBIO application inside the company's ecosystem",
+                        "Expand the VIBBIO application's feature set to include ON24's products"
+                    ]
+                }
+            ]
+        },
+        {
             "company": "VIBBIO",
             "location": "Oslo (NO) - Remote",
             "website": "https://www.vibbio.com",
@@ -8,7 +24,7 @@
                 {
                     "position": "Tech Lead",
                     "startDate": "Nov 2021",
-                    "endDate": "Current",
+                    "endDate": "Apr 2022",
                     "highlights": [
                         "Develop and maintain the core video rendering engine, based on Remotion, on an AWS Elastic Beanstalk environment with continuous integration, auto-scaling, load balancing, express, and WebSocket servers to serve the application and update the clients on the state of the rendering job.",
                         "Rewrite the technical foundation of the product: after the rewrite, we could ship new and improved features (often impossible/very difficult to implement before) faster and with fewer bugs.",
