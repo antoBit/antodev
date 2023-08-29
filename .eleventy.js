@@ -8,7 +8,7 @@ const eleventyGoogleFonts = require('eleventy-google-fonts')
 const lazyImagesPlugin = require('eleventy-plugin-lazyimages')
 const timeToRead = require('eleventy-plugin-time-to-read')
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
-const pluginPWA = require('eleventy-plugin-pwa')
+const pluginPWA = require('eleventy-plugin-pwa-v2')
 
 module.exports = function (eleventyConfig) {
     const markdownItOptions = {
@@ -77,22 +77,7 @@ module.exports = function (eleventyConfig) {
         alwaysWrapLineHighlights: true,
     })
     eleventyConfig.addPlugin(pluginPWA, {
-        runtimeCaching: [
-            {
-                urlPattern: /images/,
-                handler: 'cacheFirst',
-            },
-            {
-                urlPattern: new RegExp(
-                    '^https://fonts.(?:googleapis|gstatic).com/(.*)'
-                ),
-                handler: 'cacheFirst',
-            },
-            {
-                urlPattern: /.*/,
-                handler: 'networkFirst',
-            },
-        ],
+        globDirectory: './_site',
     })
 
     eleventyConfig.setDataDeepMerge(false)
