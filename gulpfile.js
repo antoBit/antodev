@@ -1,15 +1,15 @@
 const gulp = require('gulp')
 const sass = require('gulp-dart-sass')
 const autoprefixer = require('gulp-autoprefixer')
-const cssnano = require('gulp-cssnano')
+const postcss = require('gulp-postcss')
+const cssnano = require('cssnano')
 
 gulp.task('css', function () {
     return gulp
         .src('./src/css/style.scss')
         .pipe(sass.sync())
         .pipe(autoprefixer())
-        .pipe(cssnano())
-        .on('error', sass.logError)
+        .pipe(postcss([cssnano()]))
         .pipe(gulp.dest('./_site/css'))
 })
 
