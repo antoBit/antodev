@@ -105,8 +105,12 @@
             "name": "Frontend",
             "keywords": [
                 "React JS",
+                "Typescript",
                 "Redux",
-                "Javascript",
+                "Recoil",
+                "React Query",
+                "Zod",
+                "Tailwind",
                 "11ty",
                 "HTML5",
                 "CSS3",
@@ -117,6 +121,8 @@
             "name": "Backend",
             "keywords": [
                 "Node JS",
+                "Express",
+                "Hapi",
                 "AWS Elastic Beanstalk",
                 "AWS Lambda functions",
                 "Google Cloud Functions",
@@ -142,6 +148,13 @@
                 "AWS CLI",
                 "Webpack",
                 "Unix shell"
+            ]
+        },
+        {
+            "name": "Monitoring",
+            "keywords": [
+                "Mixpanel",
+                "Sentry"
             ]
         },
         {
