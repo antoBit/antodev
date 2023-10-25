@@ -1,0 +1,12 @@
+[
+    {
+        "title": "blog",
+        "url": "/blog",
+        "label": "Blog"
+    },
+    {
+        "title": "uses",
+        "url": "/uses",
+        "label": "What I use"
+    }
+]

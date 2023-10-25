@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;800;900&family=Fira+Code:wght@300;400;500&family=Arvo:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1,
+    h2,
+    h3,
+    h4 {
+        @apply relative font-serif font-bold text-left mt-8;
+    }
+
+    h3, h4 {
+        @apply text-base;
+    }
+
+    .post h1:before,
+    .post h2:before,
+    .post h3:before,
+    .post h4:before {
+        @apply inline-block font-mono text-accent mr-2 scale-75;
+        content: '';
+    }
+
+    h1 {
+        @apply text-2xl;
+    }
+
+    h2 {
+        @apply mt-14 text-lg;
+    }
+
+    .post h2::before {
+        content: '</>';
+    }
+
+    .post h3::before {
+        content: '#';
+    }
+
+    .post h4::before {
+        content: '=>';
+    }
+
+    p {
+        @apply text-base my-5
+    }
+
+    a:not(.button) {
+        @apply hover:text-accent;
+    }
+
+    nav a {
+        @apply bg-[length:0_2px] hover:bg-[length:100%_2px] bg-[0_100%] bg-no-repeat bg-gradient-to-r from-accent to-accent transition-background-size duration-300;
+    }
+
+    .home article::before,
+    .home article:after {
+        @apply absolute top-[90%] bottom-[15px] -z-[1];
+        content: '';
+        box-shadow: 0 10px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    .home article::before {
+        @apply bg-transparent left-[3px] right-[45px] rotate-[-3deg];
+    }
+
+    .home article::after {
+        @apply bg-transparent left-[45px] right-[3px] rotate-[3deg];
+    }
+
+    progress#reading-progress::-moz-progress-bar {
+        @apply bg-accent;
+    }
+    
+    /* Force indeterminate bars to have zero width */
+    progress#reading-progress:indeterminate::-moz-progress-bar {
+        @apply w-0;
+    }
+    
+    progress#reading-progress::-webkit-progress-bar {
+        @apply bg-background;
+    }
+    
+    progress#reading-progress::-webkit-progress-value {
+        @apply bg-accent;
+    }
+
+    .post article a:not(.header-anchor):not(.social-link) {
+        @apply text-accent bg-[length:0_2px] hover:bg-[length:100%_2px] bg-[0_100%] bg-no-repeat bg-gradient-to-r from-accent to-accent transition-background-size duration-300;
+    } 
+
+    .post:not(.resume) article ul {
+        @apply pl-10 my-4 list-disc;
+    }
+
+    .header-anchor {
+        @apply text-light_alt ml-2 transition-transform ease-linear hover:scale-110;
+    }
+
+    figure {
+        @apply flex flex-col items-center justify-center;
+    }
+
+    img {
+        @apply rounded-lg;
+    }
+
+    figcaption {
+        @apply italic text-center my-2;
+    }
+    
+    blockquote {
+        @apply relative text-center flow-root my-9 p-16 pb-12;
+    }
+
+    blockquote::before, blockquote::after {
+        @apply absolute top-0 left-0 w-full h-full bg-no-repeat bg-quote bg-left-bottom bg-[length:80px] opacity-20;
+        content: '';
+    }
+
+    blockquote::before {
+        @apply rotate-180;
+    }
+
+    blockquote span.author {
+        @apply italic float-right;
+    }
+}
+
+@layer components {
+    .button {
+        @apply bg-violet hover:bg-violet_dark text-xs font-black uppercase py-4 px-10 rounded-lg;
+    }
+
+    .gradient {
+        -webkit-text-fill-color: transparent;
+    }
+
+    .resources {
+        @apply border-2 border-purple my-4 py-6 px-4;
+    }
+
+    .resources ul {
+        @apply pl-10;
+    }
+
+    .resources ul li:before {
+        @apply text-base ml-[-1.25rem] mr-[0.625rem];
+        content: "🔖";
+    }
+
+    .resources ul li a {
+        @apply text-accent text-lg;
+    }
+}
+
+code {
+    @apply bg-background_light font-mono text-sm py-1 px-1.5 rounded-lg;
+}
+
+pre {
+    @apply block font-mono bg-background_light rounded-md py-4 px-8 pl-4;
+}
+
+pre code {
+    @apply block text-base overflow-x-auto;
+    counter-reset: codeline;
+}
+
+pre code > span:before {
+    @apply inline-block text-light text-small text-right border-r border-background px-4 pl-2 mr-6;
+    content: counter(codeline);
+    counter-increment: codeline;
+}
+
+span.token.keyword { color: pink; }
+
+pre code .token.function-variable, pre code .token.keyword {
+    @apply font-semibold;
+}
+
+pre code .token:not(.function-variable), pre code .token.operator {
+    @apply text-accent_alt;
+}
+
+pre code .token.function-variable {
+    @apply text-light_alt;
+}
+
+pre code .token.keyword, pre code .token.boolean {
+    @apply text-accent;
+}
+
+pre code .token.string {
+    @apply italic;
+}
+
+pre code .token.comment {
+    @apply text-xs italic text-light_alt;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('/fonts/icomoon.eot?ek6ztv');
+    src: url('/fonts/icomoon.eot?ek6ztv#iefix') format('embedded-opentype'),
+        url('/fonts/icomoon.ttf?ek6ztv') format('truetype'),
+        url('/fonts/icomoon.woff?ek6ztv') format('woff'),
+        url('/fonts/icomoon.svg?ek6ztv#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+i {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-dev-dot-to:before {
+    content: '\e907';
+}
+.icon-arrow_back:before {
+    content: '\e906';
+}
+.icon-arrow_upward:before {
+    content: '\e904';
+}
+.icon-arrow_forward:before {
+    content: '\e903';
+}
+.icon-feed:before {
+    content: '\e908';
+}
+.icon-retweet:before {
+    content: '\e905';
+}
+.icon-github:before {
+    content: '\e900';
+}
+.icon-instagram:before {
+    content: '\e901';
+}
+.icon-twitter:before {
+    content: '\e902';
+}
+.icon-link:before {
+    content: '\e9cb';
+}
+.icon-linkedin2:before {
+    content: '\eaca';
+}

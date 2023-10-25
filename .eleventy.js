@@ -69,6 +69,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy('src/scripts/*.js.*')
 
     eleventyConfig.addWatchTarget('src/css/')
+    eleventyConfig.addWatchTarget('tailwind.config.js')
 
     eleventyConfig.addPlugin(eleventyGoogleFonts)
     eleventyConfig.addPlugin(lazyImagesPlugin)
