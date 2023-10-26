@@ -1,11 +1,11 @@
 <footer class="w-full mx-auto max-w-screen-2xl my-20 px-8">
     <div class="flex flex-col items-center justify-between">
-        <div class="w-full flex flex-row items-center justify-between">
+        <ul class="w-full flex items-center justify-center md:justify-start gap-6 mb-4">
+            {% include "layouts/partials/social-links.njk" %}
+        </ul>
+        <div class="w-full flex flex-row items-center justify-between gap-2">
             <div>
-                <ul class="flex items-center justify-start gap-6">
-                    {% include "layouts/partials/social-links.njk" %}
-                </ul>
-                <p class="text-xs">Made with ❤️. Powered by
+                <p class="text-xs my-0">Made with ❤️. Powered by
                     <a
                         class="hover:text-accent bg-[length:0_2px] hover:bg-[length:100%_2px] bg-[0_100%] bg-no-repeat bg-gradient-to-r
                             from-accent to-accent transition-background-size duration-300"
