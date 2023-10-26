@@ -52,7 +52,7 @@ But as soon as the application started, I noticed that the `backgroundSize` prop
 
 ## Let’s get googling
 
-After inspecting the output HTML and a bit of googling, I came across this [closed issue on React's Github](https://github.com/facebook/react/issues/5030){rel="noopener noreferrer" target="\_blank"}.
+After inspecting the output HTML and a bit of googling, I came across this [closed issue on React's Github](https://github.com/facebook/react/issues/5030).
 
 Apparently, using the CSS `background` shorthand property with a `backgroundSize` prop causes this last property to be cleared **if and when** the `background` property is updated.
 

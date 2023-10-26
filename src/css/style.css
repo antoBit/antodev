@@ -97,7 +97,7 @@
     }
 
     .header-anchor {
-        @apply text-light_alt ml-2 transition-transform ease-linear hover:scale-110;
+        @apply inline-block ml-2 transition-transform ease-linear hover:scale-110;
     }
 
     figure {
