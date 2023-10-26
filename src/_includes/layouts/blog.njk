@@ -1,13 +1,15 @@
 {% set bodyClass = "blog" %}
 {% extends "layouts/base.njk" %}
-{% block mainContent %} 
-<main class="wrapper">
-    <h1>Blog</h1>
-    <ul class="articles">
-        {% for post in posts %}
-            {% include "layouts/partials/blog-article.njk" %}
-        {% endfor %}
-    </ul>
-</main>
-{% include "layouts/partials/pagination.njk" %}
+{% block mainContent %}
+    <main class="w-full mx-auto max-w-screen-xl px-8 my-20">
+        <section class="w-full flex flex-col items-center gap-4">
+            <h1>Blog</h1>
+            <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {% for post in posts %}
+                    {% include "layouts/partials/blog-article.njk" %}
+                {% endfor %}
+            </ul>
+        </section>
+    </main>
+    {% include "layouts/partials/pagination.njk" %}
 {% endblock %}

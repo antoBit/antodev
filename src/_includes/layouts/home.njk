@@ -1,29 +1,34 @@
 {% set bodyClass = "home" %}
 {% extends "layouts/base.njk" %}
 {% block mainContent %}
-  <section class="wrapper intro" aria-label="intro">
-    <h1>
-      <span class="hi" data-aos="fade-right" data-aos-delay="100">
-        <span class="emoji">👋🏻</span>
-        Ciao!</span><br/> <br/>
-      <span data-aos="fade-left" data-aos-delay="500">I'm a web developer from Italy, madly in love with Javascript and
-        everything web related!<br/><br/>
-        This is where I usually rant about web development things I face every day and wathever catches my attention at the
-        moment...🚀<br/> <br/>
-        <span class="gradient gradient_1">#takeAlookAtTheBlog</span>
-        <span class="gradient gradient_2">#enjoyYourStay</span>
-      </h1>
-    </section>
-    <main class="wrapper blog_feed">
-      <ul class="articles" {% if page.url === '/' %} data-aos="zoom-out-down" data-aos-duration="600" {% endif %}>
-        {% for post in collections.posts.reverse().slice(0, 6) %}
-          {% include "layouts/partials/blog-article.njk" %}
-        {% endfor %}
-      </ul>
-      <a href="/blog" class="button" aria-label="Blog">
-        <span>Read it all
-          <i class="icon-arrow_forward" aria-hidden="true"></i>
-        </span>
-      </a>
-    </main>
-  {% endblock %}
+    <main class="w-full mx-auto max-w-screen-2xl px-8">
+        <section class="my-20" aria-label="intro">
+            <h1 class="w-full md:w-2/3 font-mono font-normal leading-5 text-left">
+                <span class="inline-block text-2xl mb-4" data-aos="fade-right" data-aos-delay="100">
+                    <span class="inline-block animate-wave">👋🏻</span>
+                    Ciao!</span><br/> <br/>
+                <span class="text-base" data-aos="fade-left" data-aos-delay="500">I'm a web developer from Italy, madly in love with
+                    Javascript and everything web related!<br/><br/>
+                    This is where I usually rant about web development things I face every day and wathever catches my attention at the
+                    moment...🚀<br/> <br/>
+                    <span class="gradient bg-gradient-1 bg-clip-text">#takeAlookAtTheBlog</span>
+                    <span class="gradient bg-gradient-2 bg-clip-text">#enjoyYourStay</span>
+                </h1>
+            </section>
+            <section class="flex flex-col my-20">
+                <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" {% if page.url === '/' %} data-aos="zoom-out-down" data-aos-duration="600" {% endif %}>
+                    {% for post in collections.posts.reverse().slice(0, 6) %}
+                        {% include "layouts/partials/blog-article.njk" %}
+                    {% endfor %}
+                </ul>
+                <a href="/blog" class="button group relative flex items-center mt-12 mx-auto" aria-label="Blog">
+                    <span class="transition-transform ease-out group-hover:-translate-x-4">Read it all
+                    </span>
+                    <i
+                        class="icon-arrow_forward absolute right-4 opacity-0 transition-opacity ease-out group-hover:right-4
+                            group-hover:opacity-100 group-hover:animate-rubberBand text-lg"
+                        aria-hidden="true"></i>
+                </a>
+            </section>
+        </main>
+    {% endblock %}

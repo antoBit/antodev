@@ -1,7 +1,14 @@
-<nav class="wrapper header">
-    <div class="logo"><img src="/images/panda.png" title="{{ global.siteName }}" alt="Panda" width="32" height="32"/> <a href="/" class="animated" aria-label="Home">anto<span class="logo__thin">Dev</span></a></div>
-    <ul class="menu">
-        <li class="menu__item"><a href="/blog" class="animated {{ 'active' if '/blog' in page.url }}" aria-label="Blog">blog</a></li>
-        <li class="menu__item"><a href="/uses" class="animated {{ 'active' if '/uses' in page.url }}" aria-label="What I use">uses</a></li>
+<nav class="w-full mx-auto max-w-screen-2xl h-14 flex items-center justify-between px-8 font-black">
+    <div class="flex items-center justify-between">
+        <img class="w-8 h-8 mr-4" src="/images/panda.png" title="{{ global.siteName }}" alt="Panda" width="32" height="32"/>
+        <a class="font-bold" href="/" aria-label="Home">anto<span class="font-light">Dev</span>
+        </a>
+    </div>
+    <ul class="flex items-center justify-between text-sm">
+        {% for link in navigation %}
+            <li class="p-4">
+                <a class="{{ 'text-accent bg-[length:100%_2px] bg-no-repeat bg-gradient-to-r from-accent to-accent' if link.url in page.url }}" href="{{ link.url }}" aria-label={{ link.label }}>{{ link.title }}</a>
+            </li>
+        {% endfor %}
     </ul>
 </nav>

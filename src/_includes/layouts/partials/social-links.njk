@@ -1,5 +1,12 @@
-{% for link in social %}
-    <a class="social__link" href="{{ link.url }}" rel="noopener noreferrer" aria-label="{{ link.label }}" target="_blank">
-        <i class="{{ link.icon }}" aria-hidden="true"></i>
+<li class="group">
+    <a class="social-link relative group-hover:text-accent transition-colors ease-out group-hover:top-[-0.1rem]" href="{{ global.siteUrl }}/rss.xml" rel="noopener noreferrer" aria-label="RSS Feed">
+        <i class="icon-feed" aria-hidden="true"></i>
     </a>
+</li>
+{% for link in social %}
+    <li class="group">
+        <a class="social-link relative group-hover:text-accent transition-colors ease-out group-hover:top-[-0.1rem]" href="{{ link.url }}" rel="noopener noreferrer" aria-label="{{ link.label }}" target="_blank">
+            <i class="{{ link.icon }}" aria-hidden="true"></i>
+        </a>
+    </li>
 {% endfor %}

@@ -1,18 +1,18 @@
 {% set bodyClass = "post resume" %}
 {% extends "layouts/base.njk" %}
 {% block mainContent %}
-    <main class="wrapper blog blog__post">
-        <article class="post">
-            <h1 class="post__title">{{ title }}</h1>
-            <div class="post__content">
+    <main class="w-full mx-auto max-w-screen-lg px-8">
+        <article class="flex flex-col items-center">
+            <h1 class="px-6 text-center">{{ title }}</h1>
+            <div class="w-full text-left my-6">
                 {{ content | safe }}
-                <div class="social">
-                    {% include "layouts/partials/social-links.njk" %}
-                </div>
-                {% include "layouts/partials/experience.njk" %}
-                {% include "layouts/partials/skills.njk" %}
-                {% include "layouts/partials/education.njk" %}
             </div>
+            <ul class="flex items-center justify-center gap-6 text-2xl">
+                {% include "layouts/partials/social-links.njk" %}
+            </ul>
+            {% include "layouts/partials/experience.njk" %}
+            {% include "layouts/partials/skills.njk" %}
+            {% include "layouts/partials/education.njk" %}
         </article>
     </main>
     {% include "layouts/partials/reading-progress-indicator.njk" %}

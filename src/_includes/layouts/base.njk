@@ -1,20 +1,15 @@
 {% include "layouts/partials/head.njk" %}
-  <body id="top" class="{{ bodyClass }}">
-    {% include "layouts/partials/nav.njk" %}
-    {% block mainContent %}
-    {% endblock %}
-    {% include "layouts/partials/footer.njk" %}
-    {% if page.url === '/' %}
+<body id="top" class="{{ bodyClass }} selection:text-black selection:bg-accent [&_:focus-visible]:outline-2 [&_:focus-visible]:outline-offset-[0.5rem] [&_:focus-visible]:outline-accent [&_:focus-visible]:outline-dashed bg-background font-sans text-lg text-white">
+  {% include "layouts/partials/nav.njk" %}
+  {% block mainContent %}{% endblock %}
+  {% include "layouts/partials/footer.njk" %}
+  {% if page.url === '/' %}
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init({
-        once: true,
-        easing: 'ease-in-out',
-        disable: window.matchMedia('(prefers-reduced-motion: reduce)').matches
-      })
+      AOS.init({once: true, easing: 'ease-in-out', disable: window.matchMedia('(prefers-reduced-motion: reduce)').matches})
     </script>
-    {% endif %}
-    <script>
+  {% endif %}
+  <script>
     if (window.netlifyIdentity) {
       window.netlifyIdentity.on("init", user => {
         if (!user) {
@@ -24,7 +19,5 @@
         }
       });
     }
-    </script>
-  </body>
-</html>
-
+  </script>
+</body></html>

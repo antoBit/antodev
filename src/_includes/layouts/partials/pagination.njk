@@ -1,12 +1,18 @@
 {% if pagination.pageLinks.length > 1 %}
-<nav class="wrapper pagination">
-    <ul>
-    {% if pagination.previousPageLink %}
-    <li class="pagination__prev"><i class="icon-arrow_back" aria-hidden="true"></i> <a class="animated" href="{{ pagination.previousPageHref | url }}">Newer</a></li>
-    {% endif %}
-    {% if pagination.nextPageLink %}
-    <li class="pagination__next"><a class="animated" href="{{ pagination.nextPageHref | url }}">Older</a> <i class="icon-arrow_forward" aria-hidden="true"></i></li>
-    {% endif %}
-    </ul>
-</nav>
+    <nav class="w-full mx-auto max-w-screen-2xl px-8 flex items-center justify-center">
+        <ul class="text-sm">
+            {% if pagination.previousPageLink %}
+                <li class="group cursor-pointer">
+                    <i class="icon-arrow_back group-hover:text-accent" aria-hidden="true"></i>
+                    <a href="{{ pagination.previousPageHref | url }}">Newer</a>
+                </li>
+            {% endif %}
+            {% if pagination.nextPageLink %}
+                <li class="group cursor-pointer">
+                    <a href="{{ pagination.nextPageHref | url }}">Older</a>
+                    <i class="icon-arrow_forward group-hover:text-accent" aria-hidden="true"></i>
+                </li>
+            {% endif %}
+        </ul>
+    </nav>
 {% endif %}

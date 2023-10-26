@@ -1,7 +1,7 @@
 const fs = require('fs')
 const markdownIt = require('markdown-it')
 const markdownItAnchor = require('markdown-it-anchor')
-const markdownItAttrs = require('markdown-it-attrs')
+const markdownItLinkAttrs = require('markdown-it-link-attributes')
 const { DateTime } = require('luxon')
 const { minify } = require('terser')
 const eleventyGoogleFonts = require('eleventy-google-fonts')
@@ -16,17 +16,21 @@ module.exports = function (eleventyConfig) {
         breaks: true,
         linkify: false,
     }
+    
     const markdownLib = markdownIt(markdownItOptions)
         .use(markdownItAnchor, {
             level: [2],
             permalink: markdownItAnchor.permalink.linkInsideHeader({
-                symbol: '<i class="icon-link" aria-hidden="true"></i>',
-                placement: 'before',
+                symbol: '<i class="icon-link text-accent_alt" aria-hidden="true"></i>',
+                placement: 'after',
                 renderAttrs: () => ({ 'aria-label': 'Link to this section' }),
             }),
         })
-        .use(markdownItAttrs, {
-            allowedAttributes: ['rel', 'target'],
+        .use(markdownItLinkAttrs, {
+            attrs: {
+              target: "_blank",
+              rel: "noopener noreferrer"
+            }
         })
 
     eleventyConfig.setLibrary('md', markdownLib)
@@ -69,6 +73,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy('src/scripts/*.js.*')
 
     eleventyConfig.addWatchTarget('src/css/')
+    eleventyConfig.addWatchTarget('tailwind.config.js')
 
     eleventyConfig.addPlugin(eleventyGoogleFonts)
     eleventyConfig.addPlugin(lazyImagesPlugin)

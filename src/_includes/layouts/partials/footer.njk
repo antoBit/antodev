@@ -1,31 +1,69 @@
-<footer class="wrapper footer">
-    <div class="social">
-        <a href="{{ global.siteUrl }}/rss.xml" rel="noopener noreferrer" aria-label="RSS Feed">
-            <i class="icon-feed" aria-hidden="true"></i>
-        </a>
-        {% include "layouts/partials/social-links.njk" %}
-    </div>
-    <p class="made_by">Made with ❤️. Powered by
-        <a href="https://www.11ty.dev/" rel="noopener noreferrer" class="animated" target="_blank" aria-label="Eleventy">11ty</a>. Hosted on
-        <a href="https://www.netlify.com/" rel="noopener noreferrer" class="animated" target="_blank" aria-label="Netlify">
-            Netlify</a>.</p>
-    <p class="credits">Icons made by
-        <a
-            href="https://www.flaticon.com/authors/smashicons"
-            rel="noopener noreferrer"
-            class="animated"
-            target="_blank"
-            aria-label="Smashicons">Smashicons</a>
-        from
-        <a href="https://www.flaticon.com/" rel="noopener noreferrer" class="animated" target="_blank" aria-label="Flaticon">
-            Flaticon</a>. Some animations from
-        <a href="https://animate.style/" rel="noreferrer noopener" class="animated" target="_blank" aria-label="Animate.css">
-            Animate.css</a>.</p>
-    <p class="copyright"><img src="/images/panda_mask.png" alt="Panda Mask" title="Panda Mask" width="40" height="40"/> ©️ {% year %}
-    Antonio Piras</p>
-    <div class="scroll_to_top">
-        <a href="#top" aria-label="Go to top">
-            <i class="icon-arrow_upward" aria-hidden="true"></i>
-        </a>
+<footer class="w-full mx-auto max-w-screen-2xl my-20 px-8">
+    <div class="flex flex-col items-center justify-between">
+        <div class="w-full flex flex-row items-center justify-between">
+            <div>
+                <ul class="flex items-center justify-start gap-6">
+                    {% include "layouts/partials/social-links.njk" %}
+                </ul>
+                <p class="text-xs">Made with ❤️. Powered by
+                    <a
+                        class="hover:text-accent bg-[length:0_2px] hover:bg-[length:100%_2px] bg-[0_100%] bg-no-repeat bg-gradient-to-r
+                            from-accent to-accent transition-background-size duration-300"
+                        href="https://www.11ty.dev/"
+                        rel="noopener noreferrer"
+                        class="animated"
+                        target="_blank"
+                        aria-label="Eleventy">11ty</a>. Hosted on
+                    <a
+                        class="hover:text-accent bg-[length:0_2px] hover:bg-[length:100%_2px] bg-[0_100%] bg-no-repeat bg-gradient-to-r
+                            from-accent to-accent transition-background-size duration-300"
+                        href="https://www.netlify.com/"
+                        rel="noopener noreferrer"
+                        class="animated"
+                        target="_blank"
+                        aria-label="Netlify">
+                        Netlify</a>.</p>
+                <small class="text-xs">Icons made by
+                    <a
+                        class="hover:text-accent bg-[length:0_2px] hover:bg-[length:100%_2px] bg-[0_100%] bg-no-repeat bg-gradient-to-r
+                            from-accent to-accent transition-background-size duration-300"
+                        href="https://www.flaticon.com/authors/smashicons"
+                        rel="noopener noreferrer"
+                        class="animated"
+                        target="_blank"
+                        aria-label="Smashicons">Smashicons</a>
+                    from
+                    <a
+                        class="hover:text-accent bg-[length:0_2px] hover:bg-[length:100%_2px] bg-[0_100%] bg-no-repeat bg-gradient-to-r
+                            from-accent to-accent transition-background-size duration-300"
+                        href="https://www.flaticon.com/"
+                        rel="noopener noreferrer"
+                        class="animated"
+                        target="_blank"
+                        aria-label="Flaticon">
+                        Flaticon</a>. Some animations from
+                    <a
+                        class="hover:text-accent bg-[length:0_2px] hover:bg-[length:100%_2px] bg-[0_100%] bg-no-repeat bg-gradient-to-r
+                            from-accent to-accent transition-background-size duration-300"
+                        href="https://animate.style/"
+                        rel="noreferrer noopener"
+                        class="animated"
+                        target="_blank"
+                        aria-label="Animate.css">
+                        Animate.css</a>.
+                </small>
+            </div>
+            <div>
+                <a class="group" href="#top" aria-label="Go to top">
+                    <i
+                        class="icon-arrow_upward inline-block group-hover:animate-rubberBand bg-accent text-background rounded-full p-1"
+                        aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+        <div class="flex items-center justify-center gap-4 mt-8">
+            <img src="/images/panda_mask.png" alt="Panda Mask" title="Panda Mask" width="40" height="40"/>
+            <p class="text-xs">©️ {% year %} Antonio Piras</p>
+        </div>
     </div>
 </footer>
