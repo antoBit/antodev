@@ -20,7 +20,7 @@ metaKeywords:
 Blatantly copied from [Wes Bos' /uses page](https://wesbos.com/uses), I decided to list what I use in my everyday life. I don't know, you may be curious?!? 😆
 
 <figure>
-    <img class="rounded-corners" src="/images/uploads/cleanshot-2021-04-09-at-20.11.19-2x.jpg" alt="Terminal" title="Terminal" />
+    <img class="rounded-corners" src="/images/uploads/cleanshot-2023-12-01-at-11.48.20-2x.png" alt="Terminal" title="Terminal" />
     <figcaption class="image-caption-text">My terminal with this site's actual commit history. Please, don't judge 😅</a></figcaption>
 </figure>
 
