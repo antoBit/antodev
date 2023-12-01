@@ -4,17 +4,17 @@ title: antoDev uses
 description: This is what I use every day to develop... and more 💪🏻
 date: 2021-04-09T18:59:37.540Z
 metaDescription: Web developer tools and Mac OS utilities for working, blogging
-    and taking the system to the next level.
-metaImage: /images/uploads/cleanshot-2021-04-09-at-20.11.19-2x.jpg
+  and taking the system to the next level.
+metaImage: /images/uploads/cleanshot-2023-12-01-at-11.48.20-2x.png
 metaKeywords:
-    - web
-    - developer
-    - code
-    - coding
-    - tools
-    - software
-    - uses
-    - utilities
+  - web
+  - developer
+  - code
+  - coding
+  - tools
+  - software
+  - uses
+  - utilities
 ---
 
 Blatantly copied from [Wes Bos' /uses page](https://wesbos.com/uses), I decided to list what I use in my everyday life. I don't know, you may be curious?!? 😆
@@ -28,18 +28,13 @@ Blatantly copied from [Wes Bos' /uses page](https://wesbos.com/uses), I decided 
 
 ### Shell configuration
 
-I spend _a lot_ of time on my terminal and I have to say I freaking love **[iTerm2](https://iterm2.com/)**. I tried other terminals over the years, but I always come back to it.\
-I have a bazillion plugins installed on it, but my favourites are:
-
--   [Oh-my-zsh](https://ohmyz.sh/), seriously it's the best
--   [autojump](https://github.com/wting/autojump) (lets you `cd` into a previously visited directory, even if you misspell it!)
--   [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) and [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
--   [emojiparty](https://gist.github.com/brennv/3e9a26308948f11d651f) (a theme that prepends a random emoji to the command line 🥳)
+I spend _a lot_ of time on my terminal and I have to say I freaking love **[Warp](https://www.warp.dev/b)**. I tried other terminals over the years, but I fell in love with it thanks to the AI prompt and the amazing workflows.\
+I have a bazillion plugins installed on it, but a big shoutout to [autojump](https://github.com/wting/autojump) (lets you `cd` into a previously visited directory, even if you misspell it!) is a must.
 
 ### Main tools
 
--   [Visual Studio Code](https://code.visualstudio.com/), because yes.
--   **[Insomnia](https://insomnia.rest/)**
+-   **[Visual Studio Code](https://code.visualstudio.com/)**, because yes.
+-   **[HTTPie](https://httpie.io/)**
 
     An app for testing APIs, 'cause people who instantly remember the `curl` syntax and all its options have nothing to do with me.
 
@@ -49,15 +44,13 @@ I have a bazillion plugins installed on it, but my favourites are:
 
 -   **[Firefox](https://www.mozilla.org/it/firefox/new/)**
 
-    Firefox is my go-to browser of choice when I'm doing anything CSS related. Its developer tools are simply superior ([but don't listen to me, Kevin Powell knows this stuff better than I do](https://www.youtube.com/watch?v=a-V8GFtwjos)).
+    Firefox is my go-to browser of choice when I'm doing anything CSS-related. Its developer tools are simply superior ([but don't listen to me, Kevin Powell knows this stuff better than I do](https://www.youtube.com/watch?v=a-V8GFtwjos)).
 
 ## Productivity
 
 -   **[Bear App](https://bear.app/)**
 
-    I could talk for hours about Bear. It's a markdown note-taking app, but it's more than that. I use it to write my work tasks every week, blog posts, plan holidays, jot down quick notes. It's perfectly fine on the free plan, but I can assure you: it's one of those apps where you actively _feel the need to pay for the paid plan_ because they deserve it. \
-    \
-    I swear, I have an Android phone and I'm considering switching to iPhone just for their mobile app, I'm not kidding.
+    I could talk for hours about Bear. It's a markdown note-taking app, but it's more than that. I use it to write my work-related tasks every week, blog posts, plan holidays, and jot down quick notes. It's perfectly fine on the free plan, but I can assure you: it's one of those apps where you actively _feel the need to pay for the paid plan_ because they deserve it.
 
 -   **[Notion](https://www.notion.so/)**, it's the best when it comes to organising large documents into categories and it has many layouts and templates to choose from.
 
