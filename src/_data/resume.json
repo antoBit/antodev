@@ -1,6 +1,22 @@
 {
     "work": [
         {
+            "company": "Syntegral",
+            "location": "Remote",
+            "experience": [
+                {
+                    "position": "Founding Frontend Engineer",
+                    "startDate": "March 2023",
+                    "endDate": "Dec 2023",
+                    "highlights": [
+                        "Bootstrap the frontend application for the startup and set the technical foundation for its development",
+                        "Choose the technology and libraries/services used to build and run the frontend application: React + Typescript, Mixpanel, Sentry, React Query, Zod, to name a few.",
+                        "Contribute to technical discussions regarding both frontend and backend for the startup core application"
+                    ]
+                }
+            ]
+        },
+        {
             "company": "ON24",
             "location": "San Francisco (CA) - Remote",
             "website": "https://www.on24.com",
