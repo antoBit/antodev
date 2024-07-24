@@ -9,14 +9,14 @@
             <span class="gradient bg-gradient-{{ range(1, 3) | random }} bg-clip-text">{{ work.company }}</span>
         </p>
         {% for experience in work.experience %}
-            <div class="flex flex-row items-center justify-between border-b border-dashed border-accent my-4 pb-4">
+            <div class="flex flex-row items-center justify-between border-b border-dashed border-accent mb-2 pb-4">
                 <p class="my-0">{{ experience.position }}</p>
                 <div class="text-right">
                     <p class="text-xs my-0 italic">{{ work.location }}</p>
                     <p class="text-xs text-accent_alt my-0">{{ experience.startDate }} – {{ experience.endDate }}</p>
                 </div>
             </div>
-            <ul class="list-disc pl-6">
+            <ul class="list-disc pl-6 mb-4">
                 {% for highlight in experience.highlights %}
                     <li>{{ highlight }}</li>
                 {% endfor %}

@@ -1,6 +1,22 @@
 {
     "work": [
         {
+            "company": "Oxolo",
+            "location": "Hamburg - Remote",
+            "website": "https://www.oxolo.ai",
+            "experience": [
+                {
+                    "position": "Tech Lead",
+                    "startDate": "Gen 2024",
+                    "endDate": "Present",
+                    "highlights": [
+                        "Rewrite the frontend application for the company's video editor with Vite, React Query and Immer as the main technologies involved",
+                        "Technical lead for the video editing team, under a product manager and with four developers and a product designer"
+                    ]
+                }
+            ]
+        },
+        {
             "company": "Syntegral",
             "location": "Remote",
             "experience": [
