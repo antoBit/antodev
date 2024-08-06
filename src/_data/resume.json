@@ -11,6 +11,7 @@
                     "endDate": "Present",
                     "highlights": [
                         "Rewrite the frontend application for the company's video editor with Vite, React Query and Immer as the main technologies involved",
+                        "Create the company's new Design System with TailwindCSS and Storybook",
                         "Contribute to tech decisions regarding backend, accompanying services to the main application",
                         "Technical lead for the video editing team, under a product manager and with four developers and a product designer"
                     ]
