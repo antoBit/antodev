@@ -1,11 +1,13 @@
-{% set bodyClass = "fourofour" %}
+{% set bodyClass = "min-h-screen grid grid-rows-[auto_1fr_auto]" %}
 {% extends "layouts/base.njk" %}
-{% block mainContent %} 
-<section class="wrapper">
-    <div class="hero">
-        <img src="/images/panda_404.png" title="Panda" alt="" />
-        <h2>404</h2>
-    </div>
-    <p class="suggestion">Have you tried <a href="/" class="animated" aria-label="Home page">turning it off and on again?</a></p>
-</section>
+{% block mainContent %}
+    <section class="w-full h-full flex flex-col items-center justify-center gap-4">
+        <div class="flex flex-col items-center justify-center gap-2">
+            <img class="w-[100px] h-auto invert" src="/images/panda_404.png" title="Panda" alt="Sleeping panda"/>
+            <h2 class="text-9xl m-0">404</h2>
+        </div>
+        <p class="text-lg text-center">Have you tried
+            <a href="/" class="animated" aria-label="Home page">turning it off and on again?</a>
+        </p>
+    </section>
 {% endblock %}
