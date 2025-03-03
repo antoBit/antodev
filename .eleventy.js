@@ -110,7 +110,9 @@ module.exports = function (eleventyConfig) {
     })
 
     eleventyConfig.addFilter('debugger', (...args) => {
+        console.log('---DEBUGGER---')
         console.log(...args)
+        console.log('---DEBUGGER---')
         debugger
     })
 

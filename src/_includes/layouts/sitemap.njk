@@ -4,7 +4,7 @@
         <loc>{{ global.siteUrl }}</loc>
         <lastmod>{{ page.date.toISOString() }}</lastmod>
     </url>
-        <url>
+    <url>
         <loc>{{ global.siteUrl }}/blog</loc>
         <lastmod>{{ page.date.toISOString() }}</lastmod>
     </url>
@@ -12,6 +12,19 @@
         <url>
             <loc>{{ global.siteUrl }}{{ page.url | url }}</loc>
             <lastmod>{{ page.date.toISOString() }}</lastmod>
+        </url>
+    {% endfor %}
+    {% set tags = [] %}
+    {% for post in collections.all %}
+        {% for tag in post.data.tags %}
+            {% if tag not in tags %}
+                {% set tags = tags.concat(tag) %}
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+    {% for tag in tags %}
+        <url>
+            <loc>{{ global.siteUrl }}/tags/{{ tag | slug }}</loc>
         </url>
     {% endfor %}
 </urlset>
