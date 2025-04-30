@@ -228,15 +228,13 @@
   }
 }
 
-@layer utilities {
-  .link-underline {
-    @apply bg-no-repeat transition-[background-size] duration-300;
-    background-size: 0 2px;
-    background-position: 0 100%;
-    background-image: linear-gradient(to right, theme('colors.accent'), theme('colors.accent'));
-  }
+@utility link-underline {
+  @apply bg-no-repeat transition-[background-size] duration-300;
+  background-size: 0 2px;
+  background-position: 0 100%;
+  background-image: linear-gradient(to right, theme('colors.accent'), theme('colors.accent'));
 
-  .link-underline:hover {
+  &:hover {
     background-size: 100% 2px;
   }
 }
