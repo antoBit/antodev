@@ -1,8 +1,8 @@
-const getScrollPosition = () => {
+const getScrollPosition = (): number => {
     return window.pageYOffset || document.documentElement.scrollTop || 0
 }
 
-const getDocumentHeight = () => {
+const getDocumentHeight = (): number => {
     return Math.max(
         document.documentElement.clientHeight,
         document.body.scrollHeight,
@@ -12,17 +12,17 @@ const getDocumentHeight = () => {
     )
 }
 
-const progressBar : HTMLElement | null = document.getElementById('reading-progress')
+const progressBar: HTMLElement | null = document.getElementById('reading-progress')
 
 if (progressBar) {
-    let windowHeight = window.innerHeight || 0
-    let documentHeight = getDocumentHeight()
-    let maximumHeight = documentHeight - windowHeight
+    let windowHeight: number = window.innerHeight || 0
+    let documentHeight: number = getDocumentHeight()
+    let maximumHeight: number = documentHeight - windowHeight
 
     progressBar.setAttribute('max', maximumHeight.toString())
 
     document.addEventListener('scroll', () => {
-        const scrollPosition = getScrollPosition()
+        const scrollPosition: number = getScrollPosition()
         progressBar.setAttribute('value', scrollPosition.toString())
     })
 
@@ -33,7 +33,7 @@ if (progressBar) {
         maximumHeight = documentHeight - windowHeight
         progressBar.setAttribute('max', maximumHeight.toString())
 
-        const scrollPosition = getScrollPosition()
+        const scrollPosition: number = getScrollPosition()
         progressBar.setAttribute('value', scrollPosition.toString())
     })
 }
